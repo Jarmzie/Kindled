@@ -4,19 +4,17 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 1;
+    public float speed = 5;
     public bool facingRight = false;
 
     private Rigidbody2D rb;
     private SpriteRenderer sr;
-    private Animator an;
-    private float velocityX = 0.0f, velocityY = 0.0f;
+    public float velocityX = 0.0f, velocityY = 0.0f;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        an = GetComponent<Animator>();
     }
 
     void Update()
@@ -32,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
     {
         velocityX = Input.GetAxis("Horizontal");
         velocityY = Input.GetAxis("Vertical");
-        an.SetFloat("VertSpeed", velocityY);
         rb.velocity = new Vector2(velocityX * speed, velocityY * speed);
     }
 }

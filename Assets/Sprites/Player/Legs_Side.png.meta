@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: b9e205ad61d7f5d44af577fa1a4deb0e
+guid: f5181975d842ee347ae7f6dbc2208f56
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1559817187213835542
-    second: Legs_Down_0
+      213: -8750174841007381988
+    second: Legs_Side_0
   - first:
-      213: 2449556457266126601
-    second: Legs_Down_1
+      213: -3983074211560964981
+    second: Legs_Side_1
   - first:
-      213: -7652513143645174672
-    second: Legs_Down_2
+      213: -7993878123349030808
+    second: Legs_Side_2
   - first:
-      213: -9082479819274244357
-    second: Legs_Down_3
+      213: -913225497288465009
+    second: Legs_Side_3
   - first:
-      213: -7165697327986957728
-    second: Legs_Down_4
+      213: 8601057519503863039
+    second: Legs_Side_4
   - first:
-      213: 5849374464733821178
-    second: Legs_Down_5
+      213: 1150732830689249002
+    second: Legs_Side_5
   - first:
-      213: -3060828784199237122
-    second: Legs_Down_6
-  - first:
-      213: 4758044447466129765
-    second: Legs_Down_7
+      213: -9117764201092806301
+    second: Legs_Side_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -137,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Legs_Down_0
+      name: Legs_Side_0
       rect:
         serializedVersion: 2
         x: 0
@@ -145,24 +142,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -13}
-        - {x: 5, y: -13}
-        - {x: 5, y: -3}
-        - {x: -6, y: -3}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61dfd6ea77595a510800000000000000
-      internalID: 1559817187213835542
+      spriteID: c12e13fa752219680800000000000000
+      internalID: -8750174841007381988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Down_1
+      name: Legs_Side_1
       rect:
         serializedVersion: 2
         x: 32
@@ -170,24 +163,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -13}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -13}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90f9c9c9e929ef120800000000000000
-      internalID: 2449556457266126601
+      spriteID: b8cb3e99b1749b8c0800000000000000
+      internalID: -3983074211560964981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Down_2
+      name: Legs_Side_2
       rect:
         serializedVersion: 2
         x: 64
@@ -195,24 +184,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -15}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -15}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 074850237dfccc590800000000000000
-      internalID: -7652513143645174672
+      spriteID: 868c300433a001190800000000000000
+      internalID: -7993878123349030808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Down_3
+      name: Legs_Side_3
       rect:
         serializedVersion: 2
         x: 0
@@ -220,24 +205,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -13}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -13}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfe2184b9bc84f180800000000000000
-      internalID: -9082479819274244357
+      spriteID: f85aa4aaf329353f0800000000000000
+      internalID: -913225497288465009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Down_4
+      name: Legs_Side_4
       rect:
         serializedVersion: 2
         x: 32
@@ -245,24 +226,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -13}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -13}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0622f55ee345e8c90800000000000000
-      internalID: -7165697327986957728
+      spriteID: ffceabe5e381d5770800000000000000
+      internalID: 8601057519503863039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Down_5
+      name: Legs_Side_5
       rect:
         serializedVersion: 2
         x: 64
@@ -270,24 +247,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -13}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -13}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af833b895172d2150800000000000000
-      internalID: 5849374464733821178
+      spriteID: ae6cc94a96938ff00800000000000000
+      internalID: 1150732830689249002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Legs_Down_6
+      name: Legs_Side_6
       rect:
         serializedVersion: 2
         x: 0
@@ -295,43 +268,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -6, y: -15}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -15}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef1838f0070c585d0800000000000000
-      internalID: -3060828784199237122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Legs_Down_7
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -6, y: -13}
-        - {x: -6, y: -3}
-        - {x: 5, y: -3}
-        - {x: 5, y: -13}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5690dbc3738f70240800000000000000
-      internalID: 4758044447466129765
+      spriteID: 369071064c1377180800000000000000
+      internalID: -9117764201092806301
       vertices: []
       indices: 
       edges: []

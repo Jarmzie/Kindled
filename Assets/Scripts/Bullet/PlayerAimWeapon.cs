@@ -38,7 +38,11 @@ public class PlayerAimWeapon : MonoBehaviour
         {
             Shoot();
         }
+        
+       
     }
+
+  
 
     void Shoot()
     {

@@ -71,7 +71,7 @@ public class FlyingLanternAI : MonoBehaviour
         if (playerInRange) {
             print("Swoop");
             StartCoroutine(SwoopTowardsPlayer(curPlayerPosition));
-        } else if (Random.Range(1, 2) == 1) {
+        } else if (Random.Range(0, 3) == 1) {
             print("Random");
             StartCoroutine(MoveRandomly());
         } else {

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 7423267083993531865}
   - component: {fileID: 5230559741913158266}
   - component: {fileID: 6450737226777092791}
-  - component: {fileID: 4812637460142583882}
+  - component: {fileID: 890468995519418574}
+  - component: {fileID: 7694885441036180534}
   - component: {fileID: 7330348383255506634}
   - component: {fileID: 448986810927607870}
   m_Layer: 0
@@ -127,8 +128,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &4812637460142583882
-PolygonCollider2D:
+--- !u!58 &890468995519418574
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -141,24 +142,24 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.3228895, y: 0.4764244}
-      - {x: -0.0043665767, y: 0.32319945}
-      - {x: -0.2738497, y: 0.4808508}
-      - {x: -0.634008, y: 0.06617114}
-      - {x: -0.22052376, y: -0.54433304}
-      - {x: 0.23215033, y: -0.53465676}
-      - {x: 0.60365206, y: 0.052679926}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!58 &7694885441036180534
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7423267083993531864}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!58 &7330348383255506634
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -174,7 +175,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 2.5
+  m_Radius: 3
 --- !u!114 &448986810927607870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,4 +188,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4b7229ec60c6b4691939d070cc752d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
+  health: 0
+  damage: 10
+  myProjectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
+  player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
+  tf: {fileID: 0}
+  an: {fileID: 0}
+  rb: {fileID: 0}
+  hurtbox: {fileID: 0}
+  collisionbox: {fileID: 0}

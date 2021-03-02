@@ -2,22 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlyingLanternAI : MonoBehaviour
+public class FlyingLanternAI : Enemy
 {
-    private Rigidbody2D rb;
-    private Transform tf;
-    private Animator an;
     private bool playerInRange = false;
     private Vector3 curPlayerPosition;
-    public GameObject projectile, player;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
+        player = GameObject.Find("Player (Legs)");
         curPlayerPosition = player.GetComponent<Transform>().position;
         InvokeRepeating("DecideBehaviour", 1.0f, 3.0f);
+        SetUpColliders();
     }
 
     void Update()
@@ -27,7 +25,8 @@ public class FlyingLanternAI : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D playerCollider)
     {
-        if (playerCollider.gameObject.tag == "Player") {
+        if (playerCollider.gameObject.tag == "Player")
+        {
             playerInRange = true;
             print("Enter");
         }
@@ -68,15 +67,20 @@ public class FlyingLanternAI : MonoBehaviour
 
     void DecideBehaviour()
     {
-        if (playerInRange) {
+        if (playerInRange)
+        {
             print("Swoop");
             StartCoroutine(SwoopTowardsPlayer(curPlayerPosition));
-        } else if (Random.Range(0, 3) == 1) {
+        }
+        else if (Random.Range(0, 3) == 1)
+        {
             print("Random");
             StartCoroutine(MoveRandomly());
-        } else {
+        }
+        else
+        {
             print("Shoot");
-            StartCoroutine(ShootProjectile(curPlayerPosition, projectile));
+            StartCoroutine(ShootProjectile(curPlayerPosition, myProjectile));
         }
     }
 
@@ -87,7 +91,6 @@ public class FlyingLanternAI : MonoBehaviour
         an.SetTrigger("Idle");
         Vector2 sentDirection = findPlayerDirection(playerPos, tf.position);
         GameObject newProj = Instantiate(proj, tf.position, Quaternion.identity);
-        //This is entirely temporary, will prbably implement a projectile interface to make a generic script
         newProj.GetComponent<Rigidbody2D>().velocity = sentDirection;
         yield return null;
     }

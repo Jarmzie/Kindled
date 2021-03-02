@@ -2,31 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fireball : MonoBehaviour
+public class Fireball : Projectile
 {
-    private Rigidbody2D rb;
-    private float timeAtLoad, timeAlive = 0.0f;
-    public Vector2 direction = new Vector2(0.0f, 0.0f);
-    public float speed = 1.0f;
-    public int deathTime = 5;
-
     void Start()
     {
+        speed = 1.0f;
+        damage = 5;
         rb = GetComponent<Rigidbody2D>();
+        cb = GetComponent<CircleCollider2D>();
+        deathTime = 5.0f;
         timeAtLoad = Time.timeSinceLevelLoad;
     }
 
     void Update()
     {
-        timeAlive = Time.timeSinceLevelLoad - timeAtLoad;
-        if (timeAlive > deathTime)
-        {
-            Destroy(gameObject);
-        }
-    }
-
-    void FixedUpdate()
-    {
-
+        TimeDestroy();
     }
 }

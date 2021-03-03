@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -951685280195610410}
   m_Layer: 0
   m_Name: Fireball
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,6 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af9c9791f6335e4db1f65ceff337638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0}
   speed: 1
+  timeAtLoad: 0
   deathTime: 5
+  timeAlive: 0
+  damage: 0
+  directionUnitVector: {x: 0, y: 0}
+  cb: {fileID: 0}
+  rb: {fileID: 0}

@@ -12,13 +12,8 @@ public class Enemy : MonoBehaviour
 
     //It's important to note that most enemies will have a hitbox (for wall collisions), hurtbox (for damage),
     //and probably a player detector (for sensing the player). The hitbox is the collider on the actual enemy
-    //while the other colliders have specific children for themselves.
-    public Collider2D hurtbox, collisionbox;
-
-    public void SetUpColliders()
-    {
-       //Don't do shit rn 
-    }
+    //while the other colliders have specific children for themselves. The enemy itself needs to be on the "Enemy Hitbox"
+    //layer and the child needs to be on the "Enemy Hurtbox" layer. Also, you need to tag the child as "Enemy" as well.
 
     public void TakeDamage(int damageAmount)
     {

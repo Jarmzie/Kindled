@@ -717,11 +717,11 @@ PrefabInstance:
       objectReference: {fileID: 4856061536945846870, guid: 9445e0bdf190ae64abe7f96454b72732, type: 3}
     - target: {fileID: 9059281771669358569, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.8801562
+      value: -1.621
       objectReference: {fileID: 0}
     - target: {fileID: 9059281771669358569, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.92659533
+      value: 0.313
       objectReference: {fileID: 0}
     - target: {fileID: 9059281771669358569, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
       propertyPath: m_LocalPosition.z
@@ -782,9 +782,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7118995efdfaa6b4dbd0c4ce8df480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  aimTransform: {fileID: 0}
   aimLanternEndPointTransform: {fileID: 286964}
   bulletPrefab: {fileID: 4856061536945846870, guid: 9445e0bdf190ae64abe7f96454b72732, type: 3}
   bulletForce: 10
+--- !u!114 &1312154221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312154219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2aa6bce0b5950d4d8681344d9261fdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proj: {fileID: 2698061270648502042, guid: bc36918d827449f4890289b1707a1a60, type: 3}
+  whatever: {fileID: 2038357998}
+  wait: 300
 --- !u!4 &1312154226 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9059281771669358569, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
@@ -995,9 +1011,9 @@ GameObject:
   - component: {fileID: 1746000655}
   - component: {fileID: 1746000657}
   - component: {fileID: 1746000656}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

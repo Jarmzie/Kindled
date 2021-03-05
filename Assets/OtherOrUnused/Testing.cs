@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Testing : MonoBehaviour
+/*public class Testing : MonoBehaviour
 {
     [SerializeField] private PlayerAimWeapon playerAimWeapon;
 
@@ -15,4 +15,4 @@ public class Testing : MonoBehaviour
     {
         //if we wanna add screen shaking or other affects
     }
-}
+}*/

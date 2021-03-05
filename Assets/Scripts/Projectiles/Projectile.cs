@@ -36,8 +36,12 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.tag == "Wall")
+        if (col.gameObject.CompareTag("Wall"))
         {
+            Destroy(gameObject);
+        } else if (col.gameObject.CompareTag("Enemy") || col.gameObject.CompareTag("Player"))
+        {
+            col.SendMessageUpwards("TakeDamage", damage);
             Destroy(gameObject);
         }
     }

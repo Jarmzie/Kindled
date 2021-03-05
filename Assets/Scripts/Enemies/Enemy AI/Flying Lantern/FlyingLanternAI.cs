@@ -9,6 +9,7 @@ public class FlyingLanternAI : Enemy
 
     void Start()
     {
+        health = 30;
         rb = GetComponent<Rigidbody2D>();
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
@@ -23,21 +24,14 @@ public class FlyingLanternAI : Enemy
         curPlayerPosition = player.GetComponent<Transform>().position;
     }
 
-    void OnTriggerEnter2D(Collider2D playerCollider)
+    void OnTriggerStay2D(Collider2D playerCollider)
     {
-        if (playerCollider.gameObject.tag == "Player")
+        if (playerCollider.gameObject.CompareTag("Player"))
         {
             playerInRange = true;
-            print("Enter");
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D playerCollider)
-    {
-        if (playerCollider.gameObject.tag == "Player")
+        } else
         {
             playerInRange = false;
-            print("Exit");
         }
     }
 
@@ -69,17 +63,14 @@ public class FlyingLanternAI : Enemy
     {
         if (playerInRange)
         {
-            print("Swoop");
             StartCoroutine(SwoopTowardsPlayer(curPlayerPosition));
         }
         else if (Random.Range(0, 3) == 1)
         {
-            print("Random");
             StartCoroutine(MoveRandomly());
         }
         else
         {
-            print("Shoot");
             StartCoroutine(ShootProjectile(curPlayerPosition, myProjectile));
         }
     }

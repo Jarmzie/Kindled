@@ -5,9 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - bullet
-  - Projectile
   - Wall
   - Enemy
+  - PlayerProjectile
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX
@@ -22,14 +23,14 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player Hitbox
+  - Enemy Hitboxes
+  - Wall
+  - Player Projectiles
+  - Enemy Projectiles
+  - Player Hurtbox
+  - Enemy Hurtbox
+  - Detection
   - 
   - 
   - 

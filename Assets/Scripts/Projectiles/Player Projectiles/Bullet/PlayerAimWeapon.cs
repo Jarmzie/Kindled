@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using CodeMonkey.Utils;
 
-/*public class PlayerAimWeapon : MonoBehaviour
+public class PlayerAimWeapon : MonoBehaviour
 {
     
     public event EventHandler<OnShootEventArgs> OnShoot;
@@ -61,7 +61,7 @@ using CodeMonkey.Utils;
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
 
         //makes the spirte flip so it is never upsidedown (cant use with current shooting set up) will look into it
-        *//*
+        /*
         Vector3 aimLocalScale = Vector3.one;
         if(angle > 90 || angle < -90)
         {
@@ -74,7 +74,7 @@ using CodeMonkey.Utils;
             
         }
         aimTransform.localScale = aimLocalScale;
-         *//*
+         */
     }
 
     //for adding affects later if wanted
@@ -94,4 +94,4 @@ using CodeMonkey.Utils;
 
         }
     }
-}*/
+}

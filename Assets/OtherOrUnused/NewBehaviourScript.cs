@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+/*public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject proj;
     public Camera whatever;
@@ -19,4 +19,4 @@ public class NewBehaviourScript : MonoBehaviour
             wait = 500;
         }
     }
-}
+}*/

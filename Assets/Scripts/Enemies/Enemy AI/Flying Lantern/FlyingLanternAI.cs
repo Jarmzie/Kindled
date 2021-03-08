@@ -16,7 +16,7 @@ public class FlyingLanternAI : Enemy
         player = GameObject.Find("Player (Legs)");
         curPlayerPosition = player.GetComponent<Transform>().position;
         InvokeRepeating("DecideBehaviour", 1.0f, 3.0f);
-        SetUpColliders();
+       
     }
 
     void Update()

@@ -782,9 +782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7118995efdfaa6b4dbd0c4ce8df480e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimTransform: {fileID: 0}
   aimLanternEndPointTransform: {fileID: 286964}
-  bulletPrefab: {fileID: 4856061536945846870, guid: 9445e0bdf190ae64abe7f96454b72732, type: 3}
+  bulletPrefab: {fileID: 2698061270648502042, guid: bc36918d827449f4890289b1707a1a60, type: 3}
   bulletForce: 10
 --- !u!114 &1312154221
 MonoBehaviour:
@@ -982,7 +981,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77b11273d2c09147ba1d11e888a1330, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerAimWeapon: {fileID: 0}
 --- !u!4 &1701426290
 Transform:
   m_ObjectHideFlags: 0

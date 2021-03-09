@@ -23,6 +23,16 @@ public class PlayerAimWeapon : MonoBehaviour
   
 
     public float bulletForce = 10f;
+    public int maxOil = 200;
+    public int currentOil;
+
+    public OilBar oilBar;
+
+    private void Start()
+    {
+        currentOil = maxOil;
+        oilBar.SetMaxOil(maxOil);
+    }
 
     private void Awake()
     {
@@ -32,17 +42,23 @@ public class PlayerAimWeapon : MonoBehaviour
 
     private void Update()
     {
+
         HandleAiming();
-       // HandleShooting();
-        if (Input.GetButtonDown("Fire1"))
+        // HandleShooting();
+        if (Input.GetButtonDown("Fire1") && currentOil > 0)
         {
             Shoot();
+            TakeOil(5);
         }
         
        
     }
 
-  
+    void TakeOil(int burnOil)
+    {
+        currentOil -= burnOil;
+        oilBar.SetOil(currentOil);
+    }
 
     void Shoot()
     {

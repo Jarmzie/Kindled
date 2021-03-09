@@ -57,6 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1503118808077716899}
   - component: {fileID: 3451149301572733698}
+  - component: {fileID: 6395804817472542347}
   m_Layer: 20
   m_Name: PlayerDetect
   m_TagString: Untagged
@@ -94,6 +95,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 3
+--- !u!114 &6395804817472542347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977239947841443892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0863489eb2e52194da843d04fa35fa7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7423267083993531864
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,10 +265,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   damage: 10
+  level: 0
   myProjectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
   player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
   tf: {fileID: 0}
   an: {fileID: 0}
   rb: {fileID: 0}
-  hurtbox: {fileID: 0}
-  collisionbox: {fileID: 0}
+  playerInRange: 0

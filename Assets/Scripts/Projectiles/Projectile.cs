@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed, timeAtLoad, deathTime, timeAlive = 0.0f;
+    public float speed, timeAtLoad = Time.timeSinceLevelLoad, deathTime, timeAlive = 0.0f;
     public int damage;
     public Vector2 directionUnitVector = new Vector2(0.0f, 0.0f);
     public Collider2D cb;
@@ -13,6 +13,11 @@ public class Projectile : MonoBehaviour
     public int GetDamage()
     {
         return damage;
+    }
+
+    public float GetSpeed()
+    {
+        return speed;
     }
 
     public Rigidbody2D GetRigidbody()

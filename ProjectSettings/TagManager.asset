@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - PlayerProjectile
   - EnemyProjectile
+  - Detection
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Flying Enemy Hitboxes
   - Player Hitbox
   - Enemy Hitboxes
   - Wall
@@ -31,7 +32,7 @@ TagManager:
   - Player Hurtbox
   - Enemy Hurtbox
   - Detection
-  - 
+  - Hole
   - 
   - 
   - 

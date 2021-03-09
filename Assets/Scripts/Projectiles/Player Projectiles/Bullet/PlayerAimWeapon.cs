@@ -46,7 +46,7 @@ public class PlayerAimWeapon : MonoBehaviour
 
     void Shoot()
     {
-       GameObject bullet = Instantiate(bulletPrefab, aimLanternEndPointTransform.position, aimLanternEndPointTransform.rotation);
+       GameObject bullet = Instantiate(bulletPrefab, aimLanternEndPointTransform.position, Quaternion.identity);
        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(aimLanternEndPointTransform.up * bulletForce, ForceMode2D.Impulse);
     }

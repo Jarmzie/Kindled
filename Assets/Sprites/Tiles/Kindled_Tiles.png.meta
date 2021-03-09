@@ -1,181 +1,181 @@
 fileFormatVersion: 2
-guid: 2692e8b4d047a014587783690afbeb74
+guid: efd9bff1789526244bc3329e6358624e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9165707053076113496
-    second: Kindled_Tiles_0
+      213: -1372167659021380468
+    second: Kindled_Tiles 1_0
   - first:
-      213: -5726638353678620919
-    second: Kindled_Tiles_1
+      213: -4772413506289461368
+    second: Kindled_Tiles 1_1
   - first:
-      213: -6975515785631391420
-    second: Kindled_Tiles_2
+      213: -4150626315308144249
+    second: Kindled_Tiles 1_2
   - first:
-      213: 3004162729813042686
-    second: Kindled_Tiles_3
+      213: 5348073116217956508
+    second: Kindled_Tiles 1_3
   - first:
-      213: 3462375973468892558
-    second: Kindled_Tiles_4
+      213: 8636379331368896412
+    second: Kindled_Tiles 1_4
   - first:
-      213: 4937461420781781396
-    second: Kindled_Tiles_5
+      213: 8588536294631167791
+    second: Kindled_Tiles 1_5
   - first:
-      213: 1491090587490266652
-    second: Kindled_Tiles_6
+      213: 345572826118180234
+    second: Kindled_Tiles 1_6
   - first:
-      213: -2953893280353242114
-    second: Kindled_Tiles_7
+      213: 4889044727304034405
+    second: Kindled_Tiles 1_7
   - first:
-      213: -2456925341871040009
-    second: Kindled_Tiles_8
+      213: 7009711501095927627
+    second: Kindled_Tiles 1_8
   - first:
-      213: -2662102215767773967
-    second: Kindled_Tiles_9
+      213: 1050001682578160385
+    second: Kindled_Tiles 1_9
   - first:
-      213: -4862400013393128782
-    second: Kindled_Tiles_10
+      213: 7322306745737837246
+    second: Kindled_Tiles 1_10
   - first:
-      213: 798353640389959943
-    second: Kindled_Tiles_11
+      213: -3738264312701344905
+    second: Kindled_Tiles 1_11
   - first:
-      213: 4009524831460841142
-    second: Kindled_Tiles_12
+      213: 6974917746575076157
+    second: Kindled_Tiles 1_12
   - first:
-      213: -7235753791002339408
-    second: Kindled_Tiles_13
+      213: 8994491986166181452
+    second: Kindled_Tiles 1_13
   - first:
-      213: -4382812456342516438
-    second: Kindled_Tiles_14
+      213: 5163333136081761161
+    second: Kindled_Tiles 1_14
   - first:
-      213: 1738876693885867778
-    second: Kindled_Tiles_15
+      213: 500453998140268087
+    second: Kindled_Tiles 1_15
   - first:
-      213: -351978727509472934
-    second: Kindled_Tiles_16
+      213: -9067090163728504636
+    second: Kindled_Tiles 1_16
   - first:
-      213: -2380689117876258924
-    second: Kindled_Tiles_17
+      213: 3814835358098214061
+    second: Kindled_Tiles 1_17
   - first:
-      213: -3124295197729350801
-    second: Kindled_Tiles_18
+      213: 4630398269383291769
+    second: Kindled_Tiles 1_18
   - first:
-      213: 5775098593972123437
-    second: Kindled_Tiles_19
+      213: -8372343163878996684
+    second: Kindled_Tiles 1_19
   - first:
-      213: 3876312880558053837
-    second: Kindled_Tiles_20
+      213: -1851334818741519178
+    second: Kindled_Tiles 1_20
   - first:
-      213: 6865833752103766667
-    second: Kindled_Tiles_21
+      213: 5699791681350610764
+    second: Kindled_Tiles 1_21
   - first:
-      213: 5557499511229915614
-    second: Kindled_Tiles_22
+      213: 6252074615264443731
+    second: Kindled_Tiles 1_22
   - first:
-      213: -2034435616123918288
-    second: Kindled_Tiles_23
+      213: 148071265482356149
+    second: Kindled_Tiles 1_23
   - first:
-      213: 5086389967018362113
-    second: Kindled_Tiles_24
+      213: -8838909397777432652
+    second: Kindled_Tiles 1_24
   - first:
-      213: -6650923334879615729
-    second: Kindled_Tiles_25
+      213: -4131780871339198219
+    second: Kindled_Tiles 1_25
   - first:
-      213: -6388224674450415486
-    second: Kindled_Tiles_26
+      213: 7274515434532263002
+    second: Kindled_Tiles 1_26
   - first:
-      213: 6009458205653998537
-    second: Kindled_Tiles_27
+      213: -6185570469856911705
+    second: Kindled_Tiles 1_27
   - first:
-      213: 8027117452615042060
-    second: Kindled_Tiles_28
+      213: 5595265144779172718
+    second: Kindled_Tiles 1_28
   - first:
-      213: -4512686450849788147
-    second: Kindled_Tiles_29
+      213: -3159720943284818856
+    second: Kindled_Tiles 1_29
   - first:
-      213: 3871623927363494142
-    second: Kindled_Tiles_30
+      213: 9125845456136400867
+    second: Kindled_Tiles 1_30
   - first:
-      213: -4269712208619046062
-    second: Kindled_Tiles_31
+      213: 6549501260564760547
+    second: Kindled_Tiles 1_31
   - first:
-      213: -6259294799377812706
-    second: Kindled_Tiles_32
+      213: -7660850220566751121
+    second: Kindled_Tiles 1_32
   - first:
-      213: 3757891458415126054
-    second: Kindled_Tiles_33
+      213: -7407688259350223519
+    second: Kindled_Tiles 1_33
   - first:
-      213: -7462862545418308857
-    second: Kindled_Tiles_34
+      213: -3002328347108211086
+    second: Kindled_Tiles 1_34
   - first:
-      213: -2087142195298979813
-    second: Kindled_Tiles_35
+      213: 7581128856162562793
+    second: Kindled_Tiles 1_35
   - first:
-      213: -8295809303164662965
-    second: Kindled_Tiles_36
+      213: 5127663933380101711
+    second: Kindled_Tiles 1_36
   - first:
-      213: -7422215199074755661
-    second: Kindled_Tiles_37
+      213: 5813091262733440404
+    second: Kindled_Tiles 1_37
   - first:
-      213: 594162091796241838
-    second: Kindled_Tiles_38
+      213: 718398861893250099
+    second: Kindled_Tiles 1_38
   - first:
-      213: 802384245634486713
-    second: Kindled_Tiles_39
+      213: 5292425438733109490
+    second: Kindled_Tiles 1_39
   - first:
-      213: 688512629038292406
-    second: Kindled_Tiles_40
+      213: -5900413190503075660
+    second: Kindled_Tiles 1_40
   - first:
-      213: 4679627047002635418
-    second: Kindled_Tiles_41
+      213: 9199143839889749835
+    second: Kindled_Tiles 1_41
   - first:
-      213: -3101582158311205675
-    second: Kindled_Tiles_42
+      213: 1992786911845191416
+    second: Kindled_Tiles 1_42
   - first:
-      213: -8270004527733002331
-    second: Kindled_Tiles_43
+      213: 3812214063578625262
+    second: Kindled_Tiles 1_43
   - first:
-      213: 3595830667852771883
-    second: Kindled_Tiles_44
+      213: 2146726287144040692
+    second: Kindled_Tiles 1_44
   - first:
-      213: -7187747389048761203
-    second: Kindled_Tiles_45
+      213: -421001504656157082
+    second: Kindled_Tiles 1_45
   - first:
-      213: -5245502564060973147
-    second: Kindled_Tiles_46
+      213: -5636415701456949417
+    second: Kindled_Tiles 1_46
   - first:
-      213: -6225491276908195145
-    second: Kindled_Tiles_47
+      213: 7271132663212781133
+    second: Kindled_Tiles 1_47
   - first:
-      213: -1915414750910001447
-    second: Kindled_Tiles_48
+      213: 153213667883119895
+    second: Kindled_Tiles 1_48
   - first:
-      213: 512955797007177609
-    second: Kindled_Tiles_49
+      213: -3730459394080078070
+    second: Kindled_Tiles 1_49
   - first:
-      213: -3435464090544945730
-    second: Kindled_Tiles_50
+      213: -5196659702296084924
+    second: Kindled_Tiles 1_50
   - first:
-      213: 2850031833692817832
-    second: Kindled_Tiles_51
+      213: -2420367222556883096
+    second: Kindled_Tiles 1_51
   - first:
-      213: -6941093706538112696
-    second: Kindled_Tiles_52
+      213: 8668374638449039778
+    second: Kindled_Tiles 1_52
   - first:
-      213: 6748999431305480840
-    second: Kindled_Tiles_53
+      213: 1510556536903775262
+    second: Kindled_Tiles 1_53
   - first:
-      213: -7616641682302033591
-    second: Kindled_Tiles_54
+      213: 7494215008557412964
+    second: Kindled_Tiles 1_54
   - first:
-      213: -4712596798983692190
-    second: Kindled_Tiles_55
+      213: -1169297480180650370
+    second: Kindled_Tiles 1_55
   - first:
-      213: -5105896431212659125
-    second: Kindled_Tiles_56
+      213: -4794992135418531139
+    second: Kindled_Tiles 1_56
   - first:
-      213: 4978905924480010891
-    second: Kindled_Tiles_57
+      213: -5207252714297704543
+    second: Kindled_Tiles 1_57
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -240,7 +240,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -252,7 +252,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -260,23 +260,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -287,7 +275,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kindled_Tiles_0
+      name: Kindled_Tiles 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -301,14 +289,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858e4e5b002233f70800000000000000
-      internalID: 9165707053076113496
+      spriteID: c8450cfb8c415fce0800000000000000
+      internalID: -1372167659021380468
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_1
+      name: Kindled_Tiles 1_1
       rect:
         serializedVersion: 2
         x: 32
@@ -322,14 +310,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 907abd322c4e680b0800000000000000
-      internalID: -5726638353678620919
+      spriteID: 887175c833bf4cdb0800000000000000
+      internalID: -4772413506289461368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_2
+      name: Kindled_Tiles 1_2
       rect:
         serializedVersion: 2
         x: 64
@@ -343,14 +331,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 441af40d95df13f90800000000000000
-      internalID: -6975515785631391420
+      spriteID: 7896ba07b530666c0800000000000000
+      internalID: -4150626315308144249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_3
+      name: Kindled_Tiles 1_3
       rect:
         serializedVersion: 2
         x: 96
@@ -364,14 +352,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef569f5061ee0b920800000000000000
-      internalID: 3004162729813042686
+      spriteID: c98dcf4f92c283a40800000000000000
+      internalID: 5348073116217956508
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_4
+      name: Kindled_Tiles 1_4
       rect:
         serializedVersion: 2
         x: 128
@@ -385,14 +373,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8de5797a94dc0030800000000000000
-      internalID: 3462375973468892558
+      spriteID: c97c4cf8e359ad770800000000000000
+      internalID: 8636379331368896412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_5
+      name: Kindled_Tiles 1_5
       rect:
         serializedVersion: 2
         x: 160
@@ -406,14 +394,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491c4ed9003658440800000000000000
-      internalID: 4937461420781781396
+      spriteID: f275a06814c903770800000000000000
+      internalID: 8588536294631167791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_6
+      name: Kindled_Tiles 1_6
       rect:
         serializedVersion: 2
         x: 192
@@ -427,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1e294b3dfa61b410800000000000000
-      internalID: 1491090587490266652
+      spriteID: a8d4dc887a8bbc400800000000000000
+      internalID: 345572826118180234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_7
+      name: Kindled_Tiles 1_7
       rect:
         serializedVersion: 2
         x: 224
@@ -448,14 +436,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef3b12046b9a107d0800000000000000
-      internalID: -2953893280353242114
+      spriteID: 56814f5b64069d340800000000000000
+      internalID: 4889044727304034405
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_8
+      name: Kindled_Tiles 1_8
       rect:
         serializedVersion: 2
         x: 0
@@ -469,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f91f1e3b6f37edd0800000000000000
-      internalID: -2456925341871040009
+      spriteID: b4ffac0a87f774160800000000000000
+      internalID: 7009711501095927627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_9
+      name: Kindled_Tiles 1_9
       rect:
         serializedVersion: 2
         x: 32
@@ -490,14 +478,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fca161a3205e0bd0800000000000000
-      internalID: -2662102215767773967
+      spriteID: 10b32a797fa529e00800000000000000
+      internalID: 1050001682578160385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_10
+      name: Kindled_Tiles 1_10
       rect:
         serializedVersion: 2
         x: 64
@@ -511,14 +499,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b219dd23f8458cb0800000000000000
-      internalID: -4862400013393128782
+      spriteID: eba7624a03f0e9560800000000000000
+      internalID: 7322306745737837246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_11
+      name: Kindled_Tiles 1_11
       rect:
         serializedVersion: 2
         x: 96
@@ -532,14 +520,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7016594f762541b00800000000000000
-      internalID: 798353640389959943
+      spriteID: 773aaece9640f1cc0800000000000000
+      internalID: -3738264312701344905
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_12
+      name: Kindled_Tiles 1_12
       rect:
         serializedVersion: 2
         x: 128
@@ -553,14 +541,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b6d4514791b4a730800000000000000
-      internalID: 4009524831460841142
+      spriteID: d3bec2e5cb2ebc060800000000000000
+      internalID: 6974917746575076157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_13
+      name: Kindled_Tiles 1_13
       rect:
         serializedVersion: 2
         x: 160
@@ -574,14 +562,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b79e158340759b90800000000000000
-      internalID: -7235753791002339408
+      spriteID: c4e688a7ecad2dc70800000000000000
+      internalID: 8994491986166181452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_14
+      name: Kindled_Tiles 1_14
       rect:
         serializedVersion: 2
         x: 192
@@ -595,14 +583,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2d0c86ca4f1d23c0800000000000000
-      internalID: -4382812456342516438
+      spriteID: 98338297128d7a740800000000000000
+      internalID: 5163333136081761161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_15
+      name: Kindled_Tiles 1_15
       rect:
         serializedVersion: 2
         x: 224
@@ -616,14 +604,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 207d54fd32bb12810800000000000000
-      internalID: 1738876693885867778
+      spriteID: 73e13918248f1f600800000000000000
+      internalID: 500453998140268087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_16
+      name: Kindled_Tiles 1_16
       rect:
         serializedVersion: 2
         x: 0
@@ -637,14 +625,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a59cd4256358d1bf0800000000000000
-      internalID: -351978727509472934
+      spriteID: 4c8268c19893b2280800000000000000
+      internalID: -9067090163728504636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_17
+      name: Kindled_Tiles 1_17
       rect:
         serializedVersion: 2
         x: 32
@@ -658,14 +646,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 497f8585cd716fed0800000000000000
-      internalID: -2380689117876258924
+      spriteID: dac4b0cdb8401f430800000000000000
+      internalID: 3814835358098214061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_18
+      name: Kindled_Tiles 1_18
       rect:
         serializedVersion: 2
         x: 64
@@ -679,14 +667,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6b12e5221644a4d0800000000000000
-      internalID: -3124295197729350801
+      spriteID: 973bc2f61ba724040800000000000000
+      internalID: 4630398269383291769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_19
+      name: Kindled_Tiles 1_19
       rect:
         serializedVersion: 2
         x: 96
@@ -700,14 +688,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d27f09cc295452050800000000000000
-      internalID: 5775098593972123437
+      spriteID: 435825340467fcb80800000000000000
+      internalID: -8372343163878996684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_20
+      name: Kindled_Tiles 1_20
       rect:
         serializedVersion: 2
         x: 128
@@ -721,14 +709,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc91febf60e6bc530800000000000000
-      internalID: 3876312880558053837
+      spriteID: 6bc79988accbe46e0800000000000000
+      internalID: -1851334818741519178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_21
+      name: Kindled_Tiles 1_21
       rect:
         serializedVersion: 2
         x: 160
@@ -742,14 +730,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a4809bb67584f50800000000000000
-      internalID: 6865833752103766667
+      spriteID: c4f21acd55ab91f40800000000000000
+      internalID: 5699791681350610764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_22
+      name: Kindled_Tiles 1_22
       rect:
         serializedVersion: 2
         x: 192
@@ -763,14 +751,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed1244e4c54302d40800000000000000
-      internalID: 5557499511229915614
+      spriteID: 35df218dcb4d3c650800000000000000
+      internalID: 6252074615264443731
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_23
+      name: Kindled_Tiles 1_23
       rect:
         serializedVersion: 2
         x: 224
@@ -784,14 +772,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 038e786069b34c3e0800000000000000
-      internalID: -2034435616123918288
+      spriteID: 5b5b48c080e0e0200800000000000000
+      internalID: 148071265482356149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_24
+      name: Kindled_Tiles 1_24
       rect:
         serializedVersion: 2
         x: 0
@@ -805,14 +793,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1058d35e9bc769640800000000000000
-      internalID: 5086389967018362113
+      spriteID: 4bf3d97bbb2e55580800000000000000
+      internalID: -8838909397777432652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_25
+      name: Kindled_Tiles 1_25
       rect:
         serializedVersion: 2
         x: 32
@@ -826,14 +814,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05e42c077c23b3a0800000000000000
-      internalID: -6650923334879615729
+      spriteID: 5f8b21a4037f8a6c0800000000000000
+      internalID: -4131780871339198219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_26
+      name: Kindled_Tiles 1_26
       rect:
         serializedVersion: 2
         x: 64
@@ -847,14 +835,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2806ffd31877857a0800000000000000
-      internalID: -6388224674450415486
+      spriteID: a545464ee3544f460800000000000000
+      internalID: 7274515434532263002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_27
+      name: Kindled_Tiles 1_27
       rect:
         serializedVersion: 2
         x: 96
@@ -868,14 +856,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cb10980662e56350800000000000000
-      internalID: 6009458205653998537
+      spriteID: 7ae58032e60782aa0800000000000000
+      internalID: -6185570469856911705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_28
+      name: Kindled_Tiles 1_28
       rect:
         serializedVersion: 2
         x: 128
@@ -889,14 +877,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c04457d2bcc066f60800000000000000
-      internalID: 8027117452615042060
+      spriteID: e6befa2110066ad40800000000000000
+      internalID: 5595265144779172718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_29
+      name: Kindled_Tiles 1_29
       rect:
         serializedVersion: 2
         x: 160
@@ -910,14 +898,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0f416a0597bf51c0800000000000000
-      internalID: -4512686450849788147
+      spriteID: 85c65220b8a6624d0800000000000000
+      internalID: -3159720943284818856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_30
+      name: Kindled_Tiles 1_30
       rect:
         serializedVersion: 2
         x: 192
@@ -931,14 +919,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef0676ef275cab530800000000000000
-      internalID: 3871623927363494142
+      spriteID: 3ef6f10771485ae70800000000000000
+      internalID: 9125845456136400867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_31
+      name: Kindled_Tiles 1_31
       rect:
         serializedVersion: 2
         x: 224
@@ -952,14 +940,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25bfc104e5feeb4c0800000000000000
-      internalID: -4269712208619046062
+      spriteID: 3e78feb12b084ea50800000000000000
+      internalID: 6549501260564760547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_32
+      name: Kindled_Tiles 1_32
       rect:
         serializedVersion: 2
         x: 0
@@ -973,14 +961,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e13b2aa0b848229a0800000000000000
-      internalID: -6259294799377812706
+      spriteID: f6855a530513fa590800000000000000
+      internalID: -7660850220566751121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_33
+      name: Kindled_Tiles 1_33
       rect:
         serializedVersion: 2
         x: 32
@@ -994,14 +982,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 626ee4b0f56b62430800000000000000
-      internalID: 3757891458415126054
+      spriteID: 165299696ca923990800000000000000
+      internalID: -7407688259350223519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_34
+      name: Kindled_Tiles 1_34
       rect:
         serializedVersion: 2
         x: 64
@@ -1015,14 +1003,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70336cc0e069e6890800000000000000
-      internalID: -7462862545418308857
+      spriteID: 276878b76469556d0800000000000000
+      internalID: -3002328347108211086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_35
+      name: Kindled_Tiles 1_35
       rect:
         serializedVersion: 2
         x: 96
@@ -1036,14 +1024,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b10b9754b3bf803e0800000000000000
-      internalID: -2087142195298979813
+      spriteID: 9e278043784953960800000000000000
+      internalID: 7581128856162562793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_36
+      name: Kindled_Tiles 1_36
       rect:
         serializedVersion: 2
         x: 128
@@ -1057,14 +1045,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4b4d70546d5fdc80800000000000000
-      internalID: -8295809303164662965
+      spriteID: f4604bc0e2f192740800000000000000
+      internalID: 5127663933380101711
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_37
+      name: Kindled_Tiles 1_37
       rect:
         serializedVersion: 2
         x: 160
@@ -1078,14 +1066,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bbd4acd99efef890800000000000000
-      internalID: -7422215199074755661
+      spriteID: 495572254bf3ca050800000000000000
+      internalID: 5813091262733440404
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_38
+      name: Kindled_Tiles 1_38
       rect:
         serializedVersion: 2
         x: 192
@@ -1099,14 +1087,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ead94844643ee3800800000000000000
-      internalID: 594162091796241838
+      spriteID: 33c213a65f348f900800000000000000
+      internalID: 718398861893250099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_39
+      name: Kindled_Tiles 1_39
       rect:
         serializedVersion: 2
         x: 224
@@ -1120,14 +1108,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b1d96e5834a22b00800000000000000
-      internalID: 802384245634486713
+      spriteID: 2f88de365e8727940800000000000000
+      internalID: 5292425438733109490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_40
+      name: Kindled_Tiles 1_40
       rect:
         serializedVersion: 2
         x: 0
@@ -1141,14 +1129,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bd923596961e8900800000000000000
-      internalID: 688512629038292406
+      spriteID: 4b0f80807758d1ea0800000000000000
+      internalID: -5900413190503075660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_41
+      name: Kindled_Tiles 1_41
       rect:
         serializedVersion: 2
         x: 32
@@ -1162,14 +1150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9cf6e9610061f040800000000000000
-      internalID: 4679627047002635418
+      spriteID: b47f95e459ce9af70800000000000000
+      internalID: 9199143839889749835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_42
+      name: Kindled_Tiles 1_42
       rect:
         serializedVersion: 2
         x: 64
@@ -1183,14 +1171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d4db2cb577f4f4d0800000000000000
-      internalID: -3101582158311205675
+      spriteID: 8fe8499532dc7ab10800000000000000
+      internalID: 1992786911845191416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_43
+      name: Kindled_Tiles 1_43
       rect:
         serializedVersion: 2
         x: 96
@@ -1204,14 +1192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5af2a99c2ba0b3d80800000000000000
-      internalID: -8270004527733002331
+      spriteID: ee43a5b2e74b7e430800000000000000
+      internalID: 3812214063578625262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_44
+      name: Kindled_Tiles 1_44
       rect:
         serializedVersion: 2
         x: 128
@@ -1225,14 +1213,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b22f1ddd0f4f6e130800000000000000
-      internalID: 3595830667852771883
+      spriteID: 4f8b63f2f24bacd10800000000000000
+      internalID: 2146726287144040692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_45
+      name: Kindled_Tiles 1_45
       rect:
         serializedVersion: 2
         x: 160
@@ -1246,14 +1234,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d84d18cf4ddff3c90800000000000000
-      internalID: -7187747389048761203
+      spriteID: 6669011bc5d482af0800000000000000
+      internalID: -421001504656157082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_46
+      name: Kindled_Tiles 1_46
       rect:
         serializedVersion: 2
         x: 192
@@ -1267,14 +1255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a7beb8b53b3437b0800000000000000
-      internalID: -5245502564060973147
+      spriteID: 75f693458cd67c1b0800000000000000
+      internalID: -5636415701456949417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_47
+      name: Kindled_Tiles 1_47
       rect:
         serializedVersion: 2
         x: 224
@@ -1288,14 +1276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b2189feaac9a99a0800000000000000
-      internalID: -6225491276908195145
+      spriteID: d4ea98112a048e460800000000000000
+      internalID: 7271132663212781133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_48
+      name: Kindled_Tiles 1_48
       rect:
         serializedVersion: 2
         x: 0
@@ -1309,14 +1297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9de477eae641b65e0800000000000000
-      internalID: -1915414750910001447
+      spriteID: 71578e8e403502200800000000000000
+      internalID: 153213667883119895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_49
+      name: Kindled_Tiles 1_49
       rect:
         serializedVersion: 2
         x: 32
@@ -1330,14 +1318,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 987171264926e1700800000000000000
-      internalID: 512955797007177609
+      spriteID: a0786d622feba3cc0800000000000000
+      internalID: -3730459394080078070
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_50
+      name: Kindled_Tiles 1_50
       rect:
         serializedVersion: 2
         x: 128
@@ -1351,14 +1339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb5457c8c97c250d0800000000000000
-      internalID: -3435464090544945730
+      spriteID: 44efd0aa881c1e7b0800000000000000
+      internalID: -5196659702296084924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_51
+      name: Kindled_Tiles 1_51
       rect:
         serializedVersion: 2
         x: 160
@@ -1372,14 +1360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a9c0d54ad85d8720800000000000000
-      internalID: 2850031833692817832
+      spriteID: 8678f71b5d0296ed0800000000000000
+      internalID: -2420367222556883096
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_52
+      name: Kindled_Tiles 1_52
       rect:
         serializedVersion: 2
         x: 192
@@ -1393,14 +1381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 849a815ac084caf90800000000000000
-      internalID: -6941093706538112696
+      spriteID: 2a992c08ec04c4870800000000000000
+      internalID: 8668374638449039778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_53
+      name: Kindled_Tiles 1_53
       rect:
         serializedVersion: 2
         x: 224
@@ -1414,14 +1402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88ac64c993349ad50800000000000000
-      internalID: 6748999431305480840
+      spriteID: e143b43ca2396f410800000000000000
+      internalID: 1510556536903775262
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_54
+      name: Kindled_Tiles 1_54
       rect:
         serializedVersion: 2
         x: 128
@@ -1435,14 +1423,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94124f0aeb04c4690800000000000000
-      internalID: -7616641682302033591
+      spriteID: 462377f18dcc00860800000000000000
+      internalID: 7494215008557412964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_55
+      name: Kindled_Tiles 1_55
       rect:
         serializedVersion: 2
         x: 160
@@ -1456,14 +1444,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2602fe20e2e799eb0800000000000000
-      internalID: -4712596798983692190
+      spriteID: e7ea2111322d5cfe0800000000000000
+      internalID: -1169297480180650370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_56
+      name: Kindled_Tiles 1_56
       rect:
         serializedVersion: 2
         x: 192
@@ -1477,14 +1465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4e72ad7f363429b0800000000000000
-      internalID: -5105896431212659125
+      spriteID: db2369bce04c47db0800000000000000
+      internalID: -4794992135418531139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kindled_Tiles_57
+      name: Kindled_Tiles 1_57
       rect:
         serializedVersion: 2
         x: 224
@@ -1498,8 +1486,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8a08b61f80a81540800000000000000
-      internalID: 4978905924480010891
+      spriteID: 1afb89cde3f1cb7b0800000000000000
+      internalID: -5207252714297704543
       vertices: []
       indices: 
       edges: []

@@ -9,11 +9,12 @@ public class FlyingLanternAI : Enemy
     void Start()
     {
         health = 30;
+        cost = 3;
         rb = GetComponent<Rigidbody2D>();
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
         player = GameObject.Find("Player (Legs)");
-        InvokeRepeating("DecideBehaviour", 1.0f, 3.0f);
+        InvokeRepeating("DecideBehaviour", 5.0f, 3.0f);
        
     }
 

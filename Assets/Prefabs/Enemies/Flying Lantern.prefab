@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 448986810927607870}
   m_Layer: 14
   m_Name: Flying Lantern
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   damage: 10
-  level: 0
+  cost: 1
   myProjectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
   player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
   tf: {fileID: 0}

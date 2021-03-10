@@ -9,7 +9,6 @@ public class FlyingLanternDetect : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             this.transform.parent.GetComponent<FlyingLanternAI>().playerInRange = true;
-            print("Enter");
         }
     }
 
@@ -18,7 +17,6 @@ public class FlyingLanternDetect : MonoBehaviour
         if (collider.gameObject.CompareTag("Player"))
         {
             this.transform.parent.GetComponent<FlyingLanternAI>().playerInRange = false;
-            print("Exit");
         }
     }
 }

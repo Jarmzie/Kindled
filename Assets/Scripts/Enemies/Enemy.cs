@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health, damage, level;
+    public int health, damage, cost = 1;
     public GameObject myProjectile, player;
     public Transform tf;
     public Animator an;
@@ -18,7 +18,6 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         health -= damageAmount;
-        print(health);
         if (health <= 0)
         {
             DieLOL();

@@ -10,6 +10,11 @@ public class Projectile : MonoBehaviour
     public Collider2D cb;
     public Rigidbody2D rb;
 
+    void Update()
+    {
+        TimeDestroy();
+    }
+
     public int GetDamage()
     {
         return damage;

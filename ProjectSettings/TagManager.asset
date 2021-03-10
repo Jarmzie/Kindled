@@ -10,6 +10,8 @@ TagManager:
   - PlayerProjectile
   - EnemyProjectile
   - Detection
+  - barrel
+  - SpawnLocation
   layers:
   - Default
   - TransparentFX
@@ -42,7 +44,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Bad Boy Corner
   m_SortingLayers:
   - name: Default
     uniqueID: 0

@@ -13,7 +13,7 @@ public class SpawnLocation : MonoBehaviour
     {
         myRange = myQuad.GetComponent<MeshCollider>();
         pos = myRange.bounds.center;
-        width = myRange.bounds.max.x;
-        height = myRange.bounds.max.y;
+        width = myRange.bounds.max.x - myRange.bounds.min.x;
+        height = myRange.bounds.max.y - myRange.bounds.min.y;
     }
 }

@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
         level = 1;
         maxEnemies = startingMaxEnemies + maxEnemyIncrease * (level / upgradeFrequency);
         difficultyPoints = startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
-        SpawnRandomEnemies(3);
+        print("Starting DP: " + difficultyPoints);
         InvokeRepeating("DecideSpawning", 0.0f, 7.0f);
     }
 
@@ -28,9 +28,10 @@ public class EnemySpawner : MonoBehaviour
             print("No more enemies");
             CancelInvoke();
         }
-        if (GameObject.FindGameObjectsWithTag("Enemy").Length <= maxEnemies / 2 && difficultyPoints > 0)
+        //GameObject.FindGameObjectsWithTag("Enemy").Length <= maxEnemies / 2 &&
+        if (difficultyPoints > 0)
         {
-            SpawnRandomEnemies(GameObject.FindGameObjectsWithTag("Enemy").Length / 2);
+            SpawnRandomEnemies(2);
         }
     }
 
@@ -39,11 +40,14 @@ public class EnemySpawner : MonoBehaviour
         print("Running SpawnRandomEnemies");
         for (int i = 0; i < amount; i ++)
         {
+            print(i);
             GameObject enemyToSpawn = EnemyPool[Random.Range(0, EnemyPool.Count)];
             SpawnLocation SL = SpawnLocations[Random.Range(0, SpawnLocations.Length)].GetComponent<SpawnLocation>();
             Vector3 spawnLocation = new Vector3(SL.pos.x + Random.Range(-1 * SL.width / 2, SL.width / 2), SL.pos.y + Random.Range(-1 * SL.height / 2, SL.height / 2), -1);
             Instantiate(enemyToSpawn, spawnLocation, Quaternion.identity);
-            difficultyPoints -= enemyToSpawn.GetComponent<Enemy>().cost;
+            print("Before spawn: " + difficultyPoints);
+            difficultyPoints = difficultyPoints - enemyToSpawn.GetComponent<Enemy>().cost;
+            print("After spawn: " + difficultyPoints);
         }
     }
 }

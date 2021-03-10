@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 6450737226777092791}
   - component: {fileID: 7694885441036180534}
   - component: {fileID: 448986810927607870}
-  m_Layer: 14
+  m_Layer: 12
   m_Name: Flying Lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}

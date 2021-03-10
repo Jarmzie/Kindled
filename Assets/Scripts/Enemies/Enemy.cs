@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health, damage, cost = 1;
+    public int health, damage, cost;
     public GameObject myProjectile, player;
     public Transform tf;
     public Animator an;

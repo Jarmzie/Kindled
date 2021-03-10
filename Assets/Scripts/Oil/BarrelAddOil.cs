@@ -9,20 +9,20 @@ public class BarrelAddOil : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
-     
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         GameObject thePlayer = GameObject.Find("Player (Legs)");
         PlayerAimWeapon playerAimWeapon = thePlayer.GetComponent<PlayerAimWeapon>();
-        
+
 
         if (col.gameObject.CompareTag("Player"))
         {
@@ -31,7 +31,7 @@ public class BarrelAddOil : MonoBehaviour
         }
         else if (col.gameObject.CompareTag("PlayerProjectile"))
         {
-            
+
             Destroy(gameObject);
         }
     }

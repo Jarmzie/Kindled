@@ -44,13 +44,11 @@ public class PlayerAimWeapon : MonoBehaviour
     {
 
         HandleAiming();
-        oilBar.SetOil(currentOil);
         // HandleShooting();
         if (Input.GetButtonDown("Fire1") && currentOil > 0)
         {
             Shoot();
             TakeOil(5);
-            
         }
         
        

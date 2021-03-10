@@ -6,7 +6,7 @@ public class PlayerDeath : MonoBehaviour
 {
     public int playerHealth = 3;
     [SerializeField] Transform spawnPoint;
-    // Start is called before the first frame update
+   
     
 
     void TakeDamage (int damage)

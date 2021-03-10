@@ -13,7 +13,7 @@ public class FlyingLanternAI : Enemy
         rb = GetComponent<Rigidbody2D>();
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
-        player = GameObject.Find("Player (Legs) 1");
+        player = GameObject.Find("Player (Legs)");
         InvokeRepeating("DecideBehaviour", 5.0f, 3.0f);
        
     }

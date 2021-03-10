@@ -2588,6 +2588,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5655497526734769189, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5655497526734769189, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8516022473759187640, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
       propertyPath: oilBar
       value: 

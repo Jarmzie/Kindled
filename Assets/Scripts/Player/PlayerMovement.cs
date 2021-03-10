@@ -21,16 +21,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-       
-
         if (velocityX > 0 && !facingRight || velocityX < 0 && facingRight)
         {
             sr.flipX = !sr.flipX;
             facingRight = !facingRight;
         }
-
-        
-
     }
 
     void FixedUpdate()

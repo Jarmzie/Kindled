@@ -4,13 +4,11 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
   - myProjectile: {instanceID: 0}
+  - player: {fileID: 835406272427648340, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
   - tf: {instanceID: 0}
   - an: {instanceID: 0}
   - rb: {instanceID: 0}
-  - hurtbox: {instanceID: 0}
-  - collisionbox: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

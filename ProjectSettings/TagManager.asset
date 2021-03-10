@@ -52,6 +52,12 @@ TagManager:
   - name: Walls
     uniqueID: 3039694437
     locked: 0
+  - name: Legs
+    uniqueID: 1079900103
+    locked: 0
+  - name: Torso
+    uniqueID: 989078945
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

@@ -22,7 +22,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void DecideSpawning()
     {
-        print(difficultyPoints + "LEFT");
         if (difficultyPoints <= 0 && GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
         {
             CancelInvoke();
@@ -37,7 +36,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnRandomEnemies(int amount)
     {
-        print("Running SpawnRandomEnemies");
         for (int i = 0; i < amount; i ++)
         {
             //print(i);

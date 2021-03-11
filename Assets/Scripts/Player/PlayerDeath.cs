@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour
 {
     public int playerHealth = 3;
-    [SerializeField] Transform spawnPoint;
+    public GameObject spawnPoint;
    
     
 
@@ -14,7 +14,8 @@ public class PlayerDeath : MonoBehaviour
         playerHealth -= 1;
         if (playerHealth == 0)
         {
-            gameObject.transform.position = spawnPoint.position;
+            gameObject.transform.position = spawnPoint.GetComponent<Transform>().position;
+            gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             playerHealth = 3;
 
             GameObject thePlayer = GameObject.Find("Player (Legs)");

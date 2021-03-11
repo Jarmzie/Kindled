@@ -6,32 +6,32 @@ public class EnemySpawner : MonoBehaviour
 {
     public List<GameObject> EnemyPool;
     public GameObject[] SpawnLocations;
-    public int difficultyPoints = 20, level = 1, maxEnemies = 6, decisionChecks = 0;
+    public int difficultyPoints = 10, level = 1, maxEnemies = 6, decisionChecks = 0;
 
     //These are all variables so that we can tweak them
-    public int perLevelDPIncrease = 5, upgradeFrequency = 3, upgradeIncrease = 20, startingDP = 20, startingMaxEnemies = 6, maxEnemyIncrease = 3;
+    public int perLevelDPIncrease = 5, upgradeFrequency = 3, upgradeIncrease = 20, startingDP = 10, startingMaxEnemies = 6, maxEnemyIncrease = 3;
 
-    void Start()
+    void Awake()
     {
         SpawnLocations = GameObject.FindGameObjectsWithTag("SpawnLocation");
         level = 1;
         maxEnemies = startingMaxEnemies + maxEnemyIncrease * (level / upgradeFrequency);
-        difficultyPoints = startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
-        //print("Starting DP: " + difficultyPoints);
+        difficultyPoints = 10;// startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
         InvokeRepeating("DecideSpawning", 0.0f, 7.0f);
     }
 
     private void DecideSpawning()
     {
-        if (difficultyPoints <= 0)
+        print(difficultyPoints + "LEFT");
+        if (difficultyPoints <= 0 && GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
         {
-            //print("No more enemies");
             CancelInvoke();
+            GameObject.Find("Level Logic").GetComponent<LevelLogic>().ri.exit.GetComponent<Door>().Open(); //Reaching through the computer screen myself to get to this door would probably be more efficient than this lol
         }
         //GameObject.FindGameObjectsWithTag("Enemy").Length <= maxEnemies / 2 &&
         if (difficultyPoints > 0)
         {
-            SpawnRandomEnemies(1);
+            SpawnRandomEnemies(2);
         }
     }
 

@@ -31,19 +31,13 @@ public class PlayerTorsoAnimation : MonoBehaviour
         {
             if (tempName.Equals("Legs_Down") || tempName.Equals("Legs_Down_Idle"))
             {
-                print("Down");
                 an.SetTrigger("Down");
             } else if (tempName.Equals("Legs_Up") || tempName.Equals("Legs_Up_Idle"))
             {
-                print("Up");
                 an.SetTrigger("Up");
             } else if (tempName.Equals("Legs_Side") || tempName.Equals("Legs_Side_Idle"))
             {
-                print("Side");
                 an.SetTrigger("Side");
-            } else
-            {
-                print("Nope lol");
             }
             difName = tempName;
         }

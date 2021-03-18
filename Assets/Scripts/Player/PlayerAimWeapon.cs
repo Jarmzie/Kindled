@@ -6,7 +6,6 @@ using CodeMonkey.Utils;
 
 public class PlayerAimWeapon : MonoBehaviour
 {
-    
     public event EventHandler<OnShootEventArgs> OnShoot;
 
     public class OnShootEventArgs : EventArgs
@@ -42,7 +41,6 @@ public class PlayerAimWeapon : MonoBehaviour
 
     private void Update()
     {
-
         HandleAiming();
         // HandleShooting();
         if (Input.GetButtonDown("Fire1") && currentOil > 0)
@@ -50,14 +48,12 @@ public class PlayerAimWeapon : MonoBehaviour
             Shoot();
             TakeOil(5);
         }
-        
-       
+        oilBar.SetOil(currentOil);
     }
 
     void TakeOil(int burnOil)
     {
         currentOil -= burnOil;
-        oilBar.SetOil(currentOil);
     }
 
     void Shoot()

@@ -4,18 +4,34 @@ using UnityEngine;
 
 public class LevelLogic : MonoBehaviour
 {
-    public RoomInfo ri;
-    public GameObject enemyspawn;
-
-    //All of this is temporary because this class's structure does not allow me to make more indepth systems at this moment
+    public GameObject enemySpawn;
+    public GameObject[] currSpawnLocations;
+    private GameObject exit, entrance, levelTransition;
+    public int currLevel = 0;
 
     void Start()
     {
-        ri = GameObject.Find("Room Info").GetComponent<RoomInfo>();
-        ri.SetUpEverything();
-        GameObject roomES = Instantiate(enemyspawn, Vector2.zero, Quaternion.identity);
-        roomES.GetComponent<EnemySpawner>().EnemyPool = ri.GetComponent<RoomInfo>().roomEnemyPool;
-        ri.entrance.GetComponent<Door>().Close();
-        ri.exit.GetComponent<Door>().Close();
+        levelTransition = transform.Find("ExitTrigger").gameObject;
+        UpdateToNewLevel();
+    }
+
+    void UpdateToNewLevel()
+    {
+        currLevel++;
+        entrance = GameObject.FindWithTag("Entrance");
+        entrance.GetComponent<Door>().Close();
+        exit = GameObject.FindWithTag("Exit");
+        exit.GetComponent<Door>().Close();
+        levelTransition.transform.position = exit.transform.position;
+        EnemySpawner roomES = Instantiate(enemySpawn, Vector2.zero, Quaternion.identity).GetComponent<EnemySpawner>();
+        roomES.level = currLevel;
+        roomES.CurrentLevelLogic = this;
+    }
+
+    public void RoomFinished()
+    {
+        //Turn lights on here
+        //Make player stop losing oil
+        exit.GetComponent<Door>().Open();
     }
 }

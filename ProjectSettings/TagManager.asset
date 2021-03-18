@@ -12,6 +12,9 @@ TagManager:
   - Detection
   - barrel
   - SpawnLocation
+  - RoomInfo
+  - Exit
+  - Entrance
   layers:
   - Default
   - TransparentFX
@@ -49,8 +52,14 @@ TagManager:
   - name: Floor
     uniqueID: 2776146045
     locked: 0
+  - name: Hole
+    uniqueID: 2533611905
+    locked: 0
   - name: Walls
     uniqueID: 3039694437
+    locked: 0
+  - name: Decor
+    uniqueID: 1044312735
     locked: 0
   - name: Legs
     uniqueID: 1079900103

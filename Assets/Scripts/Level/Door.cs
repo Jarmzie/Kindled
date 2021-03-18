@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    public bool isExit = false;
     private Animator an;
     private Collider2D col;
     private Rigidbody2D rb;

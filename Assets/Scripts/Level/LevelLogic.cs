@@ -6,7 +6,8 @@ public class LevelLogic : MonoBehaviour
 {
     public GameObject enemySpawn;
     public GameObject[] currSpawnLocations;
-    private GameObject exit, entrance, levelTransition;
+    public Door exit, entrance;
+    private GameObject levelTransition;
     public int currLevel = 0;
 
     void Start()
@@ -18,10 +19,10 @@ public class LevelLogic : MonoBehaviour
     void UpdateToNewLevel()
     {
         currLevel++;
-        entrance = GameObject.FindWithTag("Entrance");
-        entrance.GetComponent<Door>().Close();
-        exit = GameObject.FindWithTag("Exit");
-        exit.GetComponent<Door>().Close();
+        entrance = GameObject.FindWithTag("Entrance").GetComponent<Door>();
+        entrance.Close();
+        exit = GameObject.FindWithTag("Exit").GetComponent<Door>();
+        exit.Close();
         levelTransition.transform.position = exit.transform.position;
         EnemySpawner roomES = Instantiate(enemySpawn, Vector2.zero, Quaternion.identity).GetComponent<EnemySpawner>();
         roomES.level = currLevel;

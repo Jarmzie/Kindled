@@ -17,6 +17,7 @@ public class Door : MonoBehaviour
 
     public void Close()
     {
+
         an.SetTrigger("Close");
     }
 

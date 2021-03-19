@@ -17,6 +17,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
+        //Maybe flash red
         health -= damageAmount;
         if (health <= 0)
         {

@@ -13,6 +13,7 @@ public class LevelLogic : MonoBehaviour
     void Start()
     {
         levelTransition = transform.Find("ExitTrigger").gameObject;
+        DontDestroyOnLoad(this.gameObject);
         UpdateToNewLevel();
     }
 

@@ -13,7 +13,8 @@ public class DiskDevilAI : Enemy
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
         player = GameObject.Find("Player (Legs)");
-        rb.velocity = Random.insideUnitCircle.normalized * 3;
+        //rb.velocity = Random.insideUnitCircle.normalized * 3;
+        rb.velocity = new Vector2(4, 4);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

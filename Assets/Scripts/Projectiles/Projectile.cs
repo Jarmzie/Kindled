@@ -10,6 +10,13 @@ public class Projectile : MonoBehaviour
     public Collider2D cb;
     public Rigidbody2D rb;
 
+    protected void GeneralSetUp()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        cb = GetComponent<CircleCollider2D>();
+        timeAtLoad = Time.timeSinceLevelLoad;
+    }
+
     void Update()
     {
         TimeDestroy();

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1894209512856362119}
   - component: {fileID: 1894209512856362116}
   - component: {fileID: 1894209512856362117}
+  - component: {fileID: 1133151983071211078}
   m_Layer: 12
   m_Name: Disk Devil
   m_TagString: Untagged
@@ -75,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4144560040515601487, guid: 971d0fe4d0d4ffb46bee5534d086604b, type: 3}
+  m_Sprite: {fileID: -2096218967415712008, guid: bd5ad8dd94b63344ba3e90cf87403583, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.96875, y: 0.96875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -141,8 +142,28 @@ MonoBehaviour:
   myProjectile: {fileID: 0}
   player: {fileID: 0}
   tf: {fileID: 0}
+  sr: {fileID: 0}
   an: {fileID: 0}
   rb: {fileID: 0}
+--- !u!95 &1133151983071211078
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894209512856362138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 82795460838e738498145c37f4413347, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1894209514290555064
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,6 +174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1894209514290555067}
   - component: {fileID: 1894209514290555066}
+  - component: {fileID: 1068068643197806318}
   m_Layer: 19
   m_Name: Hurtbox
   m_TagString: Enemy
@@ -190,3 +212,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1068068643197806318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894209514290555064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db3ba8358f87664196106913170d571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

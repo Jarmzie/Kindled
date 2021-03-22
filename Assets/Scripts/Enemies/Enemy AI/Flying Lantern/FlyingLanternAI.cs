@@ -11,11 +11,11 @@ public class FlyingLanternAI : Enemy
         health = 30;
         cost = 3;
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
         player = GameObject.Find("Player (Legs)");
         InvokeRepeating("DecideBehaviour", 5.0f, 3.0f);
-       
     }
 
     Vector2 findPlayerDirection(Vector3 playerPos, Vector3 myPos)

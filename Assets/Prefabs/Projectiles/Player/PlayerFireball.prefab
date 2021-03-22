@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7596718602063537597, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8745098
+      objectReference: {fileID: 0}
     - target: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
       propertyPath: m_Name
       value: PlayerFireball

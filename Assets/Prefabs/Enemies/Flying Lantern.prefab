@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2687650898668165965}
   - component: {fileID: 7311042482387429506}
+  - component: {fileID: 3015360143716298800}
   m_Layer: 19
   m_Name: Hurtbox
   m_TagString: Enemy
@@ -47,6 +48,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &3015360143716298800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043055520495662859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db3ba8358f87664196106913170d571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5977239947841443892
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,6 +134,7 @@ GameObject:
   - component: {fileID: 6450737226777092791}
   - component: {fileID: 7694885441036180534}
   - component: {fileID: 448986810927607870}
+  - component: {fileID: 7548385083251553700}
   m_Layer: 12
   m_Name: Flying Lantern
   m_TagString: Untagged
@@ -269,6 +283,48 @@ MonoBehaviour:
   myProjectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
   player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
   tf: {fileID: 0}
+  sr: {fileID: 0}
   an: {fileID: 0}
   rb: {fileID: 0}
   playerInRange: 0
+--- !u!114 &7548385083251553700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7423267083993531864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.735
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 7da078a581d90397650e2eb59ff23e3ec7f75d40a125f43a00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 48
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}

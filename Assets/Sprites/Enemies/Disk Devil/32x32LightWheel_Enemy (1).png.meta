@@ -1,196 +1,85 @@
 fileFormatVersion: 2
-guid: 971d0fe4d0d4ffb46bee5534d086604b
+guid: bd5ad8dd94b63344ba3e90cf87403583
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4460706047183438251
-    second: 32x32LightWheel_Enemy_0
+      213: -3452063932092997350
+    second: 32x32LightWheel_Enemy (1)_0
   - first:
-      213: 4089286057956859054
-    second: 32x32LightWheel_Enemy_1
+      213: 7451598173452310875
+    second: 32x32LightWheel_Enemy (1)_1
   - first:
-      213: -5773094735674120072
-    second: 32x32LightWheel_Enemy_2
+      213: 2057201452101741052
+    second: 32x32LightWheel_Enemy (1)_2
   - first:
-      213: -4144560040515601487
-    second: 32x32LightWheel_Enemy_3
+      213: -2096218967415712008
+    second: 32x32LightWheel_Enemy (1)_3
   - first:
-      213: -3480730435581054536
-    second: 32x32LightWheel_Enemy_4
+      213: 1074199291824461509
+    second: 32x32LightWheel_Enemy (1)_4
   - first:
-      213: 2386990194542389436
-    second: 32x32LightWheel_Enemy_5
+      213: -1275039899220641793
+    second: 32x32LightWheel_Enemy (1)_5
   - first:
-      213: 1974476905737711199
-    second: 32x32LightWheel_Enemy_6
+      213: -2347426796558529617
+    second: 32x32LightWheel_Enemy (1)_6
   - first:
-      213: 6806827438962588445
-    second: 32x32LightWheel_Enemy_7
+      213: -5453018923070394238
+    second: 32x32LightWheel_Enemy (1)_7
   - first:
-      213: 1988448183245943300
-    second: 32x32LightWheel_Enemy_8
+      213: -8442498527759328373
+    second: 32x32LightWheel_Enemy (1)_8
   - first:
-      213: 1210859898952746426
-    second: 32x32LightWheel_Enemy_9
+      213: 5563632085224097941
+    second: 32x32LightWheel_Enemy (1)_9
   - first:
-      213: 8900962727697537601
-    second: 32x32LightWheel_Enemy_10
+      213: 3103524475910307330
+    second: 32x32LightWheel_Enemy (1)_10
   - first:
-      213: 2516025765869092178
-    second: 32x32LightWheel_Enemy_11
+      213: 6591763944547033457
+    second: 32x32LightWheel_Enemy (1)_11
   - first:
-      213: 5709291235772064846
-    second: 32x32LightWheel_Enemy_12
+      213: -8525879810659413651
+    second: 32x32LightWheel_Enemy (1)_12
   - first:
-      213: 2638203839720111509
-    second: 32x32LightWheel_Enemy_13
+      213: 1867240531093379485
+    second: 32x32LightWheel_Enemy (1)_13
   - first:
-      213: -6761403331369650729
-    second: 32x32LightWheel_Enemy_14
+      213: 6715143299113595291
+    second: 32x32LightWheel_Enemy (1)_14
   - first:
-      213: -1816252185476400861
-    second: 32x32LightWheel_Enemy_15
+      213: -373878356007928795
+    second: 32x32LightWheel_Enemy (1)_15
   - first:
-      213: 3501123658998790438
-    second: 32x32LightWheel_Enemy_16
+      213: 8981796858507868311
+    second: 32x32LightWheel_Enemy (1)_16
   - first:
-      213: 2410716221386443334
-    second: 32x32LightWheel_Enemy_17
+      213: -2467175280747910235
+    second: 32x32LightWheel_Enemy (1)_17
   - first:
-      213: 5970561821590423264
-    second: 32x32LightWheel_Enemy_18
+      213: 8742507218943219442
+    second: 32x32LightWheel_Enemy (1)_18
   - first:
-      213: 1998843499978729474
-    second: 32x32LightWheel_Enemy_19
+      213: -2110529484417343222
+    second: 32x32LightWheel_Enemy (1)_19
   - first:
-      213: 1766135326560321162
-    second: 32x32LightWheel_Enemy_20
+      213: -8737578684912348042
+    second: 32x32LightWheel_Enemy (1)_20
   - first:
-      213: -373880898732740088
-    second: 32x32LightWheel_Enemy_21
+      213: 2324425702218340285
+    second: 32x32LightWheel_Enemy (1)_21
   - first:
-      213: 8603361348460482149
-    second: 32x32LightWheel_Enemy_22
+      213: 271389063680447215
+    second: 32x32LightWheel_Enemy (1)_22
   - first:
-      213: 4578237034677363351
-    second: 32x32LightWheel_Enemy_23
+      213: 1346635318915410253
+    second: 32x32LightWheel_Enemy (1)_23
   - first:
-      213: -4152563809995289676
-    second: 32x32LightWheel_Enemy_24
+      213: -908310293395544389
+    second: 32x32LightWheel_Enemy (1)_24
   - first:
-      213: -2989925610283414417
-    second: 32x32LightWheel_Enemy_25
-  - first:
-      213: 73633818860922865
-    second: 32x32LightWheel_Enemy_26
-  - first:
-      213: -4354372576814747120
-    second: 32x32LightWheel_Enemy_27
-  - first:
-      213: -40504298183894612
-    second: 32x32LightWheel_Enemy_0
-  - first:
-      213: -7388715420304003485
-    second: 32x32LightWheel_Enemy_1
-  - first:
-      213: -3772925881840361076
-    second: 32x32LightWheel_Enemy_2
-  - first:
-      213: -5581588658810335118
-    second: 32x32LightWheel_Enemy_3
-  - first:
-      213: 7721671830201388388
-    second: 32x32LightWheel_Enemy_4
-  - first:
-      213: -6355445719544534
-    second: 32x32LightWheel_Enemy_5
-  - first:
-      213: 713410709951390042
-    second: 32x32LightWheel_Enemy_6
-  - first:
-      213: -7606704627385649681
-    second: 32x32LightWheel_Enemy_7
-  - first:
-      213: 8468174561039435987
-    second: 32x32LightWheel_Enemy_8
-  - first:
-      213: -3790240156142210855
-    second: 32x32LightWheel_Enemy_9
-  - first:
-      213: -3943884839859004019
-    second: 32x32LightWheel_Enemy_10
-  - first:
-      213: 5399564780078199167
-    second: 32x32LightWheel_Enemy_11
-  - first:
-      213: 5610218154725070369
-    second: 32x32LightWheel_Enemy_12
-  - first:
-      213: -239708643619253838
-    second: 32x32LightWheel_Enemy_13
-  - first:
-      213: -5788144017457406986
-    second: 32x32LightWheel_Enemy_14
-  - first:
-      213: 2003324536025074241
-    second: 32x32LightWheel_Enemy_15
-  - first:
-      213: -8010495496627592903
-    second: 32x32LightWheel_Enemy_16
-  - first:
-      213: 2608300380675712715
-    second: 32x32LightWheel_Enemy_17
-  - first:
-      213: 8444919045015111242
-    second: 32x32LightWheel_Enemy_18
-  - first:
-      213: -8735960651046164832
-    second: 32x32LightWheel_Enemy_19
-  - first:
-      213: -3570483478288110460
-    second: 32x32LightWheel_Enemy_20
-  - first:
-      213: 3789616187462505987
-    second: 32x32LightWheel_Enemy_21
-  - first:
-      213: -3449837536543886225
-    second: 32x32LightWheel_Enemy_22
-  - first:
-      213: -168306639726622208
-    second: 32x32LightWheel_Enemy_23
-  - first:
-      213: -9133768845481130328
-    second: 32x32LightWheel_Enemy_24
-  - first:
-      213: 3395637191849134164
-    second: 32x32LightWheel_Enemy_25
-  - first:
-      213: -6372153114477249139
-    second: 32x32LightWheel_Enemy_26
-  - first:
-      213: -3063690683446564021
-    second: 32x32LightWheel_Enemy_27
-  - first:
-      213: 6715120682689070183
-    second: 32x32LightWheel_Enemy_28
-  - first:
-      213: -6002011843983898283
-    second: 32x32LightWheel_Enemy_29
-  - first:
-      213: 6082806586676919401
-    second: 32x32LightWheel_Enemy_30
-  - first:
-      213: -8806452375011853192
-    second: 32x32LightWheel_Enemy_31
-  - first:
-      213: 7184610394758388216
-    second: 32x32LightWheel_Enemy_32
-  - first:
-      213: -5596925809363867599
-    second: 32x32LightWheel_Enemy_33
-  - first:
-      213: -2161418270151952532
-    second: 32x32LightWheel_Enemy_34
+      213: -5376604174948436544
+    second: 32x32LightWheel_Enemy (1)_25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -237,7 +126,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -302,7 +191,112 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_0
+      name: 32x32LightWheel_Enemy (1)_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 224
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11a8a1c42ec710d0800000000000000
+      internalID: -3452063932092997350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32LightWheel_Enemy (1)_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 224
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b591399fe05696760800000000000000
+      internalID: 7451598173452310875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32LightWheel_Enemy (1)_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 224
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf921f732d5ac8c10800000000000000
+      internalID: 2057201452101741052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32LightWheel_Enemy (1)_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 224
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f610c394fbb8e2e0800000000000000
+      internalID: -2096218967415712008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32LightWheel_Enemy (1)_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 224
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c65c27809258ee00800000000000000
+      internalID: 1074199291824461509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 32x32LightWheel_Enemy (1)_5
       rect:
         serializedVersion: 2
         x: 1
@@ -310,20 +304,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca95fde2e89107ff0800000000000000
-      internalID: -40504298183894612
+      spriteID: ff7f08497f52e4ee0800000000000000
+      internalID: -1275039899220641793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_1
+      name: 32x32LightWheel_Enemy (1)_6
       rect:
         serializedVersion: 2
         x: 33
@@ -331,20 +325,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e245ae872067990800000000000000
-      internalID: -7388715420304003485
+      spriteID: fab45e604c34c6fd0800000000000000
+      internalID: -2347426796558529617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_2
+      name: 32x32LightWheel_Enemy (1)_7
       rect:
         serializedVersion: 2
         x: 65
@@ -352,20 +346,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c81270976efd3abc0800000000000000
-      internalID: -3772925881840361076
+      spriteID: 280f7e84e2cf254b0800000000000000
+      internalID: -5453018923070394238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_3
+      name: 32x32LightWheel_Enemy (1)_8
       rect:
         serializedVersion: 2
         x: 97
@@ -373,167 +367,41 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 270d245ffa63a82b0800000000000000
-      internalID: -5581588658810335118
+      spriteID: b8b952cb15836da80800000000000000
+      internalID: -8442498527759328373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_4
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 192
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46d4b4f4e93e82b60800000000000000
-      internalID: 7721671830201388388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_5
+      name: 32x32LightWheel_Enemy (1)_9
       rect:
         serializedVersion: 2
         x: 1
-        y: 160
+        y: 129
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2d4f7b71cb69eff0800000000000000
-      internalID: -6355445719544534
+      spriteID: 5988fb477edf53d40800000000000000
+      internalID: 5563632085224097941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_6
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 160
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a51ac99c24b86e900800000000000000
-      internalID: 713410709951390042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_7
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 160
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe5bb55817e8f6690800000000000000
-      internalID: -7606704627385649681
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_8
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 160
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d841ce95eff48570800000000000000
-      internalID: 8468174561039435987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_9
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 161
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d0f8b7d8ac566bc0800000000000000
-      internalID: -3790240156142210855
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_10
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 128
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d8dd72d32a18449c0800000000000000
-      internalID: -3943884839859004019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_11
+      name: 32x32LightWheel_Enemy (1)_10
       rect:
         serializedVersion: 2
         x: 33
@@ -541,20 +409,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7175423f8b1fea40800000000000000
-      internalID: 5399564780078199167
+      spriteID: 20e3d52511fe11b20800000000000000
+      internalID: 3103524475910307330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_12
+      name: 32x32LightWheel_Enemy (1)_11
       rect:
         serializedVersion: 2
         x: 65
@@ -562,20 +430,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 126d5d000bf7bdd40800000000000000
-      internalID: 5610218154725070369
+      spriteID: 17124f50266aa7b50800000000000000
+      internalID: 6591763944547033457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_13
+      name: 32x32LightWheel_Enemy (1)_12
       rect:
         serializedVersion: 2
         x: 97
@@ -583,20 +451,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b1db7732426cacf0800000000000000
-      internalID: -239708643619253838
+      spriteID: d6198f7fb7dfda980800000000000000
+      internalID: -8525879810659413651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_14
+      name: 32x32LightWheel_Enemy (1)_13
       rect:
         serializedVersion: 2
         x: 129
@@ -604,20 +472,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb16aadea16cafa0800000000000000
-      internalID: -5788144017457406986
+      spriteID: d995806be55c9e910800000000000000
+      internalID: 1867240531093379485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_15
+      name: 32x32LightWheel_Enemy (1)_14
       rect:
         serializedVersion: 2
         x: 1
@@ -625,20 +493,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14a499b2d0d3dcb10800000000000000
-      internalID: 2003324536025074241
+      spriteID: b91b28f804bf03d50800000000000000
+      internalID: 6715143299113595291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_16
+      name: 32x32LightWheel_Enemy (1)_15
       rect:
         serializedVersion: 2
         x: 33
@@ -646,20 +514,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93165a889c005d090800000000000000
-      internalID: -8010495496627592903
+      spriteID: 52cb0f8bd97bfcaf0800000000000000
+      internalID: -373878356007928795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_17
+      name: 32x32LightWheel_Enemy (1)_16
       rect:
         serializedVersion: 2
         x: 65
@@ -667,20 +535,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc621b9706b823420800000000000000
-      internalID: 2608300380675712715
+      spriteID: 798b41cb7a0c5ac70800000000000000
+      internalID: 8981796858507868311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_18
+      name: 32x32LightWheel_Enemy (1)_17
       rect:
         serializedVersion: 2
         x: 97
@@ -688,41 +556,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a468e0bd021623570800000000000000
-      internalID: 8444919045015111242
+      spriteID: 5ab65606725d2cdd0800000000000000
+      internalID: -2467175280747910235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_19
-      rect:
-        serializedVersion: 2
-        x: 129
-        y: 96
-        width: 31
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a66a9ea212a3c680800000000000000
-      internalID: -8735960651046164832
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_20
+      name: 32x32LightWheel_Enemy (1)_18
       rect:
         serializedVersion: 2
         x: 1
@@ -730,20 +577,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48c6c389138137ec0800000000000000
-      internalID: -3570483478288110460
+      spriteID: 2f6166feeff935970800000000000000
+      internalID: 8742507218943219442
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_21
+      name: 32x32LightWheel_Enemy (1)_19
       rect:
         serializedVersion: 2
         x: 33
@@ -751,20 +598,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 306d5c028db679430800000000000000
-      internalID: 3789616187462505987
+      spriteID: a01e051bd94e5b2e0800000000000000
+      internalID: -2110529484417343222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_22
+      name: 32x32LightWheel_Enemy (1)_20
       rect:
         serializedVersion: 2
         x: 65
@@ -772,20 +619,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f643e7dd907bf10d0800000000000000
-      internalID: -3449837536543886225
+      spriteID: 67456c0da72edb680800000000000000
+      internalID: -8737578684912348042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_23
+      name: 32x32LightWheel_Enemy (1)_21
       rect:
         serializedVersion: 2
         x: 97
@@ -793,20 +640,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00a41cdb00e0aadf0800000000000000
-      internalID: -168306639726622208
+      spriteID: db7138f5cd4024020800000000000000
+      internalID: 2324425702218340285
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_24
+      name: 32x32LightWheel_Enemy (1)_22
       rect:
         serializedVersion: 2
         x: 129
@@ -814,20 +661,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a64198b0a55e3180800000000000000
-      internalID: -9133768845481130328
+      spriteID: fe259906aea24c300800000000000000
+      internalID: 271389063680447215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_25
+      name: 32x32LightWheel_Enemy (1)_23
       rect:
         serializedVersion: 2
         x: 1
@@ -835,20 +682,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 458c54ef80abf1f20800000000000000
-      internalID: 3395637191849134164
+      spriteID: d49a2f110b530b210800000000000000
+      internalID: 1346635318915410253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_26
+      name: 32x32LightWheel_Enemy (1)_24
       rect:
         serializedVersion: 2
         x: 33
@@ -856,20 +703,20 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8d3f25e0809197a0800000000000000
-      internalID: -6372153114477249139
+      spriteID: bb6e350c9980563f0800000000000000
+      internalID: -908310293395544389
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 32x32LightWheel_Enemy_27
+      name: 32x32LightWheel_Enemy (1)_25
       rect:
         serializedVersion: 2
         x: 65
@@ -877,14 +724,14 @@ TextureImporter:
         width: 31
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4b6e773e859b75d0800000000000000
-      internalID: -3063690683446564021
+      spriteID: 0c5f0564df67265b0800000000000000
+      internalID: -5376604174948436544
       vertices: []
       indices: 
       edges: []

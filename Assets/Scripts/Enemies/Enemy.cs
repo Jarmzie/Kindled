@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public int health, damage, cost;
     public GameObject myProjectile, player;
     public Transform tf;
+    public SpriteRenderer sr;
     public Animator an;
     public Rigidbody2D rb;
 
@@ -17,7 +18,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
-        //Maybe flash red
+        StartCoroutine(Flashing());
         health -= damageAmount;
         if (health <= 0)
         {
@@ -25,8 +26,23 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    private IEnumerator Flashing()
+    {
+        Vector4 temp = sr.color;
+        sr.color = new Vector4(0.75f, 0, 0, 1);
+        yield return new WaitForSeconds(0.25f);
+        sr.color = temp;
+        yield return null;
+    }
+
     public void DieLOL()
     {
+        //player.GetComponent<PlayerAimWeapon>().GiveOil((int)(health * 1.1));
         Destroy(gameObject);
+    }
+
+    public void DamagePlayer()
+    {
+        player.SendMessage("TakeDamage", damage);
     }
 }

@@ -8,7 +8,7 @@ public class Door : MonoBehaviour
     private Collider2D col;
     private Rigidbody2D rb;
 
-    void Start()
+    void Awake()
     {
         an = GetComponent<Animator>();
         col = GetComponent<Collider2D>();
@@ -17,7 +17,7 @@ public class Door : MonoBehaviour
 
     public void Close()
     {
-
+        print("I am actually running");
         an.SetTrigger("Close");
     }
 

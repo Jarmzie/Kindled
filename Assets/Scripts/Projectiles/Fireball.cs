@@ -4,12 +4,8 @@ using UnityEngine;
 
 public class Fireball : Projectile
 {
-    void Start()
+    void Awake()
     {
-        speed = 1.0f;
-        damage = 5;
-        cost = 5;
-        deathTime = 5.0f;
-        GeneralSetUp();
+        GeneralSetUp(1.0f, 5, 5, 5.0f);
     }
 }

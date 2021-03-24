@@ -65,11 +65,10 @@ public class PlayerAimWeapon : MonoBehaviour
 
     void Shoot()
     {
-       GameObject bullet = Instantiate(bulletPrefab, aimLanternEndPointTransform.position, Quaternion.identity);
-        print(bullet.GetComponent<Projectile>().cost);
-       oilController.LoseOilAmount(bullet.GetComponent<typeof(Projectile)>().cost);
-       Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-       rb.AddForce(aimLanternEndPointTransform.up * bulletForce, ForceMode2D.Impulse);
+        GameObject bullet = Instantiate(bulletPrefab, aimLanternEndPointTransform.position, Quaternion.identity);
+        oilController.LoseOilAmount(bullet.GetComponent<Projectile>().cost);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.AddForce(aimLanternEndPointTransform.up * bulletForce, ForceMode2D.Impulse);
     }
 
     private void HandleAiming()

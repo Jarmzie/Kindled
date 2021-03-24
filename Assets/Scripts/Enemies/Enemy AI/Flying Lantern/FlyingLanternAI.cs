@@ -6,7 +6,7 @@ public class FlyingLanternAI : Enemy
 {
     public bool playerInRange = false;
 
-    void Start()
+    void Awake()
     {
         health = 30;
         cost = 3;

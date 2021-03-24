@@ -11,8 +11,12 @@ public class Projectile : MonoBehaviour
     public Collider2D cb;
     public Rigidbody2D rb;
 
-    protected void GeneralSetUp()
+    protected void GeneralSetUp(float speed_, int damage_, int cost_, float deathTime_)
     {
+        speed = speed_;
+        damage = damage_;
+        cost = cost_;
+        deathTime = deathTime_;
         an = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         cb = GetComponent<CircleCollider2D>();

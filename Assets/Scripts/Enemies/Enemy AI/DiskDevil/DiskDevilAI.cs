@@ -6,7 +6,7 @@ public class DiskDevilAI : Enemy
 {
     bool DVD = false, checkForAngle = false;
     float currAngle = 0;
-    void Start()
+    void Awake()
     {
         health = 50;
         cost = 2;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health, damage, cost;
+    public int maxHealth, health, damage, cost;
     private bool isFlashing = false;
     public GameObject myProjectile, player;
     public Transform tf;
@@ -19,6 +19,7 @@ public class Enemy : MonoBehaviour
 
     protected void GeneralSetUp()
     {
+        maxHealth = health;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         tf = GetComponent<Transform>();
@@ -53,7 +54,7 @@ public class Enemy : MonoBehaviour
 
     public void DieLOL()
     {
-        player.GetComponent<PlayerOilController>().GainOilAmount((int)(health * 1.1));
+        player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth * 1.1));
         rb.velocity = Vector3.zero;
         transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
         an.SetTrigger("Destroy");

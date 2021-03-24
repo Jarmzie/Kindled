@@ -24,7 +24,7 @@ public class LevelLogic : MonoBehaviour
 
     public void RoomFinished()
     {
-        //Turn lights on here
+        player.GetComponent<PlayerOilController>().inDark = false;
         //Make player stop losing oil
         exit.GetComponent<Door>().Open();
     }
@@ -38,15 +38,21 @@ public class LevelLogic : MonoBehaviour
         levelTransition.transform.position = exit.transform.position;
     }
 
+    //Everything under here can be cleaned up
+
     public void NewRoom()
     {
-        if (currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom)
+        print("Level: " + currLevel + " InRoom?: " + inUpgradeRoom);
+        if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom)
         {
+            print("To Upgrade Room!");
             inUpgradeRoom = true;
-            //Load upgrade room
+            StartCoroutine(NewUpgradeRoom());
+            return;
         } else if (inUpgradeRoom) {
             inUpgradeRoom = false;
         }
+        print("To Random Room!");
         StartCoroutine(NewRandomRoom());
     }
 
@@ -66,12 +72,12 @@ public class LevelLogic : MonoBehaviour
 
         //Sets up Enemy Spawner
         EnemySpawner roomES = Instantiate(enemySpawn, Vector2.zero, Quaternion.identity).GetComponent<EnemySpawner>();
-        roomES.level = currLevel;
-        roomES.CurrentLevelLogic = this;
+        roomES.GeneralSetUp(currLevel, this);
 
         //Puts player into new level
         player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
         transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
+        player.GetComponent<PlayerOilController>().inDark = true;
         player.GetComponent<PlayerAnimation>().enabled = true;
         player.GetComponent<PlayerMovement>().enabled = true;
         yield return null;
@@ -79,6 +85,22 @@ public class LevelLogic : MonoBehaviour
 
     IEnumerator NewUpgradeRoom()
     {
+        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<PlayerAnimation>().enabled = false;
+        transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("UpgradeLevel");
+        yield return new WaitForSeconds(1);
+
+        //Updates LevelLogic objects
+        UpdateLevelLogic();
+
+        //Puts player into new level
+        player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
+        transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
+        player.GetComponent<PlayerAnimation>().enabled = true;
+        player.GetComponent<PlayerMovement>().enabled = true;
         yield return null;
     }
 }

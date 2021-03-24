@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class PlayerDeath : MonoBehaviour
 {
     public int playerHealth = 3;
+    public float timeAtHealthChange, regenRate = 7;
     private bool inHitStun = false;
     public GameObject bloodVignette, torso;
     private Image bvsr;
@@ -13,6 +14,15 @@ public class PlayerDeath : MonoBehaviour
     private void Start()
     {
         bvsr = bloodVignette.GetComponent<Image>();
+        timeAtHealthChange = Time.timeSinceLevelLoad;
+    }
+
+    private void Update()
+    {
+        if (Time.timeSinceLevelLoad - timeAtHealthChange > regenRate && playerHealth <3)
+        {
+            healDamage();
+        }
     }
 
     IEnumerator TakeDamage (int damage)
@@ -26,6 +36,7 @@ public class PlayerDeath : MonoBehaviour
 
         //Subtract health, update blood, check for death
         playerHealth--;
+        timeAtHealthChange = Time.timeSinceLevelLoad;
         UpdateBlood();
         if (playerHealth == 0)
         {
@@ -52,6 +63,13 @@ public class PlayerDeath : MonoBehaviour
         tempTorso.color = new Vector4(1, 1, 1, 1);
         inHitStun = false;
         yield return null;
+    }
+
+    public void healDamage()
+    {
+        playerHealth++;
+        timeAtHealthChange = Time.timeSinceLevelLoad;
+        UpdateBlood();
     }
 
     private void UpdateBlood()

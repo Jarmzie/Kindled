@@ -6,7 +6,7 @@ public class FlyingLanternDetect : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (collider.gameObject.CompareTag("PlayerLegs"))
         {
             this.transform.parent.GetComponent<FlyingLanternAI>().playerInRange = true;
         }
@@ -14,7 +14,7 @@ public class FlyingLanternDetect : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.gameObject.CompareTag("Player"))
+        if (collider.gameObject.CompareTag("PlayerLegs"))
         {
             this.transform.parent.GetComponent<FlyingLanternAI>().playerInRange = false;
         }

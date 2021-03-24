@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        //This isn't movement stuff but I didn't know where else to put it so it goes here
+        DontDestroyOnLoad(this.gameObject);
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
     }
@@ -25,6 +27,12 @@ public class PlayerMovement : MonoBehaviour
         {
             sr.flipX = !sr.flipX;
             facingRight = !facingRight;
+        }
+
+        //THIS IS JUST FOR TESTING, DELETE BEFORE FINAL BUILD!!!
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
         }
     }
 

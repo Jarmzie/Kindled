@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TempTransition : MonoBehaviour
+public class LevelExitTrigger : MonoBehaviour
 {
     public Animator an;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(TransitionToNextLevel());
+        transform.parent.GetComponent<LevelLogic>().NewRoom();
     }
 
     IEnumerator TransitionToNextLevel()

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health, damage, cost;
+    private bool isFlashing = false;
     public GameObject myProjectile, player;
     public Transform tf;
     public SpriteRenderer sr;
@@ -28,10 +29,16 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Flashing()
     {
+        if (isFlashing)
+        {
+            yield break;
+        }
+        isFlashing = true;
         Vector4 temp = sr.color;
         sr.color = new Vector4(0.75f, 0, 0, 1);
         yield return new WaitForSeconds(0.25f);
         sr.color = temp;
+        isFlashing = false;
         yield return null;
     }
 

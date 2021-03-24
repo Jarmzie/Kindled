@@ -7,11 +7,13 @@ public class Projectile : MonoBehaviour
     public float speed, timeAtLoad, deathTime, timeAlive = 0.0f;
     public int damage;
     public Vector2 directionUnitVector = new Vector2(0.0f, 0.0f);
+    public Animator an;
     public Collider2D cb;
     public Rigidbody2D rb;
 
     protected void GeneralSetUp()
     {
+        an = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         cb = GetComponent<CircleCollider2D>();
         timeAtLoad = Time.timeSinceLevelLoad;
@@ -32,17 +34,12 @@ public class Projectile : MonoBehaviour
         return speed;
     }
 
-    public Rigidbody2D GetRigidbody()
-    {
-        return rb;
-    }
-
     public void TimeDestroy()
     {
         timeAlive = Time.timeSinceLevelLoad - timeAtLoad;
         if (timeAlive > deathTime)
         {
-            Destroy(gameObject);
+            DestroyProjectile();
         }
     }
 
@@ -55,11 +52,19 @@ public class Projectile : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Wall") || col.gameObject.CompareTag("barrel"))
         {
-            Destroy(gameObject);
+            rb.velocity = Vector3.zero;
+            DestroyProjectile();
         } else if (col.gameObject.CompareTag("Enemy") || col.gameObject.CompareTag("Player"))
         {
             col.SendMessageUpwards("TakeDamage", damage);
-            Destroy(gameObject);
+            rb.velocity = Vector3.zero;
+            DestroyProjectile();
         }
+    }
+
+    void DestroyProjectile()
+    {
+        cb.enabled = false;
+        an.SetTrigger("Destroy");
     }
 }

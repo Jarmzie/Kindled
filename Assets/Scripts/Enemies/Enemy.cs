@@ -45,7 +45,9 @@ public class Enemy : MonoBehaviour
     public void DieLOL()
     {
         //player.GetComponent<PlayerAimWeapon>().GiveOil((int)(health * 1.1));
-        Destroy(gameObject);
+        rb.velocity = Vector3.zero;
+        transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
+        an.SetTrigger("Destroy");
     }
 
     public void DamagePlayer()

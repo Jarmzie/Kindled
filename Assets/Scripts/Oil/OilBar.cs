@@ -20,7 +20,6 @@ public class OilBar : MonoBehaviour
     public void SetOil(int oil)
     {
         slider.value = oil;
-
         fill.color = gradient.Evaluate(slider.normalizedValue);
     }
 }

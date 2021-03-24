@@ -17,7 +17,6 @@ public class Door : MonoBehaviour
 
     public void Close()
     {
-        print("I am actually running");
         an.SetTrigger("Close");
     }
 

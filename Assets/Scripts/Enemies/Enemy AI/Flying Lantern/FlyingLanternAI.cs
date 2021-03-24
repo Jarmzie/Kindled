@@ -10,11 +10,7 @@ public class FlyingLanternAI : Enemy
     {
         health = 30;
         cost = 3;
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        tf = GetComponent<Transform>();
-        an = GetComponent<Animator>();
-        player = GameObject.Find("Player (Legs)");
+        GeneralSetUp();
         InvokeRepeating("DecideBehaviour", 5.0f, 3.0f);
     }
 

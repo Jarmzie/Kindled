@@ -17,6 +17,15 @@ public class Enemy : MonoBehaviour
     //while the other colliders have specific children for themselves. The enemy itself needs to be on the "Enemy Hitbox"
     //layer and the child needs to be on the "Enemy Hurtbox" layer. Also, you need to tag the child as "Enemy" as well.
 
+    protected void GeneralSetUp()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        tf = GetComponent<Transform>();
+        an = GetComponent<Animator>();
+        player = GameObject.FindWithTag("PlayerLegs");
+    }
+
     public void TakeDamage(int damageAmount)
     {
         StartCoroutine(Flashing());
@@ -27,7 +36,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    private IEnumerator Flashing()
+    private IEnumerator Flashing() //This method is literally double the length just to check if it's flashing, there's no better solution
     {
         if (isFlashing)
         {
@@ -44,7 +53,7 @@ public class Enemy : MonoBehaviour
 
     public void DieLOL()
     {
-        //player.GetComponent<PlayerAimWeapon>().GiveOil((int)(health * 1.1));
+        player.GetComponent<PlayerOilController>().GainOilAmount((int)(health * 1.1));
         rb.velocity = Vector3.zero;
         transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
         an.SetTrigger("Destroy");

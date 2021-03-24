@@ -10,11 +10,7 @@ public class DiskDevilAI : Enemy
     {
         health = 50;
         cost = 2;
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        tf = GetComponent<Transform>();
-        an = GetComponent<Animator>();
-        player = GameObject.Find("Player (Legs)");
+        GeneralSetUp();
         StartCoroutine(Readjust());
         //rb.velocity = new Vector2(4, 4);
     }

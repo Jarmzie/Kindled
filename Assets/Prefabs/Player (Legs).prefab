@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 835406272427648346}
   - component: {fileID: 8516022473759187640}
   - component: {fileID: 561326488438792888}
+  - component: {fileID: 2475225921895079053}
   - component: {fileID: 1467441672825823869}
   m_Layer: 13
   m_Name: Player (Legs)
@@ -201,6 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aimLanternEndPointTransform: {fileID: 8516022472449548320}
+  oilController: {fileID: 0}
   bulletPrefab: {fileID: 2698061270648502042, guid: bc36918d827449f4890289b1707a1a60, type: 3}
   bulletForce: 10
   maxOil: 200
@@ -221,6 +223,22 @@ MonoBehaviour:
   playerHealth: 3
   bloodVignette: {fileID: 2090447020003248330}
   torso: {fileID: 835406273604483532}
+--- !u!114 &2475225921895079053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835406272427648340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f13698afcbd3d44987bc4b406f98729, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxOil: 200
+  currOil: 0
+  OilBar: {fileID: 5655497525663705875}
+  inDark: 1
 --- !u!114 &1467441672825823869
 MonoBehaviour:
   m_ObjectHideFlags: 0

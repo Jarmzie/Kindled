@@ -8,6 +8,7 @@ public class Fireball : Projectile
     {
         speed = 1.0f;
         damage = 5;
+        cost = 5;
         deathTime = 5.0f;
         GeneralSetUp();
     }

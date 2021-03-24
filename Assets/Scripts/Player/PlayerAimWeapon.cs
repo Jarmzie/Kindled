@@ -14,13 +14,11 @@ public class PlayerAimWeapon : MonoBehaviour
         public Vector3 shootPosition;
     }
 
-
     private Transform aimTransform;
     public Transform aimLanternEndPointTransform;
-
+    public PlayerOilController oilController;
     public GameObject bulletPrefab;
   
-
     public float bulletForce = 10f;
     public int maxOil = 200;
     public int currentOil;
@@ -29,6 +27,7 @@ public class PlayerAimWeapon : MonoBehaviour
 
     private void Start()
     {
+        oilController = GetComponent<PlayerOilController>();
         currentOil = maxOil;
         oilBar.SetMaxOil(maxOil);
     }
@@ -46,21 +45,31 @@ public class PlayerAimWeapon : MonoBehaviour
         if (Input.GetButtonDown("Fire1") && currentOil > 0)
         {
             Shoot();
-            TakeOil(5);
         }
-        oilBar.SetOil(currentOil);
     }
 
-    void TakeOil(int burnOil)
+    /*void TakeOil(int burnOil)
     {
         currentOil -= burnOil;
-    }
+    }*/
+
+    /*public void GiveOil(int gottenOil)
+    {
+        if (currentOil + gottenOil > maxOil)
+        {
+            currentOil = maxOil;
+            return;
+        }
+        currentOil += gottenOil;
+    }*/
 
     void Shoot()
     {
        GameObject bullet = Instantiate(bulletPrefab, aimLanternEndPointTransform.position, Quaternion.identity);
+        print(bullet.GetComponent<Projectile>().cost);
+       oilController.LoseOilAmount(bullet.GetComponent<typeof(Projectile)>().cost);
        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.AddForce(aimLanternEndPointTransform.up * bulletForce, ForceMode2D.Impulse);
+       rb.AddForce(aimLanternEndPointTransform.up * bulletForce, ForceMode2D.Impulse);
     }
 
     private void HandleAiming()

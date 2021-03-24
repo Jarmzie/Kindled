@@ -53,7 +53,6 @@ public class LevelLogic : MonoBehaviour
     IEnumerator NewRandomRoom()
     {
         currLevel++;
-        player.transform.position = Vector3.zero;
         player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         player.GetComponent<PlayerMovement>().enabled = false;
         player.GetComponent<PlayerAnimation>().enabled = false;

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public float speed, timeAtLoad, deathTime, timeAlive = 0.0f;
-    public int damage;
+    public int damage, cost;
     public Vector2 directionUnitVector = new Vector2(0.0f, 0.0f);
     public Animator an;
     public Collider2D cb;

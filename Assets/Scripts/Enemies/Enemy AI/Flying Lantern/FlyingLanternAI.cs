@@ -11,7 +11,7 @@ public class FlyingLanternAI : Enemy
         health = 30;
         cost = 3;
         GeneralSetUp();
-        InvokeRepeating("DecideBehaviour", 5.0f, 3.0f);
+        InvokeRepeating("DecideBehaviour", 0.0f, 3.0f);
     }
 
     Vector2 findPlayerDirection(Vector3 playerPos, Vector3 myPos)

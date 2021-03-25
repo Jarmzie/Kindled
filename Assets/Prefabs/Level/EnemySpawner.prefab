@@ -48,6 +48,7 @@ MonoBehaviour:
   - {fileID: 1894209512856362138, guid: a2e37f4b5adccf14b9a42c1113c6e383, type: 3}
   CurrentLevelLogic: {fileID: 0}
   SpawnLocations: []
+  spawnBubble: {fileID: 642673432850427630, guid: e90bcd0ede211604188527b57609a71a, type: 3}
   difficultyPoints: 20
   level: 1
   maxEnemies: 6

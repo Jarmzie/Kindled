@@ -39,6 +39,10 @@ public class PlayerTorsoAnimation : MonoBehaviour
             {
                 an.SetTrigger("Side");
             }
+            else if (tempName.Equals("Player_Death") || tempName.Equals("Invis"))
+            {
+                sr.color = new Vector4(1, 1, 1, 0);
+            }
             difName = tempName;
         }
     }

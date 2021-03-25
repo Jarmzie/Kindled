@@ -19,7 +19,7 @@ public class PlayerDeath : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeSinceLevelLoad - timeAtHealthChange > regenRate && playerHealth <3)
+        if (Time.timeSinceLevelLoad - timeAtHealthChange > regenRate && playerHealth <3 && playerHealth > 0)
         {
             healDamage();
         }
@@ -36,13 +36,14 @@ public class PlayerDeath : MonoBehaviour
 
         //Subtract health, update blood, check for death
         playerHealth--;
-        timeAtHealthChange = Time.timeSinceLevelLoad;
         UpdateBlood();
         if (playerHealth == 0)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             PlayerDie();
+            yield break;
         }
+        timeAtHealthChange = Time.timeSinceLevelLoad;
 
         //The rest of this is for the flashing and hitstun reset
         SpriteRenderer temp = GetComponent<SpriteRenderer>(), tempTorso = torso.GetComponent<SpriteRenderer>();
@@ -50,10 +51,12 @@ public class PlayerDeath : MonoBehaviour
         {
             if(temp.color.a == 0)
             {
+                print("Color");
                 temp.color = new Vector4(1, 1, 1, 1);
                 tempTorso.color = new Vector4(1, 1, 1, 1);
             } else
             {
+                print("Invis");
                 temp.color = new Vector4(1, 1, 1, 0);
                 tempTorso.color = new Vector4(1, 1, 1, 0);
             }
@@ -89,6 +92,11 @@ public class PlayerDeath : MonoBehaviour
 
     public void PlayerDie()
     {
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
+        torso.GetComponent<Collider2D>().enabled = false;
+        GetComponent<PlayerMovement>().enabled = false;
+        GetComponent<PlayerAnimation>().enabled = false;
+        GetComponent<Animator>().SetTrigger("Death");
         print("Player would've died here");
     }
 }

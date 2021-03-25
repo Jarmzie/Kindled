@@ -221,6 +221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 3
+  timeAtHealthChange: 0
+  regenRate: 7
   bloodVignette: {fileID: 2090447020003248330}
   torso: {fileID: 835406273604483532}
 --- !u!114 &2475225921895079053

@@ -2,36 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlobScript : MonoBehaviour
+public class BlobScript : Enemy
 {
     public bool playerInRange = false;
 
-    public Transform tf;
-    public Rigidbody2D rb;
-    public SpriteRenderer sr;
-    public Animator an;
-    public GameObject player;
-
-    // Start is called before the first frame update
-    void Start()
+   
+    void Awake()
     {
-       
+        health = 40;
+        cost = 3;
+        GeneralSetUp();
+        InvokeRepeating("DecideBehaviour", 4.0f, 3.0f);
 
-        tf = GetComponent<Transform>();
-        rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-        an = GetComponent<Animator>();
-        player = GameObject.Find("Player (Legs)");
-        an.SetInteger("Health", 30);
-        InvokeRepeating("DecideBehaviour", 5.0f, 3.0f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   
     Vector2 findPlayerDirection(Vector3 playerPos, Vector3 myPos)
     {
         Vector2 delta = myPos - playerPos;
@@ -68,34 +53,34 @@ public class BlobScript : MonoBehaviour
         yield return null;
     }
 
-    private IEnumerator SwoopTowardsPlayer(Vector3 playerPos)
-    {
-        an.SetTrigger("WingsUp");
-        yield return new WaitForSeconds(0.5f);
-        rb.velocity = findPlayerDirection(playerPos, tf.position) * 10;
-        for (int i = 0; i < 10; i++)
-        {
-            rb.velocity -= 0.2f * rb.velocity;
-            yield return new WaitForSeconds(0.1f);
-        }
-        an.SetTrigger("Idle");
-        rb.velocity = Vector2.zero;
-        yield return null;
-    }
-
-
+   
 
     void DecideBehaviour()
     {
         if (playerInRange)
         {
             StartCoroutine(SwoopTowardsPlayer(player.GetComponent<Transform>().position));
+
         }
-        else 
+        else
         {
             StartCoroutine(MoveRandomly());
         }
        
     }
 
+    private IEnumerator SwoopTowardsPlayer(Vector3 playerPos)
+    {
+        an.SetTrigger("Attack");
+        yield return new WaitForSeconds(0.25f);
+        rb.velocity = findPlayerDirection(playerPos, tf.position) * 12;
+        for (int i = 0; i < 10; i++)
+        {
+            rb.velocity -= 0.2f * rb.velocity;
+            yield return new WaitForSeconds(0.1f);
+        }
+        an.SetTrigger("Back");
+        rb.velocity = Vector2.zero;
+        yield return null;
+    }
 }

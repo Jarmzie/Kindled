@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
         CurrentLevelLogic = CurrentLevelLogic_;
         SpawnLocations = GameObject.FindGameObjectsWithTag("SpawnLocation");
         maxEnemies = startingMaxEnemies + maxEnemyIncrease * (level / upgradeFrequency);
-        difficultyPoints = 1; //startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
+        difficultyPoints = startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
         InvokeRepeating("DecideSpawning", 3.0f, 7.0f);
     }
 

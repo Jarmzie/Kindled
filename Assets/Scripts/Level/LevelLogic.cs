@@ -25,6 +25,7 @@ public class LevelLogic : MonoBehaviour
     public void RoomFinished()
     {
         player.GetComponent<PlayerOilController>().inDark = false;
+        player.GetComponent<PlayerOilController>().GainOilAmount(50);
         //Make player stop losing oil
         exit.GetComponent<Door>().Open();
     }

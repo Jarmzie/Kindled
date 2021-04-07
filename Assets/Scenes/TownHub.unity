@@ -990,7 +990,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &525858456
 MonoBehaviour:
@@ -1442,7 +1442,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1001 &1784369240
+--- !u!1001 &1703272863
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1455,11 +1455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 835406272427648343, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.42320347
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 835406272427648343, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.13260412
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 835406272427648343, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1483,7 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 835406272427648343, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 835406272427648343, guid: fd92efb0ef3a74a43ae75f3e217ae973, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

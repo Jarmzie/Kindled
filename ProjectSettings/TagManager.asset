@@ -40,8 +40,8 @@ TagManager:
   - Enemy Hurtbox
   - Detection
   - Hole
-  - 
-  - 
+  - Interactable
+  - PlayerInteractDectection
   - 
   - 
   - 

@@ -17,6 +17,7 @@ TagManager:
   - Entrance
   - Transition
   - PlayerLegs
+  - UpgradeTable
   layers:
   - Default
   - TransparentFX

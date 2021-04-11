@@ -11,16 +11,23 @@ public class PlayerInteract : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey("e"))
+        if (Input.GetKeyDown("e"))
         {
-            Interactable foundInteractable = Physics2D.OverlapCircleAll(transform.position + new Vector3(0, -0.25f, 0), 0.5f, 23)[0].transform.parent.GetComponent<Interactable>();
+            if (Physics2D.OverlapCircle(transform.position + new Vector3(0, -0.25f, 0), 0.5f, 1 << 22))
+            {
+                Interactable foundInteractable = Physics2D.OverlapCircleAll(transform.position + new Vector3(0, -0.25f, 0), 0.5f, 1 << 22)[0].gameObject.GetComponent<Interactable>();
+                StartCoroutine(foundInteractable.OnInteract());
+            } else
+            {
+                print("No interact");
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         contWriteText = true;
-        StartCoroutine(WriteText(collision.gameObject.GetComponent<Interactable>().InteractMessage));
+        StartCoroutine(WriteText(collision.GetComponent<Interactable>().InteractMessage));
     }
 
     private void OnTriggerExit2D(Collider2D collision)

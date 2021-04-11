@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5;
+    public float speed = 4;
     public bool facingRight = false;
-
-    
-
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private PlayerUpgradeController upgrades;
     public float velocityX = 0.0f, velocityY = 0.0f;
 
     void Start()
@@ -19,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        upgrades = GetComponent<PlayerUpgradeController>();
     }
 
     void Update()
@@ -41,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
         velocityX = Input.GetAxis("Horizontal");
         velocityY = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(velocityX * speed, velocityY * speed);
+        rb.velocity = new Vector2(velocityX, velocityY) * speed * (1 + (0.1f * upgrades.walkSpeedUpgrade));
 
     }
 

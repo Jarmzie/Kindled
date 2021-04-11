@@ -5,10 +5,12 @@ using UnityEngine;
 public class InteractUpgradeTable : Interactable
 {
     private UpgradeTable myTable;
+    private GameObject myItem;
 
     private void Start()
     {
         myTable = transform.parent.GetComponent<UpgradeTable>();
+        myItem = transform.parent.Find("UpgradeItem").gameObject;
         switch (myTable.myType)
         {
             case UpgradeTable.UpgradeType.HealthRegen:
@@ -34,28 +36,34 @@ public class InteractUpgradeTable : Interactable
 
     public override IEnumerator OnInteract()
     {
+        PlayerUpgradeController temp = GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerUpgradeController>();
         switch (myTable.myType)
         {
             case UpgradeTable.UpgradeType.HealthRegen:
-                
+                temp.healthRegenUpgrades++;
                 break;
             case UpgradeTable.UpgradeType.LightRadius:
-                
+                temp.lightRadiusUpgrades++;
                 break;
             case UpgradeTable.UpgradeType.OilAmount:
-                
+                temp.oilAmountUpgrades++;
+                temp.UpdateMaxOil();
                 break;
             case UpgradeTable.UpgradeType.WalkingSpeed:
-                
+                temp.walkSpeedUpgrade++;
                 break;
             case UpgradeTable.UpgradeType.OilUseOverTime:
-                
+                temp.oilUseUpgrade++;
                 break;
             default:
                 Debug.Log("Error: No upgrade type");
                 break;
         }
-        Destroy(gameObject);
+        Destroy(myItem);
+        foreach (GameObject table in GameObject.FindGameObjectsWithTag("UpgradeInteract"))
+        {
+            Destroy(table);
+        }
         yield return null;
     }
 }

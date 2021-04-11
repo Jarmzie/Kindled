@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class PlayerUpgradeController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int healthRegenUpgrades = 0, lightRadiusUpgrades = 0, oilAmountUpgrades = 0, walkSpeedUpgrade = 0, oilUseUpgrade = 0;
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateMaxOil()
     {
-        
+        PlayerOilController temp = GetComponent<PlayerOilController>();
+        temp.OilBar.SetMaxOil(temp.maxOil + (25 * oilAmountUpgrades));
     }
 }

@@ -6,20 +6,23 @@ using UnityEngine.UI;
 public class PlayerDeath : MonoBehaviour
 {
     public int playerHealth = 3;
-    public float timeAtHealthChange, regenRate = 7;
+    public float timeAtHealthChange, regenRate = 10;
     private bool inHitStun = false;
     public GameObject bloodVignette, torso;
     private Image bvsr;
+    private PlayerUpgradeController upgrades;
 
     private void Start()
     {
         bvsr = bloodVignette.GetComponent<Image>();
+        upgrades = GetComponent<PlayerUpgradeController>();
         timeAtHealthChange = Time.timeSinceLevelLoad;
     }
 
     private void Update()
     {
-        if (Time.timeSinceLevelLoad - timeAtHealthChange > regenRate && playerHealth <3 && playerHealth > 0)
+        //This break with too many regen upgrades, shouldn't happen during normal gameplay tho
+        if (Time.timeSinceLevelLoad - timeAtHealthChange > (regenRate - upgrades.healthRegenUpgrades) && playerHealth <3 && playerHealth > 0)
         {
             healDamage();
         }

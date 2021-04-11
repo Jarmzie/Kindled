@@ -5,14 +5,14 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class PlayerOilController : MonoBehaviour
 {
-    public int maxOil = 200, currOil;
+    public int initMaxOil = 200, maxOil = 200, currOil = 200;
     public OilBar OilBar;
     public bool inDark = true;
 
     private void Start()
     {
-        currOil = maxOil;
-        OilBar.SetMaxOil(maxOil);
+        currOil = initMaxOil;
+        OilBar.SetMaxOil(initMaxOil);
         InvokeRepeating("LoseOilOverTime", 0, 1);
     }
 

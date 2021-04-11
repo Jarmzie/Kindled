@@ -44,6 +44,7 @@ public class InteractUpgradeTable : Interactable
                 break;
             case UpgradeTable.UpgradeType.LightRadius:
                 temp.lightRadiusUpgrades++;
+                temp.UpdateLightRadius();
                 break;
             case UpgradeTable.UpgradeType.OilAmount:
                 temp.oilAmountUpgrades++;
@@ -54,6 +55,7 @@ public class InteractUpgradeTable : Interactable
                 break;
             case UpgradeTable.UpgradeType.OilUseOverTime:
                 temp.oilUseUpgrade++;
+                temp.UpdateOilUsage();
                 break;
             default:
                 Debug.Log("Error: No upgrade type");

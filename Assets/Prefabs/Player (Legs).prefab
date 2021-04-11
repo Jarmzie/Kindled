@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 561326488438792888}
   - component: {fileID: 2475225921895079053}
   - component: {fileID: 366223853347109651}
+  - component: {fileID: 8580132461333578007}
   - component: {fileID: 1467441672825823869}
   m_Layer: 13
   m_Name: Player (Legs)
@@ -260,6 +261,18 @@ MonoBehaviour:
   oilAmountUpgrades: 0
   walkSpeedUpgrade: 0
   oilUseUpgrade: 0
+--- !u!114 &8580132461333578007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 835406272427648340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3903a29e72a0d94880d78171a2a21d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1467441672825823869
 MonoBehaviour:
   m_ObjectHideFlags: 0

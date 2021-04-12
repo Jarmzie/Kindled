@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f13698afcbd3d44987bc4b406f98729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initMaxOil: 200
   maxOil: 200
   currOil: 0
   OilBar: {fileID: 5655497525663705875}
@@ -273,6 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3903a29e72a0d94880d78171a2a21d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxLightRadius: 4
+  falloff: 9.24
 --- !u!114 &1467441672825823869
 MonoBehaviour:
   m_ObjectHideFlags: 0

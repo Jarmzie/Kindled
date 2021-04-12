@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class UpgradeTable : MonoBehaviour
 {
+    [SerializeField]
+    Sprite HealthUpgrade, LightUpgrade, OilAmountUpgrade, SpeedUpgrade, OilUseUpgrade;
+
     public enum UpgradeType
     {
         HealthRegen,     //0, Increase health regen
@@ -18,5 +21,27 @@ public class UpgradeTable : MonoBehaviour
     private void Awake()
     {
         myType = (UpgradeType)Random.Range(0, 5);
+        SpriteRenderer Item = transform.Find("UpgradeItem").GetComponent<SpriteRenderer>();
+        switch (myType)
+        {
+            case UpgradeType.HealthRegen:
+                Item.sprite = HealthUpgrade;
+                break;
+            case UpgradeType.LightRadius:
+                Item.sprite = LightUpgrade;
+                break;
+            case UpgradeType.OilAmount:
+                Item.sprite = OilAmountUpgrade;
+                break;
+            case UpgradeType.WalkingSpeed:
+                Item.sprite = SpeedUpgrade;
+                break;
+            case UpgradeType.OilUseOverTime:
+                Item.sprite = OilUseUpgrade;
+                break;
+            default:
+                
+                break;
+        }
     }
 }

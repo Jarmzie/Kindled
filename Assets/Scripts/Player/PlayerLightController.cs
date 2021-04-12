@@ -18,7 +18,6 @@ public class PlayerLightController : MonoBehaviour
     void FixedUpdate()
     {
         float barPercent = (float)OilController.currOil / (float)OilController.maxOil;
-        print(OilController.currOil + " / " + OilController.maxOil + " = " + barPercent);
         ThisLittleLightOfMine.pointLightInnerRadius = (maxLightRadius / 4) - ((1 - barPercent) * Mathf.Pow(maxLightRadius / 4, -1 * ((barPercent * falloff) - 1)));
         ThisLittleLightOfMine.pointLightOuterRadius = maxLightRadius - ((1 - barPercent) * Mathf.Pow(maxLightRadius, -1 * ((barPercent * falloff) - 1)));
     }

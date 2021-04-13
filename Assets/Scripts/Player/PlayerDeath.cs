@@ -54,12 +54,10 @@ public class PlayerDeath : MonoBehaviour
         {
             if(temp.color.a == 0)
             {
-                print("Color");
                 temp.color = new Vector4(1, 1, 1, 1);
                 tempTorso.color = new Vector4(1, 1, 1, 1);
             } else
             {
-                print("Invis");
                 temp.color = new Vector4(1, 1, 1, 0);
                 tempTorso.color = new Vector4(1, 1, 1, 0);
             }

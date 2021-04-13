@@ -28,7 +28,7 @@ public class DrillburnAI : Enemy
         {
             if (horizontal) //checks direction
             {
-                if (Physics2D.Raycast(transform.position, Vector2.up, 7, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.down, 7, 1 << 13)) //finds player
+                if (Physics2D.Raycast(transform.position, Vector2.up, 4, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.down, 4, 1 << 13)) //finds player
                 {
                     if (player.transform.position.y > transform.position.y) //checks if up
                     {
@@ -42,7 +42,7 @@ public class DrillburnAI : Enemy
             }
             else
             {
-                if (Physics2D.Raycast(transform.position, Vector2.left, 7, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.right, 7, 1 << 13))
+                if (Physics2D.Raycast(transform.position, Vector2.left, 4, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.right, 4, 1 << 13))
                 {
                     if (player.transform.position.x > transform.position.x) //checks if right
                     {

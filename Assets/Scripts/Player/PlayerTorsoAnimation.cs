@@ -7,7 +7,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
     private Animator an, pan;
     private SpriteRenderer sr, psr;
     string tempName = "", difName = "";
-    private bool shooting = false;
+    private bool shooting = true;
     private float shotAngle = 1;
     direction currDirection = direction.Down, lastDirection = direction.Down;
 

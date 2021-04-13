@@ -46,6 +46,8 @@ MonoBehaviour:
   EnemyPool:
   - {fileID: 7423267083993531864, guid: 7588b11c28e8db64a9d1d07e00795ada, type: 3}
   - {fileID: 1894209512856362138, guid: a2e37f4b5adccf14b9a42c1113c6e383, type: 3}
+  - {fileID: 8935308993322785402, guid: cb4122c29f4a5ac439f4587acde3dee8, type: 3}
+  - {fileID: 2209705079115290208, guid: cbfa5fd3f64d67942864abc35f1b5d3b, type: 3}
   CurrentLevelLogic: {fileID: 0}
   SpawnLocations: []
   spawnBubble: {fileID: 642673432850427630, guid: e90bcd0ede211604188527b57609a71a, type: 3}

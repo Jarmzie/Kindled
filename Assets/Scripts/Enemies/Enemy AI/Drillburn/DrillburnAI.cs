@@ -46,11 +46,11 @@ public class DrillburnAI : Enemy
                 {
                     if (player.transform.position.x > transform.position.x) //checks if right
                     {
-                        StartCoroutine(Charge(DrillDirection.Right));
+                        StartCoroutine(Charge(DrillDirection.Left));
                     }
                     else //else left
                     {
-                        StartCoroutine(Charge(DrillDirection.Left));
+                        StartCoroutine(Charge(DrillDirection.Right));
                     }
                 }
             }

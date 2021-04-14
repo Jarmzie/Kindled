@@ -1,31 +1,7 @@
 fileFormatVersion: 2
-guid: a31e706a8b965f747a541eb370a88890
+guid: dff67bc4643a6d04d90e8ddf4555b265
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 2569184354847569944
-    second: 32xMC_FrontAtkL_0
-  - first:
-      213: -3106881809568194842
-    second: 32xMC_FrontAtkL_1
-  - first:
-      213: 1395900487914426609
-    second: 32xMC_FrontAtkL_2
-  - first:
-      213: 4089697773128545803
-    second: 32xMC_FrontAtkL_3
-  - first:
-      213: -338896548535038667
-    second: 32xMC_FrontAtkL_0
-  - first:
-      213: -1315732409590139342
-    second: 32xMC_FrontAtkL_1
-  - first:
-      213: 7153285537269554956
-    second: 32xMC_FrontAtkL_2
-  - first:
-      213: -1676923361693755453
-    second: 32xMC_FrontAtkL_3
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -65,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -135,91 +111,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: 32xMC_FrontAtkL_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53d86f8726ffb4bf0800000000000000
-      internalID: -338896548535038667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32xMC_FrontAtkL_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 23639e238549dbde0800000000000000
-      internalID: -1315732409590139342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32xMC_FrontAtkL_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0f14e1eb43954360800000000000000
-      internalID: 7153285537269554956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 32xMC_FrontAtkL_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c790b6561f5ab8e0800000000000000
-      internalID: -1676923361693755453
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []

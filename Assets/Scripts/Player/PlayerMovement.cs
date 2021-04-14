@@ -41,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
         velocityY = Input.GetAxis("Vertical");
 
         rb.velocity = new Vector2(velocityX, velocityY) * speed * (1 + (0.1f * upgrades.walkSpeedUpgrade));
-
     }
 
 }

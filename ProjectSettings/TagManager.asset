@@ -66,11 +66,17 @@ TagManager:
   - name: Decor
     uniqueID: 1044312735
     locked: 0
+  - name: BehindOfPlayer
+    uniqueID: 1110701319
+    locked: 0
   - name: Legs
     uniqueID: 1079900103
     locked: 0
   - name: Torso
     uniqueID: 989078945
+    locked: 0
+  - name: FrontOfPlayer
+    uniqueID: 2991404625
     locked: 0
   - name: Default
     uniqueID: 0

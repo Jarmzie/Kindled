@@ -6,7 +6,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
 {
     private Animator an, pan;
     private SpriteRenderer sr, psr;
-    string tempName = "", difName = "";
+    string tempName = "";
     private bool shooting = true;
     private float shotAngle = 1;
     direction currDirection = direction.Down, lastDirection = direction.Down;
@@ -30,13 +30,13 @@ public class PlayerTorsoAnimation : MonoBehaviour
 
     private void Update()
     {
-        if (psr.flipX != sr.flipX && currDirection != direction.Up && currDirection != direction.Down)
-        {
-            sr.flipX = psr.flipX;
-        } else if (currDirection == direction.Up || currDirection == direction.Down)
+        if ((currDirection == direction.Up || currDirection == direction.Down) && psr.flipX)
         {
             sr.flipX = false;
+            psr.flipX = false;
+            transform.parent.GetComponent<PlayerMovement>().facingRight = false;
         }
+
         if (Input.GetMouseButtonDown(0))
         {
             float temp = Mathf.Rad2Deg * Mathf.Atan2((Input.mousePosition.y - Screen.height / 2), (Input.mousePosition.x - Screen.width / 2));
@@ -54,29 +54,36 @@ public class PlayerTorsoAnimation : MonoBehaviour
     {
         an.SetFloat("Angle", shotAngle);
         currDirection = findDirection();
-        if (currDirection != lastDirection && !shooting)
+        if (currDirection != lastDirection)
         {
-            if (currDirection == direction.Down)
+            print(currDirection + " and " + lastDirection);
+            if (!shooting)
             {
-                an.SetTrigger("Down");
+                switch (currDirection)
+                {
+                    case direction.Down:
+                        an.SetTrigger("Down");
+                        break;
+                    case direction.Up:
+                        an.SetTrigger("Up");
+                        break;
+                    case direction.Left:
+                        an.SetTrigger("Side");
+                        break;
+                    case direction.Right:
+                        an.SetTrigger("Right");
+                        break;
+                    case direction.Other:
+                        sr.color = new Vector4(1, 1, 1, 0);
+                        break;
+                }
+                lastDirection = currDirection;
             }
-            else if (currDirection == direction.Up)
+            else
             {
-                an.SetTrigger("Up");
+                ShootAtDirection();
+                lastDirection = currDirection;
             }
-            else if (currDirection == direction.Left || currDirection == direction.Right)
-            {
-                an.SetTrigger("Side");
-            }
-            else if (currDirection == direction.Other)
-            {
-                sr.color = new Vector4(1, 1, 1, 0);
-            }
-            lastDirection = currDirection;
-        } else if (currDirection != lastDirection)
-        {
-            ShootAtDirection();
-            lastDirection = currDirection;
         }
     }
 
@@ -93,7 +100,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
         }
         else if (tempName.Equals("Legs_Side") || tempName.Equals("Legs_Side_Idle"))
         {
-            if (!sr.flipX)
+            if (!psr.flipX)
             {
                 return direction.Left;
             }
@@ -107,29 +114,28 @@ public class PlayerTorsoAnimation : MonoBehaviour
 
     void ShootAtDirection()
     {
+        print("ShootingShot");
         for (int i = 0; i < 5; i++)
         {
             an.SetLayerWeight(i, 0);
         }
-        if (currDirection == direction.Down)
+        switch (currDirection)
         {
-            an.SetLayerWeight(an.GetLayerIndex("ShootingDown"), 1);
-        }
-        else if (currDirection == direction.Up)
-        {
-            an.SetLayerWeight(an.GetLayerIndex("ShootingUp"), 1);
-        }
-        else if (currDirection == direction.Right)
-        {
-            an.SetLayerWeight(an.GetLayerIndex("ShootingRight"), 1);
-        }
-        else if (currDirection == direction.Left)
-        {
-            an.SetLayerWeight(an.GetLayerIndex("ShootingLeft"), 1);
-        }
-        else if (currDirection == direction.Other)
-        {
-            shooting = false;
+            case direction.Down:
+                an.SetLayerWeight(an.GetLayerIndex("ShootingDown"), 1);
+                break;
+            case direction.Up:
+                an.SetLayerWeight(an.GetLayerIndex("ShootingUp"), 1);
+                break;
+            case direction.Left:
+                an.SetLayerWeight(an.GetLayerIndex("ShootingLeft"), 1);
+                break;
+            case direction.Right:
+                an.SetLayerWeight(an.GetLayerIndex("ShootingRight"), 1);
+                break;
+            case direction.Other:
+                shooting = false;
+                break;
         }
     }
 }

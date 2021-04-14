@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: -85176749224732009
     second: Legs_Down_Idle_0
+  - first:
+      213: 8558499437507570775
+    second: Legs_Down_Idle_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,7 +124,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 31
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -130,8 +133,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79a5657a23461def0800000000000000
-      internalID: -85176749224732009
+      spriteID: 75ce40fb4e5e5c670800000000000000
+      internalID: 8558499437507570775
       vertices: []
       indices: 
       edges: []

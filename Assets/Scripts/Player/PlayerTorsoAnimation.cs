@@ -8,8 +8,8 @@ public class PlayerTorsoAnimation : MonoBehaviour
     private SpriteRenderer sr, psr;
     private GameObject lamp;
     string tempName = "";
-    private bool shooting = true;
-    private float shotAngle = 1;
+    public bool shooting = false;
+    public float shotAngle = 1;
     direction currDirection = direction.Down, lastDirection = direction.Down;
 
     enum direction
@@ -37,18 +37,6 @@ public class PlayerTorsoAnimation : MonoBehaviour
             sr.flipX = false;
             psr.flipX = false;
             transform.parent.GetComponent<PlayerMovement>().facingRight = false;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            float temp = Mathf.Rad2Deg * Mathf.Atan2((Input.mousePosition.y - Screen.height / 2), (Input.mousePosition.x - Screen.width / 2));
-            if (temp < 0)
-            {
-                temp = 360 + temp;
-            }
-            print(temp);
-            shotAngle = temp;
-            ShootAtDirection();
         }
     }
 
@@ -115,7 +103,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
         return direction.Other;
     }
 
-    void ShootAtDirection()
+    public void ShootAtDirection()
     {
         for (int i = 0; i < 5; i++)
         {

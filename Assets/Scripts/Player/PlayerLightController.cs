@@ -21,4 +21,14 @@ public class PlayerLightController : MonoBehaviour
         ThisLittleLightOfMine.pointLightInnerRadius = (maxLightRadius / 4) - ((1 - barPercent) * Mathf.Pow(maxLightRadius / 4, -1 * ((barPercent * falloff) - 1)));
         ThisLittleLightOfMine.pointLightOuterRadius = maxLightRadius - ((1 - barPercent) * Mathf.Pow(maxLightRadius, -1 * ((barPercent * falloff) - 1)));
     }
+
+    public void TurnOnBrights()
+    {
+        ThisLittleLightOfMine.lightType = Light2D.LightType.Global;
+    }
+
+    public void TurnOffBrights()
+    {
+        ThisLittleLightOfMine.lightType = Light2D.LightType.Point;
+    }
 }

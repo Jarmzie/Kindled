@@ -33,6 +33,9 @@ public class PlayerTorsoAnimation : MonoBehaviour
         if (psr.flipX != sr.flipX && currDirection != direction.Up && currDirection != direction.Down)
         {
             sr.flipX = psr.flipX;
+        } else if (currDirection == direction.Up || currDirection == direction.Down)
+        {
+            sr.flipX = false;
         }
         if (Input.GetMouseButtonDown(0))
         {

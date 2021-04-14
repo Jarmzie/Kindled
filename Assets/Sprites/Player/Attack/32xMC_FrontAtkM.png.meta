@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 7022589418616020867
     second: MC_FrontAtkM_3
+  - first:
+      213: 1251441891452058288
+    second: 32xMC_FrontAtkM_0
+  - first:
+      213: -7443424999219106996
+    second: 32xMC_FrontAtkM_1
+  - first:
+      213: 1346237448687741289
+    second: 32xMC_FrontAtkM_2
+  - first:
+      213: -6958476219383045309
+    second: 32xMC_FrontAtkM_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,12 +137,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MC_FrontAtkM_0
+      name: 32xMC_FrontAtkM_0
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 32
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,19 +151,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 729a038060cf7b870800000000000000
-      internalID: 8698698308126812455
+      spriteID: 0bafa0515c30e5110800000000000000
+      internalID: 1251441891452058288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_FrontAtkM_1
+      name: 32xMC_FrontAtkM_1
       rect:
         serializedVersion: 2
         x: 32
         y: 32
-        width: 32
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,19 +172,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77ee0f465968a51e0800000000000000
-      internalID: -2208304691070046601
+      spriteID: c4b68417664a3b890800000000000000
+      internalID: -7443424999219106996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_FrontAtkM_2
+      name: 32xMC_FrontAtkM_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,19 +193,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe4e0aa023b09d860800000000000000
-      internalID: 7555082159445304559
+      spriteID: 9696c50b3dbcea210800000000000000
+      internalID: 1346237448687741289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MC_FrontAtkM_3
+      name: 32xMC_FrontAtkM_3
       rect:
         serializedVersion: 2
         x: 32
         y: 0
-        width: 32
+        width: 31
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,8 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38f56047edf357160800000000000000
-      internalID: 7022589418616020867
+      spriteID: 343abadfeb68e6f90800000000000000
+      internalID: -6958476219383045309
       vertices: []
       indices: 
       edges: []

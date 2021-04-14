@@ -32,10 +32,12 @@ public class DrillburnAI : Enemy
                 {
                     if (player.transform.position.y > transform.position.y) //checks if up
                     {
+                        an.SetTrigger("SprintDown");
                         StartCoroutine(Charge(DrillDirection.Up));
                     } 
                     else //else down
                     {
+                        an.SetTrigger("SprintUp");
                         StartCoroutine(Charge(DrillDirection.Down));
                     }
                 }
@@ -46,10 +48,12 @@ public class DrillburnAI : Enemy
                 {
                     if (player.transform.position.x > transform.position.x) //checks if right
                     {
+                        an.SetTrigger("SprintRight");
                         StartCoroutine(Charge(DrillDirection.Left));
                     }
                     else //else left
                     {
+                        an.SetTrigger("SprintLeft");
                         StartCoroutine(Charge(DrillDirection.Right));
                     }
                 }
@@ -69,8 +73,7 @@ public class DrillburnAI : Enemy
         rb.velocity = Vector2.zero;
         horizontal = !horizontal;
         charging = true;
-        //Get mad
-        yield return new WaitForSeconds(1); //mad animation wait
+        yield return new WaitForSeconds(1);
         switch (chaseDirection)
         {
             case DrillDirection.Up:

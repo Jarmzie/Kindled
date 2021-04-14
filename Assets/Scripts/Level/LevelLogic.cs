@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class LevelLogic : MonoBehaviour
 {
@@ -26,7 +27,10 @@ public class LevelLogic : MonoBehaviour
     {
         player.GetComponent<PlayerOilController>().inDark = false;
         player.GetComponent<PlayerOilController>().GainOilAmount(50);
-        //Make player stop losing oil
+        foreach (GameObject torch in GameObject.FindGameObjectsWithTag("WallTorch"))
+        {
+            torch.GetComponent<WallTorch>().LetThereBeLight();
+        }
         exit.GetComponent<Door>().Open();
     }
 
@@ -43,17 +47,14 @@ public class LevelLogic : MonoBehaviour
 
     public void NewRoom()
     {
-        print("Level: " + currLevel + " InRoom?: " + inUpgradeRoom);
         if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom)
         {
-            print("To Upgrade Room!");
             inUpgradeRoom = true;
             StartCoroutine(NewUpgradeRoom());
             return;
         } else if (inUpgradeRoom) {
             inUpgradeRoom = false;
         }
-        print("To Random Room!");
         StartCoroutine(NewRandomRoom());
     }
 

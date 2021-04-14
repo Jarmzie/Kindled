@@ -6,6 +6,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
 {
     private Animator an, pan;
     private SpriteRenderer sr, psr;
+    private GameObject lamp;
     string tempName = "";
     private bool shooting = true;
     private float shotAngle = 1;
@@ -26,6 +27,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
         pan = transform.parent.GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         psr = transform.parent.GetComponent<SpriteRenderer>();
+        lamp = transform.Find("Lantern").gameObject;
     }
 
     private void Update()
@@ -54,6 +56,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
     {
         an.SetFloat("Angle", shotAngle);
         currDirection = findDirection();
+        lamp.GetComponent<LayerController>().CheckAndSet();
         if (currDirection != lastDirection)
         {
             print(currDirection + " and " + lastDirection);
@@ -114,7 +117,6 @@ public class PlayerTorsoAnimation : MonoBehaviour
 
     void ShootAtDirection()
     {
-        print("ShootingShot");
         for (int i = 0; i < 5; i++)
         {
             an.SetLayerWeight(i, 0);

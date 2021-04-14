@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 252c8484af70e9c43844bdda1519985b
+guid: e64ead273f020ab44a431e538cab3e76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6306338132282489224
-    second: EvenTinyLamps_0
+      213: -1387707800346799547
+    second: Recolored Tinylamps_0
   - first:
-      213: -7450382027193387391
-    second: EvenTinyLamps_1
+      213: 6814823235903221269
+    second: Recolored Tinylamps_1
   - first:
-      213: -7155556088208275709
-    second: EvenTinyLamps_2
+      213: 6894908819276517589
+    second: Recolored Tinylamps_2
   - first:
-      213: -3147146144563965212
-    second: EvenTinyLamps_3
+      213: 7954770739803869265
+    second: Recolored Tinylamps_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,7 +125,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EvenTinyLamps_0
+      name: Recolored Tinylamps_0
       rect:
         serializedVersion: 2
         x: 0
@@ -139,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8764dcf81e26b78a0800000000000000
-      internalID: -6306338132282489224
+      spriteID: 5425a44ab1fddbce0800000000000000
+      internalID: -1387707800346799547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EvenTinyLamps_1
+      name: Recolored Tinylamps_1
       rect:
         serializedVersion: 2
         x: 16
@@ -154,20 +154,20 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 9
-      pivot: {x: 0.46738422, y: 0.68532574}
+      pivot: {x: 0.5, y: 0.6875}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 186fe24250dea9890800000000000000
-      internalID: -7450382027193387391
+      spriteID: 51ee61760ad139e50800000000000000
+      internalID: 6814823235903221269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EvenTinyLamps_2
+      name: Recolored Tinylamps_2
       rect:
         serializedVersion: 2
         x: 0
@@ -181,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30746f746ab52bc90800000000000000
-      internalID: -7155556088208275709
+      spriteID: 5d05fa35a03afaf50800000000000000
+      internalID: 6894908819276517589
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EvenTinyLamps_3
+      name: Recolored Tinylamps_3
       rect:
         serializedVersion: 2
         x: 16
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e2560d71471354d0800000000000000
-      internalID: -3147146144563965212
+      spriteID: 1505ea777d5056e60800000000000000
+      internalID: 7954770739803869265
       vertices: []
       indices: 
       edges: []

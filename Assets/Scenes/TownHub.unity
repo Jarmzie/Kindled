@@ -5027,6 +5027,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (Legs)
       objectReference: {fileID: 0}
+    - target: {fileID: 7587840637013106024, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 336
+      objectReference: {fileID: 0}
+    - target: {fileID: 7587840637013106024, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 214
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
 --- !u!4 &1412571702 stripped

@@ -55,7 +55,10 @@ public class Enemy : MonoBehaviour
     public void DieLOL()
     {
         player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth * 1.3));
-        rb.velocity = Vector3.zero;
+        if (rb.bodyType != RigidbodyType2D.Static)
+        {
+            rb.velocity = Vector3.zero;
+        }
         transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
         an.SetTrigger("Destroy");
     }

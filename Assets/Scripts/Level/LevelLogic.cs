@@ -105,4 +105,20 @@ public class LevelLogic : MonoBehaviour
         player.GetComponent<PlayerMovement>().enabled = true;
         yield return null;
     }
+
+    public void StartDeathCoroutine(GameObject player)
+    {
+        StartCoroutine(RestartForDeath(player));
+    }
+
+    public IEnumerator RestartForDeath(GameObject player)
+    {
+        yield return new WaitForSeconds(3f);
+        transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
+        yield return new WaitForSeconds(1.5f);
+        Destroy(player);
+        SceneManager.LoadScene("TownHub");
+        Destroy(gameObject);
+        yield return null;
+    }
 }

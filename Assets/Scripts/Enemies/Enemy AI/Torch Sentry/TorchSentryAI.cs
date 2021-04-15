@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TorchSentryAI : Enemy
 {
-    void Start()
+    void Awake()
     {
         health = 30;
         cost = 2;

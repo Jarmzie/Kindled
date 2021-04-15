@@ -94,10 +94,11 @@ public class PlayerDeath : MonoBehaviour
     public void PlayerDie()
     {
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        torso.GetComponent<Collider2D>().enabled = false;
+        Destroy(torso);
+        GetComponent<PlayerLightController>().enabled = false;
         GetComponent<PlayerMovement>().enabled = false;
         GetComponent<PlayerAnimation>().enabled = false;
         GetComponent<Animator>().SetTrigger("Death");
-        print("Player would've died here");
+        GameObject.FindGameObjectWithTag("LevelLogic").GetComponent<LevelLogic>().StartDeathCoroutine(gameObject);
     }
 }

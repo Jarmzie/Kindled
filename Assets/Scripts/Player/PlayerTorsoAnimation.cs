@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerTorsoAnimation : MonoBehaviour
 {
-    private Animator an, pan;
+    public Animator an, pan;
     private SpriteRenderer sr, psr;
     private GameObject lamp;
     string tempName = "";
@@ -47,7 +47,6 @@ public class PlayerTorsoAnimation : MonoBehaviour
         lamp.GetComponent<LayerController>().CheckAndSet();
         if (currDirection != lastDirection)
         {
-            print(currDirection + " and " + lastDirection);
             if (!shooting)
             {
                 switch (currDirection)

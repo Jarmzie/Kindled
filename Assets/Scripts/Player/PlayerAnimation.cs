@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerAnimation : MonoBehaviour
 {
@@ -8,9 +9,10 @@ public class PlayerAnimation : MonoBehaviour
     float velocityX = 0.0f, velocityY = 0.0f;
     private bool buttonsDown = false, horZero = true;
 
-    void Start()
+    void Awake()
     {
         an = GetComponent<Animator>();
+        transform.Find("Canvas").transform.Find("Image").GetComponent<Image>().GetComponent<Animator>().SetTrigger("ExitBlack");
     }
 
     // Update is called once per frame

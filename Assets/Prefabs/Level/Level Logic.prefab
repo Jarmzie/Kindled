@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 4290429667701809823}
   m_Layer: 0
   m_Name: Level Logic
-  m_TagString: Untagged
+  m_TagString: LevelLogic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySpawn: {fileID: 7759903624803691349, guid: 08ef1ec27726c47429de4c47e5e50d35, type: 3}
+  player: {fileID: 0}
   currSpawnLocations: []
   exit: {fileID: 0}
   entrance: {fileID: 0}
   currLevel: 0
+  roomsPerUpgrade: 3

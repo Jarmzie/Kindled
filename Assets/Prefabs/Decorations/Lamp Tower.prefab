@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 8843380891889903849}
   - component: {fileID: 8810831767675395065}
   - component: {fileID: -1327967039975045828}
-  m_Layer: 15
+  m_Layer: 0
   m_Name: Lamp Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

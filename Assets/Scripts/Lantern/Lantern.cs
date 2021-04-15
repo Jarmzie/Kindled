@@ -44,6 +44,7 @@ public class Lantern : MonoBehaviour
             yield break;
         }
         shooting = true;
+        torso.shooting = false;
         float temp = Mathf.Rad2Deg * Mathf.Atan2((Input.mousePosition.y - Screen.height / 2), (Input.mousePosition.x - Screen.width / 2));
         if (temp < 0)
         {
@@ -51,14 +52,20 @@ public class Lantern : MonoBehaviour
         }
         torso.shotAngle = temp;
         torso.ShootAtDirection();
-        GameObject shotProjectile = ShootTheWayIWantYouToo();
+        GameObject shotProjectile = ShootTheWayIWantYouTo();
         oil.LoseOilAmount(shotProjectile.GetComponent<Projectile>().GetDamage());
         yield return new WaitForSeconds(shotSpeed);
+        for (int i = 0; i < 5; i++) // this is dumb but so is Unity so what can i say ¯\_(ツ)_/¯
+        {
+            torso.an.SetLayerWeight(i, 0);
+        }
+        torso.an.SetLayerWeight(0, 1);
+        torso.shooting = false;
         shooting = false;
         yield return null;
     }
 
-    public virtual GameObject ShootTheWayIWantYouToo()
+    public virtual GameObject ShootTheWayIWantYouTo()
     {
         Vector2 delta = new Vector2(Input.mousePosition.y - Screen.height / 2, Input.mousePosition.x - Screen.width / 2);
         float theta = Mathf.Atan2(delta.x, delta.y);

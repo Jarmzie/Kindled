@@ -56,6 +56,7 @@ public class FlyingLanternAI : Enemy
 
     private IEnumerator ShootProjectile(Vector3 playerPos, GameObject proj)
     {
+        FindObjectOfType<AudioManager>().Plays("BatShoot");
         an.SetTrigger("WingsDown");
         yield return new WaitForSeconds(0.5f);
         an.SetTrigger("Idle");
@@ -88,4 +89,5 @@ public class FlyingLanternAI : Enemy
         rb.velocity = Vector2.zero;
         yield return null;
     }
+    
 }

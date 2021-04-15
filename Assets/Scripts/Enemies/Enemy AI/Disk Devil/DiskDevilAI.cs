@@ -26,6 +26,7 @@ public class DiskDevilAI : Enemy
         {
             StartCoroutine(Readjust());
         }
+        DeathSound();
     }
 
     //Resets the angle the Devil is moving at with a cool animation to make it look nicer
@@ -60,6 +61,7 @@ public class DiskDevilAI : Enemy
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        FindObjectOfType<AudioManager>().Plays("WheelBounce");
         sr.flipX = !sr.flipX;
         if (blinking)
         {
@@ -77,6 +79,14 @@ public class DiskDevilAI : Enemy
         {
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             sr.color = new Vector4(Random.Range(0.0f,1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), 1);
+        }
+    }
+
+    void DeathSound()
+    {
+        if (health == 0)
+        {
+            FindObjectOfType<AudioManager>().Plays("WheelDeath");
         }
     }
 }

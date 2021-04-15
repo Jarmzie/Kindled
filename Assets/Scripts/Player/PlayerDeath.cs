@@ -30,6 +30,7 @@ public class PlayerDeath : MonoBehaviour
 
     IEnumerator TakeDamage (int damage)
     {
+        FindObjectOfType<AudioManager>().Plays("PlayerHurt");
         //Check for hitstun
         if (inHitStun)
         {
@@ -42,6 +43,9 @@ public class PlayerDeath : MonoBehaviour
         UpdateBlood();
         if (playerHealth == 0)
         {
+            FindObjectOfType<AudioManager>().Stop("CaveMusic");
+            //FindObjectOfType<AudioManager>().Stop("RuinsMusic");
+            FindObjectOfType<AudioManager>().Plays("DeathMusic");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             PlayerDie();
             yield break;
@@ -93,6 +97,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void PlayerDie()
     {
+        FindObjectOfType<AudioManager>().Plays("PlayerDeath");
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         Destroy(torso);
         GetComponent<PlayerLightController>().enabled = false;

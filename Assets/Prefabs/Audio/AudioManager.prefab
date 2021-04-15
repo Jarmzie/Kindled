@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5092201753413484970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5092201753413484968}
+  - component: {fileID: 5092201753413484969}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5092201753413484968
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092201753413484970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5092201753413484969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092201753413484970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dca7f2e8718041245ae409912905b6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: PlayerWalk
+    clip: {fileID: 8300000, guid: 0b94476e485a6f2479bbb687d7b4bab4, type: 3}
+    volume: 0
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: BatShoot
+    clip: {fileID: 8300000, guid: 6838e17f1b9c3b246964e14ff1258137, type: 3}
+    volume: 0.148
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerDeath
+    clip: {fileID: 8300000, guid: 109ed9635f33c464fa11e8e41cdfc241, type: 3}
+    volume: 0.237
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: PlayerHurt
+    clip: {fileID: 8300000, guid: e7532731d09e00b4b855c901d8715f51, type: 3}
+    volume: 0.168
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: WheelBounce
+    clip: {fileID: 8300000, guid: 6de49691272b5304b90adb2efe8068fb, type: 3}
+    volume: 0.056
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: WheelDeath
+    clip: {fileID: 8300000, guid: 06e67a87bb6627d41aa877e8b651726e, type: 3}
+    volume: 0.056
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: DoorOpen
+    clip: {fileID: 8300000, guid: c258f7001d014904fbf5060462506ed4, type: 3}
+    volume: 0.056
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: EnterDungeon
+    clip: {fileID: 8300000, guid: e6747d519b43e17419e924406610354a, type: 3}
+    volume: 0.139
+    pitch: 1.32
+    loop: 0
+    source: {fileID: 0}
+  - name: TownHubMusic
+    clip: {fileID: 8300000, guid: 5a4b8368b44cd4a4e8d5ef7fe36516fb, type: 3}
+    volume: 0.101
+    pitch: 1.32
+    loop: 1
+    source: {fileID: 0}
+  - name: DeathMusic
+    clip: {fileID: 8300000, guid: 950f69267d67b0b4cabe22ea9173fe98, type: 3}
+    volume: 0.101
+    pitch: 1.32
+    loop: 1
+    source: {fileID: 0}
+  - name: CaveMusic
+    clip: {fileID: 8300000, guid: 28046aae0aa0cd648ae8c4cc6ce8d1cb, type: 3}
+    volume: 0.101
+    pitch: 1.32
+    loop: 1
+    source: {fileID: 0}

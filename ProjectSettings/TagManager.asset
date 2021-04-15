@@ -54,6 +54,9 @@ TagManager:
   - 
   - Bad Boy Corner
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4104568057
+    locked: 0
   - name: Floor
     uniqueID: 2776146045
     locked: 0

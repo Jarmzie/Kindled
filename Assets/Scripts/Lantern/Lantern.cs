@@ -9,12 +9,15 @@ public class Lantern : MonoBehaviour
     [SerializeField]
     GameObject myProjectile;
     PlayerTorsoAnimation torso;
+    PlayerOilController oil;
     bool shooting = false;
+    float shotSpeed = 1;
 
     private void Awake()
     {
         GetComponent<SpriteRenderer>().sprite = mySprite;
         torso = transform.parent.gameObject.GetComponent<PlayerTorsoAnimation>();
+        oil = transform.parent.gameObject.GetComponent<PlayerOilController>();
     }
 
     private void Update()
@@ -44,7 +47,8 @@ public class Lantern : MonoBehaviour
         Vector2 shootDirection = new Vector2(Mathf.Cos(theta), Mathf.Sin(theta)).normalized;
         GameObject shotProjectile = Instantiate(myProjectile, transform.position, Quaternion.identity);
         shotProjectile.GetComponent<Rigidbody2D>().velocity = shootDirection * shotProjectile.GetComponent<Projectile>().speed;
-        yield return new WaitForSeconds(1);
+        oil.LoseOilAmount(shotProjectile.GetComponent<Projectile>().GetDamage());
+        yield return new WaitForSeconds(shotSpeed);
         shooting = false;
         yield return null;
     }

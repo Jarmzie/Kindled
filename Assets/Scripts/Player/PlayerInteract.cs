@@ -26,8 +26,11 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        contWriteText = true;
-        StartCoroutine(WriteText(collision.GetComponent<Interactable>().InteractMessage));
+        if (collision.CompareTag("UpgradeInteract"))
+        {
+            contWriteText = true;
+            StartCoroutine(WriteText(collision.GetComponent<Interactable>().InteractMessage));
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

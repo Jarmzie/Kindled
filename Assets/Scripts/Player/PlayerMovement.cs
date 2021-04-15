@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sr;
     private PlayerUpgradeController upgrades;
     public float velocityX = 0.0f, velocityY = 0.0f;
+    
 
     void Start()
     {
@@ -18,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         upgrades = GetComponent<PlayerUpgradeController>();
+       
+        
     }
 
     void Update()
@@ -27,6 +30,17 @@ public class PlayerMovement : MonoBehaviour
             sr.flipX = !sr.flipX;
             facingRight = !facingRight;
         }
+
+       if(Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){
+            FindObjectOfType<AudioManager>().Plays("PlayerWalk");
+        }else if(!Input.GetButtonDown("Horizontal") && (!Input.GetButtonDown("Vertical")))
+        {
+            FindObjectOfType<AudioManager>().Stop("PlayerWalk");
+        }
+           
+       
+        
+        
 
         //THIS IS JUST FOR TESTING, DELETE BEFORE FINAL BUILD!!!
         if (Input.GetKey("escape"))
@@ -38,7 +52,9 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         velocityX = Input.GetAxis("Horizontal");
+        
         velocityY = Input.GetAxis("Vertical");
+        
 
         rb.velocity = new Vector2(velocityX, velocityY) * speed * (1 + (0.1f * upgrades.walkSpeedUpgrade));
     }

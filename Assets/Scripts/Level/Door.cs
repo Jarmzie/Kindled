@@ -17,11 +17,13 @@ public class Door : MonoBehaviour
 
     public void Close()
     {
+        FindObjectOfType<AudioManager>().Plays("DoorOpen");
         an.SetTrigger("Close");
     }
 
     public void Open()
     {
+        FindObjectOfType<AudioManager>().Plays("DoorOpen");
         an.SetTrigger("Open");
         Destroy(rb);
         Destroy(col);

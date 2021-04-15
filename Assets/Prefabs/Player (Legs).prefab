@@ -541,6 +541,7 @@ GameObject:
   - component: {fileID: 7796109086743711884}
   - component: {fileID: 2177068535079807624}
   - component: {fileID: 9041300757729102306}
+  - component: {fileID: 1591931577360825913}
   m_Layer: 13
   m_Name: Player (Legs)
   m_TagString: PlayerLegs
@@ -817,6 +818,18 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!114 &1591931577360825913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7112227092621971147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e653d5ee7b5f09243851450de3dbf3d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7576252284474058204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,11 +1157,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e77243cbf68bc0b48a2167114a54acc4, type: 3}
---- !u!224 &2835047054608390378 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6687289809569053796, guid: e77243cbf68bc0b48a2167114a54acc4, type: 3}
-  m_PrefabInstance: {fileID: 8905334863251416206}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2835047055687385228 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6687289810647983106, guid: e77243cbf68bc0b48a2167114a54acc4, type: 3}
@@ -1160,3 +1168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36623601dbd34714db82d46249f64678, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &2835047054608390378 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6687289809569053796, guid: e77243cbf68bc0b48a2167114a54acc4, type: 3}
+  m_PrefabInstance: {fileID: 8905334863251416206}
+  m_PrefabAsset: {fileID: 0}

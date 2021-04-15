@@ -48,7 +48,10 @@ public class PlayerDeath : MonoBehaviour
             FindObjectOfType<AudioManager>().Plays("DeathMusic");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             PlayerDie();
+            yield return new WaitForSeconds(4);
+            FindObjectOfType<AudioManager>().Plays("TownHubMusic");
             yield break;
+            
         }
         timeAtHealthChange = Time.timeSinceLevelLoad;
 

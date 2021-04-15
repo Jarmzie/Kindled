@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("TownHub");
         FindObjectOfType<AudioManager>().Stop("MainMenuMusic");
+        FindObjectOfType<AudioManager>().Plays("TownHubMusic");
     }
     
 }

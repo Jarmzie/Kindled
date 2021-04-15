@@ -7,7 +7,7 @@ public class PlayerInteract : MonoBehaviour
 {
     [SerializeField]
     public Text DisplayText;
-    bool contWriteText = false;
+    public bool contWriteText = false;
 
     private void Update()
     {

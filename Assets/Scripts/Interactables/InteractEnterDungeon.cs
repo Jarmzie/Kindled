@@ -13,6 +13,7 @@ public class InteractEnterDungeon : Interactable
 
     public override IEnumerator OnInteract()
     {
+        GameObject.FindGameObjectWithTag("PlayerLegs").transform.Find("InteractSelector").GetComponent<PlayerInteract>().contWriteText = false;
         GameObject.FindGameObjectWithTag("PlayerLegs").transform.Find("InteractSelector").GetComponent<PlayerInteract>().DisplayText.text = "";
         FindObjectOfType<AudioManager>().Stop("TownHubMusic");
         FindObjectOfType<AudioManager>().Plays("EnterDungeon");

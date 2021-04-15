@@ -5440,6 +5440,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6757859330013174172, guid: bff4a456c02d3db4287da910c9652089, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6757859330013174173, guid: bff4a456c02d3db4287da910c9652089, type: 3}
       propertyPath: m_Name
       value: BigBarrel (1)

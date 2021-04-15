@@ -99,14 +99,14 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: DeathMusic
-    clip: {fileID: 8300000, guid: 950f69267d67b0b4cabe22ea9173fe98, type: 3}
+    clip: {fileID: 8300000, guid: 845cb1f25d20c7c4b848e067a30af165, type: 3}
     volume: 0.101
     pitch: 1.32
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: CaveMusic
     clip: {fileID: 8300000, guid: 28046aae0aa0cd648ae8c4cc6ce8d1cb, type: 3}
     volume: 0.101
-    pitch: 1.32
+    pitch: 1
     loop: 1
     source: {fileID: 0}

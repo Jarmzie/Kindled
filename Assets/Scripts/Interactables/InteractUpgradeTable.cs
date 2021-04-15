@@ -66,6 +66,7 @@ public class InteractUpgradeTable : Interactable
         {
             Destroy(table);
         }
+        GameObject.FindGameObjectWithTag("LevelLogic").GetComponent<LevelLogic>().RoomFinished();
         yield return null;
     }
 }

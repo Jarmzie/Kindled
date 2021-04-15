@@ -21,6 +21,7 @@ TagManager:
   - UpgradeInteract
   - WallTorch
   - LevelLogic
+  - EnterDungeonInteract
   layers:
   - Default
   - TransparentFX

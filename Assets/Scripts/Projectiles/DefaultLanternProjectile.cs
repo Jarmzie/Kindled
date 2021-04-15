@@ -6,6 +6,6 @@ public class DefaultLanternProjectile : Projectile
 {
     void Awake()
     {
-        GeneralSetUp(4.0f, 5, 5, 5.0f);
+        GeneralSetUp(6.0f, 5, 5, 5.0f);
     }
 }

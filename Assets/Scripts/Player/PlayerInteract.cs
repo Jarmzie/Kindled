@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField]
-    Text DisplayText;
+    public Text DisplayText;
     bool contWriteText = false;
 
     private void Update()
@@ -26,7 +26,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("UpgradeInteract"))
+        if (collision.CompareTag("UpgradeInteract") || collision.CompareTag("EnterDungeonInteract"))
         {
             contWriteText = true;
             StartCoroutine(WriteText(collision.GetComponent<Interactable>().InteractMessage));

@@ -16,7 +16,7 @@ public class DrillburnAI : Enemy
 
     void Awake()
     {
-        health = 60;
+        health = 35;
         cost = 4;
         GeneralSetUp();
         rb.velocity = new Vector2(2, 0); //probably randomize this

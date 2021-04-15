@@ -26,7 +26,10 @@ public class LevelLogic : MonoBehaviour
     public void RoomFinished()
     {
         player.GetComponent<PlayerOilController>().inDark = false;
-        player.GetComponent<PlayerOilController>().GainOilAmount(50);
+        if (!inUpgradeRoom)
+        {
+            player.GetComponent<PlayerOilController>().GainOilAmount(50);
+        }
         foreach (GameObject torch in GameObject.FindGameObjectsWithTag("WallTorch"))
         {
             torch.GetComponent<WallTorch>().LetThereBeLight();

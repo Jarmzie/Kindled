@@ -747,7 +747,7 @@ MonoBehaviour:
   maxOil: 200
   currOil: 0
   OilBar: {fileID: 2835047055687385228}
-  inDark: 1
+  inDark: 0
   notDying: 1
 --- !u!114 &7796109086743711884
 MonoBehaviour:

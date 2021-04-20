@@ -16,10 +16,10 @@ public class LayerController : MonoBehaviour
     {
         if (front)
         {
-            sr.sortingLayerName = "FrontOfPlayer";
+            sr.sortingLayerName = "FrontForLantern";
         } else
         {
-            sr.sortingLayerName = "BehindOfPlayer";
+            sr.sortingLayerName = "BackForLantern";
         }
     }
 }

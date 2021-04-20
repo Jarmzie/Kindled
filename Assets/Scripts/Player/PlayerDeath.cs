@@ -43,9 +43,6 @@ public class PlayerDeath : MonoBehaviour
         UpdateBlood();
         if (playerHealth == 0)
         {
-            FindObjectOfType<AudioManager>().Stop("CaveMusic");
-            //FindObjectOfType<AudioManager>().Stop("RuinsMusic");
-            FindObjectOfType<AudioManager>().Plays("DeathMusic");
             gameObject.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
             PlayerDie();
             yield return new WaitForSeconds(4);
@@ -100,6 +97,9 @@ public class PlayerDeath : MonoBehaviour
 
     public void PlayerDie()
     {
+        FindObjectOfType<AudioManager>().Stop("CaveMusic");
+        //FindObjectOfType<AudioManager>().Stop("RuinsMusic");
+        FindObjectOfType<AudioManager>().Plays("DeathMusic");
         FindObjectOfType<AudioManager>().Plays("PlayerDeath");
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         Destroy(torso);

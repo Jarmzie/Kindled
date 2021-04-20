@@ -25,7 +25,10 @@ public class Lantern : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            StartCoroutine(ShootYourShot());
+            if (!oil.inDark)
+            {
+                StartCoroutine(ShootYourShot());
+            }
         }
     }
 

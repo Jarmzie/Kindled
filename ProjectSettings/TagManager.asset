@@ -22,6 +22,8 @@ TagManager:
   - WallTorch
   - LevelLogic
   - EnterDungeonInteract
+  - ShopInteract
+  - HubStateManager
   layers:
   - Default
   - TransparentFX
@@ -71,6 +73,9 @@ TagManager:
   - name: Decor
     uniqueID: 1044312735
     locked: 0
+  - name: LitDecor
+    uniqueID: 560418885
+    locked: 0
   - name: BehindOfPlayer
     uniqueID: 1110701319
     locked: 0
@@ -88,6 +93,9 @@ TagManager:
     locked: 0
   - name: FrontOfPlayer
     uniqueID: 2991404625
+    locked: 0
+  - name: LitFrontOfPlayer
+    uniqueID: 2628864999
     locked: 0
   - name: Default
     uniqueID: 0

@@ -14,6 +14,7 @@ public class LevelLogic : MonoBehaviour
     private GameObject levelTransition;
     public int currLevel = 0, roomsPerUpgrade = 3;
     private bool inUpgradeRoom = false;
+    public HubStateManager hub;
 
     void Awake()
     {
@@ -21,6 +22,13 @@ public class LevelLogic : MonoBehaviour
         transitionImage = player.transform.Find("Canvas").transform.Find("Image").GetComponent<Image>();
         levelTransition = transform.Find("ExitTrigger").gameObject;
         DontDestroyOnLoad(this.gameObject);
+
+        //Update hub manager
+        hub = GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>();
+        if (hub.myState == HubStateManager.ShopState.FirstLoad)
+        {
+            hub.myState = HubStateManager.ShopState.SecondLoad;
+        }
     }
 
     public void RoomFinished()

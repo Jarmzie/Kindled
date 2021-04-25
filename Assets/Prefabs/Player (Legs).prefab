@@ -823,7 +823,7 @@ MonoBehaviour:
   maxOil: 200
   currOil: 0
   OilBar: {fileID: 4116261144887693523}
-  inDark: 1
+  inDark: 0
   notDying: 1
 --- !u!114 &7796109086743711884
 MonoBehaviour:
@@ -1499,7 +1499,7 @@ PrefabInstance:
       objectReference: {fileID: 2492168934346225574}
     - target: {fileID: 6687289809569053819, guid: e77243cbf68bc0b48a2167114a54acc4, type: 3}
       propertyPath: m_PixelPerfect
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6687289809572610868, guid: e77243cbf68bc0b48a2167114a54acc4, type: 3}
       propertyPath: m_AnchorMax.x

@@ -12,9 +12,7 @@ public class Dialogue : MonoBehaviour
     Coroutine lastRoutine;
     GameObject creator;
     string endCallback = "", dName = "";
-
-    [SerializeField]
-    GameObject DialoguePrefab;
+    float textTime = 0.03f;
 
     public void RunDialogue(string name_, string[] ListOStrings)
     {
@@ -84,7 +82,7 @@ public class Dialogue : MonoBehaviour
         for (int i = 0; i < message.Length + 1; i++)
         {
             myText.text = dName + message.Substring(0, i);
-            yield return new WaitForSeconds(0.03f);
+            yield return new WaitForSeconds(textTime);
         }
         writing = false;
         yield return null;

@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class DrillburnAI : Enemy
 {
     private bool horizontal = true, charging = false;
+    private Light2D myLight;
 
     private enum DrillDirection
     {
@@ -18,6 +20,7 @@ public class DrillburnAI : Enemy
     {
         health = 35;
         cost = 4;
+        myLight = GetComponent<Light2D>();
         GeneralSetUp();
         rb.velocity = new Vector2(2, 0); //probably randomize this
     }
@@ -73,7 +76,9 @@ public class DrillburnAI : Enemy
         rb.velocity = Vector2.zero;
         horizontal = !horizontal;
         charging = true;
-        yield return new WaitForSeconds(1);
+        myLight.pointLightInnerRadius = 0.25f;
+        myLight.pointLightOuterRadius = 1.25f;
+        yield return new WaitForSeconds(1.5f);
         switch (chaseDirection)
         {
             case DrillDirection.Up:
@@ -88,8 +93,11 @@ public class DrillburnAI : Enemy
         yield return new WaitForSeconds(5);
         Vector2 tempHold = rb.velocity.normalized;
         rb.velocity = Vector2.zero;
-        //an.SetTrigger("FoundLifesManager"); //tired animation to normal animation
-        yield return new WaitForSeconds(1); //tired animation wait
+        myLight.pointLightInnerRadius = 0;
+        myLight.pointLightOuterRadius = 0;
+        an.SetTrigger("TireOut"); //tired animation to normal animation
+        yield return new WaitForSeconds(3); //tired animation wait
+        an.SetTrigger("TireOut");
         rb.velocity = tempHold * 2;
         charging = false;
         yield return null;

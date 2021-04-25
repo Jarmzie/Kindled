@@ -84,11 +84,11 @@ public class PlayerDeath : MonoBehaviour
     {
         if (playerHealth == 2)
         {
-            bvsr.color = new Vector4(1, 1, 1, 0.33f);
+            bvsr.color = new Vector4(1, 1, 1, 0.15f);
         }
         else if (playerHealth == 1)
         {
-            bvsr.color = new Vector4(1, 1, 1, 0.66f);
+            bvsr.color = new Vector4(1, 1, 1, 0.33f);
         } else
         {
             bvsr.color = new Vector4(1, 1, 1, 0);

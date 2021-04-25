@@ -7,6 +7,7 @@ public class DrillburnAI : Enemy
 {
     private bool horizontal = true, charging = false;
     private Light2D myLight;
+    private const float VIEW_DIST = 1.25f;
 
     private enum DrillDirection
     {
@@ -18,7 +19,7 @@ public class DrillburnAI : Enemy
 
     void Awake()
     {
-        health = 35;
+        health = 30;
         cost = 4;
         myLight = GetComponent<Light2D>();
         GeneralSetUp();
@@ -31,7 +32,7 @@ public class DrillburnAI : Enemy
         {
             if (horizontal) //checks direction
             {
-                if (Physics2D.Raycast(transform.position, Vector2.up, 4, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.down, 4, 1 << 13)) //finds player
+                if (Physics2D.Raycast(transform.position, Vector2.up, VIEW_DIST, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.down, VIEW_DIST, 1 << 13)) //finds player
                 {
                     if (player.transform.position.y > transform.position.y) //checks if up
                     {
@@ -47,7 +48,7 @@ public class DrillburnAI : Enemy
             }
             else
             {
-                if (Physics2D.Raycast(transform.position, Vector2.left, 4, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.right, 4, 1 << 13))
+                if (Physics2D.Raycast(transform.position, Vector2.left, VIEW_DIST, 1 << 13) || Physics2D.Raycast(transform.position, Vector2.right, VIEW_DIST, 1 << 13))
                 {
                     if (player.transform.position.x > transform.position.x) //checks if right
                     {
@@ -70,7 +71,7 @@ public class DrillburnAI : Enemy
     }
 
     //It's 4:11 AM, I just programmed this in one sitting wtihout testing and it worked first try and I popped off so hard
-    //No animations yet tho
+    
     private IEnumerator Charge(DrillDirection chaseDirection)
     {
         rb.velocity = Vector2.zero;
@@ -95,8 +96,8 @@ public class DrillburnAI : Enemy
         rb.velocity = Vector2.zero;
         myLight.pointLightInnerRadius = 0;
         myLight.pointLightOuterRadius = 0;
-        an.SetTrigger("TireOut"); //tired animation to normal animation
-        yield return new WaitForSeconds(3); //tired animation wait
+        an.SetTrigger("TireOut"); 
+        yield return new WaitForSeconds(3); 
         an.SetTrigger("TireOut");
         rb.velocity = tempHold * 2;
         charging = false;

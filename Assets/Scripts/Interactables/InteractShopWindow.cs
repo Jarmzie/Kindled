@@ -18,6 +18,11 @@ public class InteractShopWindow : Interactable
 
     public override IEnumerator OnInteract()
     {
+        if (hub == null)
+        {
+            print("No HubManagerFound");
+            yield break;
+        }
         GameObject tempDialogue = Instantiate(dialoguePrefab, Vector3.zero, Quaternion.identity);
         switch (hub.myState)
         {

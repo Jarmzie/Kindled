@@ -16,7 +16,7 @@ public class InteractEnterDungeon : Interactable
 
     public override IEnumerator OnInteract()
     {
-        if (GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>().myTutState == HubStateManager.TutorialState.FirstLoad)
+        if (GameObject.FindGameObjectsWithTag("HubStateManager").Length > 0 && GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>().myTutState == HubStateManager.TutorialState.FirstLoad)
         {
             GameObject tempDialogue = Instantiate(dialoguePrefab, Vector3.zero, Quaternion.identity);
             tempDialogue.GetComponent<Dialogue>().RunDialogue("", new string[] {

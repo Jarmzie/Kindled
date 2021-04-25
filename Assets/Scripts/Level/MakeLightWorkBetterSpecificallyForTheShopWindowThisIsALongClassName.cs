@@ -5,7 +5,7 @@ using UnityEngine;
 public class MakeLightWorkBetterSpecificallyForTheShopWindowThisIsALongClassName : MonoBehaviour
 {
     [SerializeField]
-    float posX, posY;
+    float posX = 0, posY = 0;
     SpriteRenderer sr;
     GameObject player;
 

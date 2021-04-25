@@ -5400,6 +5400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (Legs)
       objectReference: {fileID: 0}
+    - target: {fileID: 7576252284474058200, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
+      propertyPath: tempDialoguePrefab
+      value: 
+      objectReference: {fileID: 5920509800841081949, guid: 63bf48f548c65804995155bbf9e58cfb, type: 3}
     - target: {fileID: 7587840637013106024, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 676

@@ -9,12 +9,6 @@ public class HubStateManager : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
-        /*Shop = tempShop.GetComponent<InteractShopWindow>();
-        if (!(GameObject.FindGameObjectsWithTag("LevelLogic").Length == 0))
-        {
-            Shop.myState = InteractShopWindow.ShopState.SecondLoad;
-        }
-        Shop.SetInteractMessage();*/
     }
 
     public enum ShopState

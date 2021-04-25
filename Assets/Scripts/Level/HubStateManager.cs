@@ -5,6 +5,7 @@ using UnityEngine;
 public class HubStateManager : MonoBehaviour
 {
     public ShopState myState = ShopState.FirstLoad;
+    public TutorialState myTutState = TutorialState.FirstLoad;
 
     private void Awake()
     {
@@ -15,6 +16,15 @@ public class HubStateManager : MonoBehaviour
     {
         FirstLoad,
         SecondLoad,
+        Default,
+        ThirdLantern,
+        FinishedGameInit,
         FinishedGame
+    }
+
+    public enum TutorialState
+    {
+        FirstLoad,
+        GoodToGo
     }
 }

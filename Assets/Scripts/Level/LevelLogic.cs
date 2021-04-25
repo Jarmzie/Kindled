@@ -132,4 +132,15 @@ public class LevelLogic : MonoBehaviour
         Destroy(gameObject);
         yield return null;
     }
+
+    public IEnumerator RestartForFinish(GameObject player)
+    {
+        //Add in things to screw with HubManager
+        transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
+        yield return new WaitForSeconds(1.5f);
+        Destroy(player);
+        SceneManager.LoadScene("TownHub");
+        Destroy(gameObject);
+        yield return null;
+    }
 }

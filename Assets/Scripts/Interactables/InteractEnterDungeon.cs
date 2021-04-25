@@ -6,6 +6,9 @@ public class InteractEnterDungeon : Interactable
 {
     public GameObject LL;
 
+    [SerializeField]
+    private GameObject dialoguePrefab;
+
     private void Awake()
     {
         InteractMessage = "Enter Dungeon - Press 'E'";
@@ -13,6 +16,14 @@ public class InteractEnterDungeon : Interactable
 
     public override IEnumerator OnInteract()
     {
+        if (GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>().myTutState == HubStateManager.TutorialState.FirstLoad)
+        {
+            GameObject tempDialogue = Instantiate(dialoguePrefab, Vector3.zero, Quaternion.identity);
+            tempDialogue.GetComponent<Dialogue>().RunDialogue("", new string[] {
+                    "Maybe I should talk to the locals before entering random doors."
+                });
+            yield break;
+        }
         GameObject.FindGameObjectWithTag("PlayerLegs").transform.Find("InteractSelector").GetComponent<PlayerInteract>().contWriteText = false;
         GameObject.FindGameObjectWithTag("PlayerLegs").transform.Find("InteractSelector").GetComponent<PlayerInteract>().DisplayText.text = "";
         FindObjectOfType<AudioManager>().Stop("TownHubMusic");

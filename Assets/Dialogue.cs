@@ -10,12 +10,15 @@ public class Dialogue : MonoBehaviour
     bool writing = false;
     int myPlace = 0;
     Coroutine lastRoutine;
+    GameObject creator;
+    string endCallback = "", dName = "";
 
     [SerializeField]
     GameObject DialoguePrefab;
 
-    public void RunDialogue(string[] ListOStrings)
+    public void RunDialogue(string name_, string[] ListOStrings)
     {
+        dName = name_;
         DialogueString = ListOStrings;
         myText = transform.Find("DialogueText").GetComponent<Text>();
         //stop player moving
@@ -28,12 +31,34 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    public void RunDialogue(string name_, string[] ListOStrings, GameObject creator_, string endCallback_)
+    {
+        dName = name_;
+        creator = creator_;
+        endCallback = endCallback_;
+        DialogueString = ListOStrings;
+        myText = transform.Find("DialogueText").GetComponent<Text>();
+        //stop player moving
+        if (DialogueString.Length > 0)
+        {
+            lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void Update()
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("e"))
         {
             if (myPlace + 1 >= DialogueString.Length)
             {
+                if (creator != null)
+                {
+                    creator.SendMessage("DialogueEnd", endCallback);
+                }
                 Destroy(gameObject);
                 return;
             }
@@ -42,7 +67,14 @@ public class Dialogue : MonoBehaviour
                 StopCoroutine(lastRoutine);
             }
             myPlace++;
-            lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
+            if (creator != null && DialogueString[myPlace].Substring(0, 1) == "\\")
+            {
+                //creator.SendMessage("DialogueCallback", myPlace); //Probably won't use but just in case, also probably don't use myPlace as callback ID
+            } else
+            {
+                lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
+            }
+            
         }
     }
 
@@ -51,8 +83,8 @@ public class Dialogue : MonoBehaviour
         writing = true;
         for (int i = 0; i < message.Length + 1; i++)
         {
-            myText.text = message.Substring(0, i);
-            yield return new WaitForSeconds(0.05f);
+            myText.text = dName + message.Substring(0, i);
+            yield return new WaitForSeconds(0.03f);
         }
         writing = false;
         yield return null;

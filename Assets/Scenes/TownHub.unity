@@ -2280,6 +2280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractMessage: Message.Default
   LL: {fileID: 4290429667701809820, guid: 5b6251611097b6f41bfc5fea03c71913, type: 3}
+  dialoguePrefab: {fileID: 5920509800841081949, guid: 63bf48f548c65804995155bbf9e58cfb, type: 3}
 --- !u!61 &511419706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5405,6 +5406,10 @@ PrefabInstance:
       propertyPath: tempDialoguePrefab
       value: 
       objectReference: {fileID: 5920509800841081949, guid: 63bf48f548c65804995155bbf9e58cfb, type: 3}
+    - target: {fileID: 7576252284474058200, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
+      propertyPath: mySprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5fcccc116da92454a891a53fefbe13d6, type: 3}
     - target: {fileID: 7587840637013106024, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 676

@@ -4,20 +4,41 @@ using UnityEngine;
 
 public class InteractShopWindow : Interactable
 {
+    private HubStateManager hub;
+
+    [SerializeField]
+    private GameObject dialoguePrefab;
+
     public void Awake()
     {
-        HubStateManager hub = GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>();
+        hub = GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>();
+        InteractMessage = "Talk to Shop Keeper - Press 'E'";
+    }
+
+    public override IEnumerator OnInteract()
+    {
+        GameObject tempDialogue = Instantiate(dialoguePrefab, Vector3.zero, Quaternion.identity);
         switch (hub.myState)
         {
             case HubStateManager.ShopState.FirstLoad:
-                InteractMessage = "Come back after you've proven yourself in the dungeon!";
+                tempDialogue.GetComponent<Dialogue>().RunDialogue(new string[] {
+                    "Hmmmm... They sent a new one huh?",
+                    "I have nothing to say to you right now.",
+                    "Maybe after I see how you fare in the dungeon I'll change my mind."
+                });
                 break;
             case HubStateManager.ShopState.SecondLoad:
-                InteractMessage = "You must need my wares! - Press 'E'";
+                tempDialogue.GetComponent<Dialogue>().RunDialogue(new string[] {
+                    "Wow! That was awful!",
+                    "You're really going to need my help, hun?",
+                    "Well fine. Maybe you can replace that dinky old lantern with one from my collection!",
+                    "Here, have a look around."
+                });
                 break;
             case HubStateManager.ShopState.FinishedGame:
-                InteractMessage = "You seem to have found a new lantern, how about you try it out? - Press 'E'";
+                
                 break;
         }
+        yield return null;
     }
 }

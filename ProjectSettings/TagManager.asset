@@ -24,6 +24,7 @@ TagManager:
   - EnterDungeonInteract
   - ShopInteract
   - HubStateManager
+  - Dialogue
   layers:
   - Default
   - TransparentFX

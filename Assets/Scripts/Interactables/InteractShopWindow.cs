@@ -30,7 +30,7 @@ public class InteractShopWindow : Interactable
                 tempDialogue.GetComponent<Dialogue>().RunDialogue(MOTH_NAME, new string[] {
                     "Hmmmm... They sent a new one, huh?",
                     "I have nothing to say to you right now.",
-                    "You're gonna want to talk to Alfie. He's the one sitting at that stupid \"tips\" table. He'll give you more info about the dungeon.",
+                    "You're gonna want to talk to Alto. He's the one sitting at that flippant \"tips\" table. He'll give you more info about the dungeon.",
                     "Maybe after I see how you fare in the dungeon I'll change my mind about talking to you."
                 });
                 break;

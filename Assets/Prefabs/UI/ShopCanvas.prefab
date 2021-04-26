@@ -319,7 +319,7 @@ GameObject:
   - component: {fileID: 3002548843596814623}
   m_Layer: 5
   m_Name: ShopCanvas
-  m_TagString: Untagged
+  m_TagString: ShopWindow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   lantName: {fileID: 3002548842473425020}
   lantDesc: {fileID: 3002548843974587028}
   lanternSpriteList:
-  - {fileID: 21300000, guid: f6396ea2ef975774ca2076750385dfa3, type: 3}
+  - {fileID: 21300000, guid: 448e4d1511b59084b99331038d8e6615, type: 3}
   - {fileID: -5078187873138917092, guid: 5c1d9161648b59e42b0dbf98a2b3faa6, type: 3}
   - {fileID: -347325434483316860, guid: 5c1d9161648b59e42b0dbf98a2b3faa6, type: 3}
   - {fileID: 5486432166001890616, guid: 5c1d9161648b59e42b0dbf98a2b3faa6, type: 3}
@@ -573,10 +573,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 4d5d187e290155949b320f221e082824, type: 3}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 1
     m_AlignByGeometry: 0

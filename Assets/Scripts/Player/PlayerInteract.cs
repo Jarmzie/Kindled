@@ -11,7 +11,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void Update()
     {
-        if (GameObject.FindGameObjectsWithTag("Dialogue").Length < 1)
+        if (GameObject.FindGameObjectsWithTag("Dialogue").Length < 1 && GameObject.FindGameObjectsWithTag("ShopWindow").Length < 1)
         {
             if (Input.GetKeyDown("e"))
             {

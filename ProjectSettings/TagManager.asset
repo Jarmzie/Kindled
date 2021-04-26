@@ -25,6 +25,7 @@ TagManager:
   - ShopInteract
   - HubStateManager
   - Dialogue
+  - ShopWindow
   layers:
   - Default
   - TransparentFX

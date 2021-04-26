@@ -20,26 +20,26 @@ public class Shop : MonoBehaviour
         myShopList.addNode(new ShopNode(
             lanternSpriteList[0],
             false,
-            "Lantern 1",
-            "This is the description for lantern 1"
+            "Hood Lantern",
+            "You're trusty old lantern. Shoots a basic fireball that does decent damage."
         ));
         myShopList.addNode(new ShopNode(
             lanternSpriteList[1],
             false,
-            "Lantern 2",
-            "This is the description for lantern 2"
+            "Lava Lantern",
+            "A spare lantern owned by Bjartur. It takes extra oil but does more damage. It's also a bit slow."
         ));
         myShopList.addNode(new ShopNode(
             lanternSpriteList[2],
             false,
-            "Lantern 3",
-            "This is the description for lantern 3"
+            "Tiki Lantern",
+            "A lantern from a far away land. Who knows how it got down in the dungeon. Shoots fast projectiles that can do some damage. Very slow."
         ));
         myShopList.addNode(new ShopNode(
             lanternSpriteList[3],
             false,
-            "Lantern 4",
-            "This is the description for lantern 4"
+            "Candle Lantern",
+            "An intricately designed lamp and was found at the bottom of the dungeon. Shoots multiple small projectiles that don't do much damage."
         ));
 
         WouldYouLikeToBuyMyWares();

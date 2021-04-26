@@ -19,7 +19,10 @@ public class Dialogue : MonoBehaviour
         dName = name_;
         DialogueString = ListOStrings;
         myText = transform.Find("DialogueText").GetComponent<Text>();
-        //stop player moving
+        if (GameObject.FindGameObjectsWithTag("PlayerLegs").Length > 1)
+        {
+            GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().enabled = false;
+        }
         if (DialogueString.Length > 0)
         {
             lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
@@ -36,7 +39,10 @@ public class Dialogue : MonoBehaviour
         endCallback = endCallback_;
         DialogueString = ListOStrings;
         myText = transform.Find("DialogueText").GetComponent<Text>();
-        //stop player moving
+        if (GameObject.FindGameObjectsWithTag("PlayerLegs").Length > 1)
+        {
+            GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().enabled = false;
+        }
         if (DialogueString.Length > 0)
         {
             lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));

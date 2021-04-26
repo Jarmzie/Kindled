@@ -33,6 +33,11 @@ public class Projectile : MonoBehaviour
         return damage;
     }
 
+    public int GetCost()
+    {
+        return cost;
+    }
+
     public float GetSpeed()
     {
         return speed;

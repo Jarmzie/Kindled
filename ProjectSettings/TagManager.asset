@@ -26,6 +26,7 @@ TagManager:
   - HubStateManager
   - Dialogue
   - ShopWindow
+  - Lantern
   layers:
   - Default
   - TransparentFX

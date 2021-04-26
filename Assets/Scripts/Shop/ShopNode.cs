@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class ShopNode
 {
-    [SerializeField]
-    Sprite mySprite;
-    [SerializeField]
+    Sprite mySprite, inGameSprite;
+    GameObject myProjectile;
+    float shotSpeed;
     bool locked;
     string myName = "", myDesc = "";
     public ShopNode prev, next;
 
-    public ShopNode(Sprite mySprite_, bool locked_, string name_, string desc_)
+    public ShopNode(Sprite mySprite_, Sprite inGameSprite_, GameObject myProjectile_, float shotSpeed_, bool locked_, string name_, string desc_)
     {
         mySprite = mySprite_;
+        inGameSprite = inGameSprite_;
+        myProjectile = myProjectile_;
+        shotSpeed = shotSpeed_;
         locked = locked_;
         myName = name_;
         myDesc = desc_;
@@ -32,5 +35,25 @@ public class ShopNode
     public string getDesc()
     {
         return myDesc;
+    }
+
+    public bool getLocked()
+    {
+        return locked;
+    }
+
+    public Sprite getInGameSprite()
+    {
+        return inGameSprite;
+    }
+
+    public float getShotSpeed()
+    {
+        return shotSpeed;
+    }
+
+    public GameObject getProjectile()
+    {
+        return myProjectile;
     }
 }

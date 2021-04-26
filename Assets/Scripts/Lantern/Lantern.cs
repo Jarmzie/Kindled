@@ -12,11 +12,12 @@ public class Lantern : MonoBehaviour
     PlayerOilController oil;
     bool shooting = false;
     float shotSpeed = 0.3f;
-    string lantName = "Default";
+    string lantName = "Hood Lantern";
 
     private void Awake()
     {
-        GetComponent<SpriteRenderer>().sprite = mySprite;
+        ShopNode temp = GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>().currLantern;
+        ShipOfTheseus(temp.getName(), temp.getInGameSprite(), temp.getProjectile(), temp.getShotSpeed());
         torso = transform.parent.gameObject.GetComponent<PlayerTorsoAnimation>();
         oil = transform.parent.parent.gameObject.GetComponent<PlayerOilController>();
     }
@@ -36,6 +37,7 @@ public class Lantern : MonoBehaviour
     {
         lantName = newName;
         mySprite = newSprite;
+        GetComponent<SpriteRenderer>().sprite = mySprite;
         myProjectile = newProjectile;
         shotSpeed = newShotSpeed;
     }
@@ -56,7 +58,7 @@ public class Lantern : MonoBehaviour
         torso.shotAngle = temp;
         torso.ShootAtDirection();
         GameObject shotProjectile = ShootTheWayIWantYouTo();
-        oil.LoseOilAmount(shotProjectile.GetComponent<Projectile>().GetDamage());
+        oil.LoseOilAmount(shotProjectile.GetComponent<Projectile>().GetCost());
         yield return new WaitForSeconds(shotSpeed);
         for (int i = 0; i < 5; i++) // this is dumb but so is Unity so what can i say ¯\_(ツ)_/¯
         {
@@ -68,13 +70,20 @@ public class Lantern : MonoBehaviour
         yield return null;
     }
 
-    public virtual GameObject ShootTheWayIWantYouTo()
+    public GameObject ShootTheWayIWantYouTo()
     {
-        Vector2 delta = new Vector2(Input.mousePosition.y - Screen.height / 2, Input.mousePosition.x - Screen.width / 2);
-        float theta = Mathf.Atan2(delta.x, delta.y);
-        Vector2 shootDirection = new Vector2(Mathf.Cos(theta), Mathf.Sin(theta)).normalized;
-        GameObject shotProjectile = Instantiate(myProjectile, transform.position, Quaternion.identity);
-        shotProjectile.GetComponent<Rigidbody2D>().velocity = shootDirection * shotProjectile.GetComponent<Projectile>().speed;
-        return shotProjectile;
+        if (lantName == "Hood Lantern" || lantName == "Lava Lantern" || lantName == "Tiki Lantern")
+        {
+            Vector2 delta = new Vector2(Input.mousePosition.y - Screen.height / 2, Input.mousePosition.x - Screen.width / 2);
+            float theta = Mathf.Atan2(delta.x, delta.y);
+            Vector2 shootDirection = new Vector2(Mathf.Cos(theta), Mathf.Sin(theta)).normalized;
+            GameObject shotProjectile = Instantiate(myProjectile, transform.position, Quaternion.identity);
+            shotProjectile.GetComponent<Rigidbody2D>().velocity = shootDirection * shotProjectile.GetComponent<Projectile>().speed;
+            return shotProjectile;
+        } else if (lantName == "Candle Lantern")
+        {
+
+        }
+        return Instantiate(myProjectile, transform.position, Quaternion.identity);
     }
 }

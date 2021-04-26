@@ -19,10 +19,7 @@ public class Dialogue : MonoBehaviour
         dName = name_;
         DialogueString = ListOStrings;
         myText = transform.Find("DialogueText").GetComponent<Text>();
-        if (GameObject.FindGameObjectsWithTag("PlayerLegs").Length > 1)
-        {
-            GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().enabled = false;
-        }
+        GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(false);
         if (DialogueString.Length > 0)
         {
             lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
@@ -39,10 +36,7 @@ public class Dialogue : MonoBehaviour
         endCallback = endCallback_;
         DialogueString = ListOStrings;
         myText = transform.Find("DialogueText").GetComponent<Text>();
-        if (GameObject.FindGameObjectsWithTag("PlayerLegs").Length > 1)
-        {
-            GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().enabled = false;
-        }
+        GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(false);
         if (DialogueString.Length > 0)
         {
             lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
@@ -59,6 +53,7 @@ public class Dialogue : MonoBehaviour
         {
             if (myPlace + 1 >= DialogueString.Length)
             {
+                GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(true);
                 if (creator != null)
                 {
                     creator.SendMessage("DialogueEnd", endCallback);

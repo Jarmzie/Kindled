@@ -20,6 +20,7 @@ public class Shop : MonoBehaviour
 
     private void Awake()
     {
+        GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(false);
         //Every inch of my body hates this but I don't have time to learn how to do it correctly
         myShopList.addNode(new ShopNode(
             lanternSpriteList[0],
@@ -44,7 +45,7 @@ public class Shop : MonoBehaviour
             inGameSpriteList[2],
             projectileList[0],
             0.55f,
-            true,
+            false,
             "Tiki Lantern",
             "A lantern from a far away land. Who knows how it got down in the dungeon. Shoots fast projectiles that can do some damage. Very slow."
         ));
@@ -53,7 +54,7 @@ public class Shop : MonoBehaviour
             inGameSpriteList[3],
             projectileList[0],
             0.2f,
-            true,
+            false,
             "Candle Lantern",
             "An intricately designed lamp and was found at the bottom of the dungeon. Shoots multiple small projectiles that don't do much damage."
         ));
@@ -78,6 +79,7 @@ public class Shop : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>().currLantern = temp;
                 GameObject.FindGameObjectWithTag("Lantern").GetComponent<Lantern>().ShipOfTheseus(temp.getName(), temp.getInGameSprite(), temp.getProjectile(), temp.getShotSpeed());
+                GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(true);
                 Destroy(gameObject);
             }
         }

@@ -5509,7 +5509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9041300757729102306, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}
       propertyPath: m_Intensity
-      value: 0.75
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1591931577360825913, guid: aa63fcdb1b1574b4987a0b3525ce9d45, type: 3}

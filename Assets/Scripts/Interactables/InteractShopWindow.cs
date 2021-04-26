@@ -30,13 +30,13 @@ public class InteractShopWindow : Interactable
                 tempDialogue.GetComponent<Dialogue>().RunDialogue(MOTH_NAME, new string[] {
                     "Hmmmm... They sent a new one, huh?",
                     "I have nothing to say to you right now.",
-                    "You're gonna want to talk to Alto. He's the one sitting at that flippant \"tips\" table. He'll give you more info about the dungeon.",
+                    "You're gonna want to talk to Alto. He's the one sitting at that silly little \"tips\" stand. He'll give you more info about the dungeon.",
                     "Maybe after I see how you fare in the dungeon I'll change my mind about talking to you."
                 });
                 break;
             case HubStateManager.ShopState.SecondLoad:
                 tempDialogue.GetComponent<Dialogue>().RunDialogue(MOTH_NAME, new string[] {
-                    "Wow! That was awful!",
+                    "Wow! You did awful!",
                     "You're really going to need my help, huh?",
                     "Well fine. Maybe you can replace that dinky old lantern with one from my collection!",
                     "Here, have a look around."
@@ -45,12 +45,12 @@ public class InteractShopWindow : Interactable
                 break;
             case HubStateManager.ShopState.Default:
                 tempDialogue.GetComponent<Dialogue>().RunDialogue(MOTH_NAME, new string[] {
-                    "Weclome back. Made any progress in the dungeon yet?"
+                    "Welcome back. Made any progress in the dungeon yet?"
                 }, gameObject, "shop");
                 break;
             case HubStateManager.ShopState.ThirdLantern:
                 tempDialogue.GetComponent<Dialogue>().RunDialogue(MOTH_NAME, new string[] {
-                    "Weclome back. Made any progress in the dungeon yet?",
+                    "Welcome back. Made any progress in the dungeon yet?",
                     "Oh... You have, you say?",
                     "A lantern, huh? Well it looks better than any we have here right now. So I guess that's nice.",
                     "I'll keep it in stock for you to take it whenever you want it."

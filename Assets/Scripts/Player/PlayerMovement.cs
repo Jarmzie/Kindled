@@ -31,12 +31,13 @@ public class PlayerMovement : MonoBehaviour
             facingRight = !facingRight;
         }
 
-       if(Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){
+        //This keeps throwing errors and it's annoying me
+       /*if(Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){
             FindObjectOfType<AudioManager>().Plays("PlayerWalk");
         }else if(!Input.GetButtonDown("Horizontal") && (!Input.GetButtonDown("Vertical")))
         {
             FindObjectOfType<AudioManager>().Stop("PlayerWalk");
-        }
+        }*/
            
        
         
@@ -59,4 +60,11 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(velocityX, velocityY) * speed * (1 + (0.1f * upgrades.walkSpeedUpgrade));
     }
 
+    public void CutsceneMe(bool on)
+    {
+        enabled = on;
+        GetComponent<PlayerAnimation>().enabled = on;
+        GetComponent<Animator>().enabled = on;
+        GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
 }

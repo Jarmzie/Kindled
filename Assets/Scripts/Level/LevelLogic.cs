@@ -72,9 +72,7 @@ public class LevelLogic : MonoBehaviour
     IEnumerator NewRandomRoom()
     {
         currLevel++;
-        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        player.GetComponent<PlayerMovement>().enabled = false;
-        player.GetComponent<PlayerAnimation>().enabled = false;
+        player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(Random.Range(1,4));
@@ -91,16 +89,13 @@ public class LevelLogic : MonoBehaviour
         player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
         transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
         player.GetComponent<PlayerOilController>().inDark = true;
-        player.GetComponent<PlayerAnimation>().enabled = true;
-        player.GetComponent<PlayerMovement>().enabled = true;
+        player.GetComponent<PlayerMovement>().CutsceneMe(true);
         yield return null;
     }
 
     IEnumerator NewUpgradeRoom()
     {
-        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
-        player.GetComponent<PlayerMovement>().enabled = false;
-        player.GetComponent<PlayerAnimation>().enabled = false;
+        player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene("UpgradeLevel");
@@ -112,8 +107,7 @@ public class LevelLogic : MonoBehaviour
         //Puts player into new level
         player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
         transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
-        player.GetComponent<PlayerAnimation>().enabled = true;
-        player.GetComponent<PlayerMovement>().enabled = true;
+        player.GetComponent<PlayerMovement>().CutsceneMe(true);
         yield return null;
     }
 
@@ -135,7 +129,10 @@ public class LevelLogic : MonoBehaviour
 
     public IEnumerator RestartForFinish(GameObject player)
     {
-        //Add in things to screw with HubManager
+        if (hub.myState != HubStateManager.ShopState.FinishedGame)
+        {
+            hub.myState = HubStateManager.ShopState.FinishedGameInit;
+        }
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
         Destroy(player);

@@ -6,6 +6,6 @@ public class LanternOrb : Projectile
 {
     private void Awake()
     {
-        GeneralSetUp(4.0f, 7, 7, 6.0f);
+        GeneralSetUp(3.5f, 8, 7, 6.0f);
     }
 }

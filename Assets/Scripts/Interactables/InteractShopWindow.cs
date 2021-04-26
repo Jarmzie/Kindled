@@ -8,7 +8,7 @@ public class InteractShopWindow : Interactable
     private const string MOTH_NAME = "Bjartur: "; 
 
     [SerializeField]
-    private GameObject dialoguePrefab;
+    private GameObject dialoguePrefab, shopPrefab;
 
     public void Awake()
     {
@@ -79,7 +79,7 @@ public class InteractShopWindow : Interactable
     {
         if (callbackID == "shop")
         {
-            print("My system worked!");
+            Instantiate(shopPrefab);
         }
     }
 }

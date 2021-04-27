@@ -277,10 +277,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4b7229ec60c6b4691939d070cc752d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxHealth: 0
   health: 0
   damage: 10
   cost: 1
-  myProjectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
+  myProjectile: {fileID: 6593177034166436272, guid: b2d4fd1f577314246912e01f0d3a6f0c, type: 3}
   player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
   tf: {fileID: 0}
   sr: {fileID: 0}

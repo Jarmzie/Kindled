@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
 
     public void DieLOL()
     {
-        player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth * 1.1));
+        player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth));
         if (rb.bodyType != RigidbodyType2D.Static)
         {
             rb.velocity = Vector3.zero;

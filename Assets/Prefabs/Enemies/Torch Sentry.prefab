@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 2209705079115290209}
   - component: {fileID: 2209705079115290218}
   - component: {fileID: 8673719057056755802}
-  m_Layer: 15
+  m_Layer: 14
   m_Name: Torch Sentry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,12 +221,13 @@ MonoBehaviour:
   health: 0
   damage: 0
   cost: 0
-  myProjectile: {fileID: 5865343463301716806, guid: d5fca10fea89f37409ed2d281cf020eb, type: 3}
+  myProjectile: {fileID: 2654137679127203410, guid: 8d0358e06c543124c92fbdd6bea85023, type: 3}
   player: {fileID: 0}
   tf: {fileID: 0}
   sr: {fileID: 0}
   an: {fileID: 0}
   rb: {fileID: 0}
+  myProjectile2: {fileID: 3581751757962191143, guid: b323ab6f1a5c23e44b17326efd6148f3, type: 3}
 --- !u!95 &2209705079115290218
 Animator:
   serializedVersion: 3

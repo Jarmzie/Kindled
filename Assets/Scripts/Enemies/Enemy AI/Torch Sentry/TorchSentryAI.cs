@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TorchSentryAI : Enemy
 {
+    [SerializeField]
+    GameObject myProjectile2;
+
     void Awake()
     {
         health = 30;
@@ -15,10 +18,35 @@ public class TorchSentryAI : Enemy
 
     private void StartBlasting()
     {
-        Vector2 eyePos = tf.position + new Vector3(0, 0.4f);
-        Vector2 sentDirection = findPlayerDirection(player.transform.position, eyePos);
-        GameObject newProj = Instantiate(myProjectile, eyePos, Quaternion.identity);
-        newProj.GetComponent<Rigidbody2D>().velocity = sentDirection * newProj.GetComponent<Projectile>().GetSpeed();
+        if (Random.Range(0, 4) == 0)
+        {
+            bool notInFreeSpace = true;
+            int failSafe = 0;
+            Vector2 rand = Vector2.zero;
+            do
+            {
+                failSafe++;
+                rand = Random.insideUnitCircle.normalized;
+                Vector2 eyePos = tf.position + new Vector3(0, 0.4f);
+                if (!Physics2D.Raycast(eyePos, rand, 3f, 1 << 15) && !Physics2D.Raycast(eyePos, rand, 3f, 1 << 22))
+                {
+                    GameObject newProj = Instantiate(myProjectile2, eyePos, Quaternion.identity);
+                    newProj.GetComponent<Rigidbody2D>().velocity = rand * newProj.GetComponent<Projectile>().GetSpeed();
+                    notInFreeSpace = false;
+                }
+                if (failSafe > 100)
+                {
+                    return;
+                }
+            } while (notInFreeSpace);
+        }
+        else
+        {
+            Vector2 eyePos = tf.position + new Vector3(0, 0.4f);
+            Vector2 sentDirection = findPlayerDirection(player.transform.position, eyePos);
+            GameObject newProj = Instantiate(myProjectile, eyePos, Quaternion.identity);
+            newProj.GetComponent<Rigidbody2D>().velocity = sentDirection * newProj.GetComponent<Projectile>().GetSpeed();
+        }
     }
 
     Vector2 findPlayerDirection(Vector3 playerPos, Vector3 myPos)

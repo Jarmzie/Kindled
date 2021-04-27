@@ -36,7 +36,7 @@ public class LevelLogic : MonoBehaviour
         player.GetComponent<PlayerOilController>().inDark = false;
         if (!inUpgradeRoom)
         {
-            player.GetComponent<PlayerOilController>().GainOilAmount(50);
+            player.GetComponent<PlayerOilController>().GainOilAmount(20 + (5 *currLevel));
         }
         foreach (GameObject torch in GameObject.FindGameObjectsWithTag("WallTorch"))
         {
@@ -95,6 +95,18 @@ public class LevelLogic : MonoBehaviour
 
     IEnumerator NewUpgradeRoom()
     {
+        if (currLevel == 6)
+        {
+            if (hub.myState == HubStateManager.ShopState.SecondLoad)
+            {
+                hub.myState = HubStateManager.ShopState.SkippedSecondLoad2ThirdLoad;
+            }
+            else if (hub.myState == HubStateManager.ShopState.Default && !hub.ThirdLanternAquired)
+            {
+                hub.myState = HubStateManager.ShopState.ThirdLantern;
+            }
+        }
+
         player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
@@ -129,7 +141,13 @@ public class LevelLogic : MonoBehaviour
 
     public IEnumerator RestartForFinish(GameObject player)
     {
-        if (hub.myState != HubStateManager.ShopState.FinishedGame)
+        if (hub.myState == HubStateManager.ShopState.SecondLoad || hub.myState == HubStateManager.ShopState.SkippedSecondLoad2ThirdLoad)
+        {
+            hub.myState = HubStateManager.ShopState.SkippedSecondLoad2FinalLoad;
+        } else if (hub.myState == HubStateManager.ShopState.ThirdLantern)
+        {
+            hub.myState = HubStateManager.ShopState.SkippedThirdLoad;
+        } else if (hub.myState == HubStateManager.ShopState.Default)
         {
             hub.myState = HubStateManager.ShopState.FinishedGameInit;
         }

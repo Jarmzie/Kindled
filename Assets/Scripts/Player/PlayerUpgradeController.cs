@@ -44,6 +44,6 @@ public class PlayerUpgradeController : MonoBehaviour
     public void UpdateLightRadius()
     {
         PlayerLightController temp = GetComponent<PlayerLightController>();
-        temp.maxLightRadius = temp.maxLightRadius + 0.25f;
+        temp.maxLightRadius = temp.maxLightRadius + 1.0f;
     }
 }

@@ -9,6 +9,8 @@ public class EnemySpawner : MonoBehaviour
     public GameObject[] SpawnLocations;
     public GameObject spawnBubble;
     public int difficultyPoints, level, maxEnemies, decisionChecks = 0;
+    private float spawnRate = 0;
+    private int numOfEnemies = 0;
 
     //These are all variables so that we can tweak them
     public int perLevelDPIncrease = 5, upgradeFrequency = 3, upgradeIncrease = 20, startingDP = 10, startingMaxEnemies = 6, maxEnemyIncrease = 3;
@@ -17,21 +19,27 @@ public class EnemySpawner : MonoBehaviour
     {
         level = level_;
         CurrentLevelLogic = CurrentLevelLogic_;
+        spawnRate = 8 + (-1 * ((0.58333333f * level) - 1));
         SpawnLocations = GameObject.FindGameObjectsWithTag("SpawnLocation");
-        maxEnemies = startingMaxEnemies + maxEnemyIncrease * (level / upgradeFrequency);
+        maxEnemies = startingMaxEnemies + maxEnemyIncrease * ((level - 1) / upgradeFrequency);
         difficultyPoints = startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
-        InvokeRepeating("DecideSpawning", 3.0f, 7.0f);
+        InvokeRepeating("DecideSpawning", 3.0f, spawnRate);
     }
 
-    private void DecideSpawning()
+    private void Update()
     {
-        if (difficultyPoints <= 0 && GameObject.FindGameObjectsWithTag("Enemy").Length <= 0)
+        numOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        if (difficultyPoints <= 0 && numOfEnemies <= 0)
         {
             CancelInvoke();
             CurrentLevelLogic.RoomFinished();
             Destroy(this.gameObject);
             //GameObject.Find("Level Logic").GetComponent<LevelLogic>().ri.exit.GetComponent<Door>().Open(); //Reaching through the computer screen myself to get to this door would probably be more efficient than this lol
         }
+    }
+
+    private void DecideSpawning()
+    {
         if (difficultyPoints > 0)
         {
             StartCoroutine(SpawnRandomEnemies(2));

@@ -72,7 +72,7 @@ public class Lantern : MonoBehaviour
 
     public GameObject ShootTheWayIWantYouTo()
     {
-        if (lantName == "Hood Lantern" || lantName == "Lava Lantern" || lantName == "Tiki Lantern")
+        if (lantName == "Hood Lantern" || lantName == "Lava Lantern" || lantName == "Lantern Post")
         {
             Vector2 delta = new Vector2(Input.mousePosition.y - Screen.height / 2, Input.mousePosition.x - Screen.width / 2);
             float theta = Mathf.Atan2(delta.x, delta.y);
@@ -80,10 +80,21 @@ public class Lantern : MonoBehaviour
             GameObject shotProjectile = Instantiate(myProjectile, transform.position, Quaternion.identity);
             shotProjectile.GetComponent<Rigidbody2D>().velocity = shootDirection * shotProjectile.GetComponent<Projectile>().speed;
             return shotProjectile;
-        } else if (lantName == "Candle Lantern")
+        } else if (lantName == "Draught Lantern")
         {
-
+            Vector2 delta = new Vector2(Input.mousePosition.y - Screen.height / 2, Input.mousePosition.x - Screen.width / 2);
+            float theta = Mathf.Atan2(delta.x, delta.y);
+            Vector2 shootDirection = new Vector2(Mathf.Cos(theta), Mathf.Sin(theta)).normalized;
+            GameObject shotProjectile = Instantiate(myProjectile, transform.position, Quaternion.identity);
+            shotProjectile.GetComponent<Rigidbody2D>().velocity = Quaternion.Euler(0, 0, Random.Range(-15f, 15f)) * shootDirection * shotProjectile.GetComponent<Projectile>().speed;
+            for (int i = 0; i < 4; i++)
+            {
+                GameObject otherShotProjectile = Instantiate(myProjectile, transform.position, Quaternion.identity);
+                otherShotProjectile.GetComponent<Rigidbody2D>().velocity = Quaternion.Euler(0, 0, Random.Range(-15f, 15f)) * shootDirection * shotProjectile.GetComponent<Projectile>().speed;
+            }
+            return shotProjectile;
         }
+        print("Lantern specific shot not found");
         return Instantiate(myProjectile, transform.position, Quaternion.identity);
     }
 }

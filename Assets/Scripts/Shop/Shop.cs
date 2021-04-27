@@ -17,10 +17,12 @@ public class Shop : MonoBehaviour
     List<GameObject> projectileList = new List<GameObject>();
     [SerializeField]
     Sprite lockedSprite;
+    HubStateManager hub;
 
     private void Awake()
     {
         GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(false);
+        hub = GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>();
         //Every inch of my body hates this but I don't have time to learn how to do it correctly
         myShopList.addNode(new ShopNode(
             lanternSpriteList[0],
@@ -43,20 +45,20 @@ public class Shop : MonoBehaviour
         myShopList.addNode(new ShopNode(
             lanternSpriteList[2],
             inGameSpriteList[2],
-            projectileList[0],
+            projectileList[2],
             0.55f,
-            false,
-            "Tiki Lantern",
-            "A lantern from a far away land. Who knows how it got down in the dungeon. Shoots fast projectiles that can do some damage. Very slow."
+            !hub.ThirdLanternAquired,
+            "Lantern Post",
+            "A lantern from a far away land, you can't even hold it upright. Who knows how it got down in the dungeon. Shoots fast projectiles that can do some damage. Very slow."
         ));
         myShopList.addNode(new ShopNode(
             lanternSpriteList[3],
             inGameSpriteList[3],
-            projectileList[0],
+            projectileList[3],
             0.2f,
-            false,
-            "Candle Lantern",
-            "An intricately designed lamp and was found at the bottom of the dungeon. Shoots multiple small projectiles that don't do much damage."
+            !hub.FinalLanternAquired,
+            "Draught Lantern",
+            "An intricately designed lamp that was found at the bottom of the dungeon. Shoots multiple small projectiles that don't do much damage."
         ));
 
         WouldYouLikeToBuyMyWares();
@@ -77,7 +79,7 @@ public class Shop : MonoBehaviour
             ShopNode temp = myShopList.getNode(iterator);
             if (!temp.getLocked())
             {
-                GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>().currLantern = temp;
+                hub.currLantern = temp;
                 GameObject.FindGameObjectWithTag("Lantern").GetComponent<Lantern>().ShipOfTheseus(temp.getName(), temp.getInGameSprite(), temp.getProjectile(), temp.getShotSpeed());
                 GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(true);
                 Destroy(gameObject);

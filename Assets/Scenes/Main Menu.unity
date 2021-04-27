@@ -440,6 +440,14 @@ PrefabInstance:
       propertyPath: inGameSprite
       value: 
       objectReference: {fileID: 21300000, guid: 5fcccc116da92454a891a53fefbe13d6, type: 3}
+    - target: {fileID: 7984425427805318648, guid: 4cc83c4c76430054f833eac40e357b39, type: 3}
+      propertyPath: FinalLanternAquired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7984425427805318648, guid: 4cc83c4c76430054f833eac40e357b39, type: 3}
+      propertyPath: ThirdLanternAquired
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7984425427805318649, guid: 4cc83c4c76430054f833eac40e357b39, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

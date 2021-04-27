@@ -439,6 +439,8 @@ MonoBehaviour:
   projectileList:
   - {fileID: 2360237445559888207, guid: 3b5162a69f5844c4b92724046bc9b124, type: 3}
   - {fileID: 3831011413141098049, guid: 1452fbfb0f3c9364db0dd3ed1816eccf, type: 3}
+  - {fileID: 7801847673916522536, guid: 1f5b90cb32940534683c7ce9ce003deb, type: 3}
+  - {fileID: 4357980803400074064, guid: ea3042a6420644846b16a52c74bd8993, type: 3}
   lockedSprite: {fileID: 21300000, guid: f6396ea2ef975774ca2076750385dfa3, type: 3}
 --- !u!1 &3002548843893465383
 GameObject:

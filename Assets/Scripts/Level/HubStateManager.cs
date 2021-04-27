@@ -7,6 +7,7 @@ public class HubStateManager : MonoBehaviour
     public ShopState myState = ShopState.FirstLoad;
     public TutorialState myTutState = TutorialState.FirstLoad;
     public ShopNode currLantern;
+    public bool ThirdLanternAquired = false, FinalLanternAquired = true;
 
     [SerializeField]
     private Sprite inGameSprite;
@@ -34,7 +35,10 @@ public class HubStateManager : MonoBehaviour
         Default,
         ThirdLantern,
         FinishedGameInit,
-        FinishedGame
+        FinishedGame,
+        SkippedSecondLoad2ThirdLoad,
+        SkippedSecondLoad2FinalLoad,
+        SkippedThirdLoad
     }
 
     public enum TutorialState

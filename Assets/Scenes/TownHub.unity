@@ -6204,6 +6204,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player (Legs)
       objectReference: {fileID: 0}
+    - target: {fileID: 5060210507009836744, guid: 8fbac28d12e48f548bb107801d19b325, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8483118826484051908, guid: 8fbac28d12e48f548bb107801d19b325, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

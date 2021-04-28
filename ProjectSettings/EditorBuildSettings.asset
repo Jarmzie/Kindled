@@ -30,12 +30,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Level4.unity
     guid: 42542f012725bbc4da3718461cb1aa50
   - enabled: 1
-    path: Assets/Scenes/Level 5.unity
+    path: Assets/Scenes/Level5.unity
     guid: 9242743d4131a664293b829d23c53ae4
+  - enabled: 1
+    path: Assets/Scenes/Level6.unity
+    guid: a84744082d327d54eb7c78ef62acca10
   - enabled: 1
     path: Assets/Scenes/TownHub.unity
     guid: 995fd3cdeb51ff44e8bf6ee63a6e261e
   - enabled: 1
     path: Assets/Scenes/UpgradeLevel.unity
     guid: 676e9431e40b62943ab01be37c65c99f
+  - enabled: 1
+    path: Assets/Scenes/FinalLevel.unity
+    guid: 177cd84b93fd2bc429e9c71d0e34e0d1
   m_configObjects: {}

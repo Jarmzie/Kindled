@@ -34,7 +34,7 @@ public class PlayerInteract : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("UpgradeInteract") || collision.CompareTag("EnterDungeonInteract") || collision.CompareTag("ShopInteract") || collision.CompareTag("TipsInteractable"))
+        if (collision.CompareTag("UpgradeInteract") || collision.CompareTag("EnterDungeonInteract") || collision.CompareTag("ShopInteract") || collision.CompareTag("TipsInteractable") || collision.CompareTag("EndInteract"))
         {
             contWriteText = true;
             StartCoroutine(WriteText(collision.GetComponent<Interactable>().InteractMessage));

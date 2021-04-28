@@ -16,7 +16,9 @@ public class FlyingLanternDetect : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("PlayerLegs"))
         {
-            this.transform.parent.GetComponent<FlyingLanternAI>().playerInRange = false;
+            if (this.transform.parent.GetComponent<FlyingLanternAI>() != null) {
+                this.transform.parent.GetComponent<FlyingLanternAI>().playerInRange = false;
+            }
         }
     }
 }

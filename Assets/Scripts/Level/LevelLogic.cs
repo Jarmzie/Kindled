@@ -15,12 +15,14 @@ public class LevelLogic : MonoBehaviour
     public int currLevel = 0, roomsPerUpgrade = 3;
     private bool inUpgradeRoom = false;
     public HubStateManager hub;
+    private Light2D myLight;
 
     void Awake()
     {
         player = GameObject.FindWithTag("PlayerLegs");
         transitionImage = player.transform.Find("Canvas").transform.Find("Image").GetComponent<Image>();
         levelTransition = transform.Find("ExitTrigger").gameObject;
+        myLight = GetComponent<Light2D>();
         DontDestroyOnLoad(this.gameObject);
 
         //Update hub manager
@@ -42,6 +44,7 @@ public class LevelLogic : MonoBehaviour
         {
             torch.GetComponent<WallTorch>().LetThereBeLight();
         }
+        myLight.intensity = 0.15f;
         exit.GetComponent<Door>().Open();
     }
 
@@ -58,8 +61,10 @@ public class LevelLogic : MonoBehaviour
 
     public void NewRoom()
     {
-        if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom)
-        {
+        if (currLevel == 12) {
+            StartCoroutine(FinalRoom());
+            return;
+        } else if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom) {
             inUpgradeRoom = true;
             StartCoroutine(NewUpgradeRoom());
             return;
@@ -69,13 +74,38 @@ public class LevelLogic : MonoBehaviour
         StartCoroutine(NewRandomRoom());
     }
 
+    IEnumerator FinalRoom()
+    {
+        player.GetComponent<PlayerMovement>().CutsceneMe(false);
+        transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene("FinalLevel");
+        yield return new WaitForSeconds(1);
+
+        //Updates LevelLogic objects
+        UpdateLevelLogic();
+
+        myLight.intensity = 0.0f;
+        player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
+        transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
+        player.GetComponent<PlayerOilController>().inDark = false;
+        player.GetComponent<PlayerMovement>().CutsceneMe(true);
+        yield return null;
+    }
+
     IEnumerator NewRandomRoom()
     {
         currLevel++;
         player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(Random.Range(1,6));
+        if (currLevel < 6)
+        {
+            SceneManager.LoadScene(Random.Range(1, 7));
+        } else
+        {
+            SceneManager.LoadScene(Random.Range(1, 7));
+        }
         yield return new WaitForSeconds(1);
 
         //Updates LevelLogic objects
@@ -86,6 +116,7 @@ public class LevelLogic : MonoBehaviour
         roomES.GeneralSetUp(currLevel, this);
 
         //Puts player into new level
+        myLight.intensity = 0.0f;
         player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
         transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
         player.GetComponent<PlayerOilController>().inDark = true;
@@ -139,21 +170,32 @@ public class LevelLogic : MonoBehaviour
         yield return null;
     }
 
-    public IEnumerator RestartForFinish(GameObject player)
+    public void StartRestartForFinish(GameObject player)
+    {
+        StartCoroutine(RestartForFinish(player));
+    }
+
+    private IEnumerator RestartForFinish(GameObject player)
     {
         if (hub.myState == HubStateManager.ShopState.SecondLoad || hub.myState == HubStateManager.ShopState.SkippedSecondLoad2ThirdLoad)
         {
             hub.myState = HubStateManager.ShopState.SkippedSecondLoad2FinalLoad;
-        } else if (hub.myState == HubStateManager.ShopState.ThirdLantern)
+        }
+        else if (hub.myState == HubStateManager.ShopState.ThirdLantern)
         {
             hub.myState = HubStateManager.ShopState.SkippedThirdLoad;
-        } else if (hub.myState == HubStateManager.ShopState.Default)
+        }
+        else if (hub.myState == HubStateManager.ShopState.Default)
         {
             hub.myState = HubStateManager.ShopState.FinishedGameInit;
         }
+        print("check 1");
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
+        print("check 2");
         yield return new WaitForSeconds(1.5f);
+        print("check 3");
         Destroy(player);
+        print("check 4");
         SceneManager.LoadScene("TownHub");
         Destroy(gameObject);
         yield return null;

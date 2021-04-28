@@ -18,7 +18,7 @@ public class TorchSentryAI : Enemy
 
     private void StartBlasting()
     {
-        if (Random.Range(0, 4) == 0)
+        if (Random.Range(0, 3) == 0)
         {
             bool notInFreeSpace = true;
             int failSafe = 0;
@@ -28,7 +28,7 @@ public class TorchSentryAI : Enemy
                 failSafe++;
                 rand = Random.insideUnitCircle.normalized;
                 Vector2 eyePos = tf.position + new Vector3(0, 0.4f);
-                if (!Physics2D.Raycast(eyePos, rand, 3f, 1 << 15) && !Physics2D.Raycast(eyePos, rand, 3f, 1 << 22))
+                if (!Physics2D.Raycast(eyePos, rand, 3f, 1 << 15) && !Physics2D.Raycast(eyePos, rand, 3f, 1 << 21))
                 {
                     GameObject newProj = Instantiate(myProjectile2, eyePos, Quaternion.identity);
                     newProj.GetComponent<Rigidbody2D>().velocity = rand * newProj.GetComponent<Projectile>().GetSpeed();

@@ -62,6 +62,7 @@ public class Enemy : MonoBehaviour
             rb.velocity = Vector3.zero;
         }
         transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
+        sr.color = new Vector4(1, 1, 1, 1);
         an.SetTrigger("Destroy");
         Destroy(this);
     }

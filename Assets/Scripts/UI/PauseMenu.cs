@@ -42,6 +42,7 @@ public class PauseMenu : MonoBehaviour
             playerOilController.inDark = true;
         }
         pauseMenuUI.SetActive(false);
+        controlsMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
     }

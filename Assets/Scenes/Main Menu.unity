@@ -430,7 +430,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7984425427805318648, guid: 4cc83c4c76430054f833eac40e357b39, type: 3}
       propertyPath: myTutState
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7984425427805318648, guid: 4cc83c4c76430054f833eac40e357b39, type: 3}
       propertyPath: projectile

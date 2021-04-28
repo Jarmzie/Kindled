@@ -1,0 +1,490 @@
+fileFormatVersion: 2
+guid: 565386777f251024986a75036760d887
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1500843560375143221
+    second: 236x188_Tips_Stand_Animation_Franes_0
+  - first:
+      213: 2166005326166320448
+    second: 236x188_Tips_Stand_Animation_Franes_1
+  - first:
+      213: 3813716255977093459
+    second: 236x188_Tips_Stand_Animation_Franes_2
+  - first:
+      213: 3252068110451138772
+    second: 236x188_Tips_Stand_Animation_Franes_3
+  - first:
+      213: -2578868100378931510
+    second: 236x188_Tips_Stand_Animation_Franes_4
+  - first:
+      213: -295252846371247721
+    second: 236x188_Tips_Stand_Animation_Franes_5
+  - first:
+      213: -4983698278226086715
+    second: 236x188_Tips_Stand_Animation_Franes_6
+  - first:
+      213: 43337123968234544
+    second: 236x188_Tips_Stand_Animation_Franes_7
+  - first:
+      213: -1386117182344566372
+    second: 236x188_Tips_Stand_Animation_Franes_8
+  - first:
+      213: 3917692831483904914
+    second: 236x188_Tips_Stand_Animation_Franes_9
+  - first:
+      213: 5350237435284019882
+    second: 236x188_Tips_Stand_Animation_Franes_10
+  - first:
+      213: 6847996820666509096
+    second: 236x188_Tips_Stand_Animation_Franes_11
+  - first:
+      213: -178630547335815575
+    second: 236x188_Tips_Stand_Animation_Franes_12
+  - first:
+      213: 6019227060150061687
+    second: 236x188_Tips_Stand_Animation_Franes_13
+  - first:
+      213: 5536364315377130286
+    second: 236x188_Tips_Stand_Animation_Franes_14
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 153
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc43860dbbeeb2be0800000000000000
+      internalID: -1500843560375143221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_1
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 153
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0456fbf3e523f0e10800000000000000
+      internalID: 2166005326166320448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 153
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359b5a79aba0de430800000000000000
+      internalID: 3813716255977093459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 115
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0e0dc57baa12d20800000000000000
+      internalID: 3252068110451138772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_4
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 115
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acec35a4025063cd0800000000000000
+      internalID: -2578868100378931510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 115
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7996e1db91d07ebf0800000000000000
+      internalID: -295252846371247721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 77
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4bb9a12d856dab0800000000000000
+      internalID: -4983698278226086715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 77
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034b6b772e6f99000800000000000000
+      internalID: 43337123968234544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 77
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99694144c583cce0800000000000000
+      internalID: -1386117182344566372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 39
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29341b79fd07e5630800000000000000
+      internalID: 3917692831483904914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_10
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 39
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaad912c99cdf3a40800000000000000
+      internalID: 5350237435284019882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 39
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827e4de73d8f80f50800000000000000
+      internalID: 6847996820666509096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ed300b670658df0800000000000000
+      internalID: -178630547335815575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ac9a6be17988350800000000000000
+      internalID: 6019227060150061687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 236x188_Tips_Stand_Animation_Franes_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 76
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2bd33d030e15dc40800000000000000
+      internalID: 5536364315377130286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

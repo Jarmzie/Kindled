@@ -115,6 +115,9 @@ public class InteractShopWindow : Interactable
                 hub.FinalLanternAquired = true;
                 hub.myState = HubStateManager.ShopState.FinishedGame;
                 break;
+            default:
+                tempDialogue.GetComponent<Dialogue>().RunDialogue("", new string[] { });
+                break;
         }
         yield return null;
     }

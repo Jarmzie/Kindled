@@ -27,6 +27,7 @@ TagManager:
   - Dialogue
   - ShopWindow
   - Lantern
+  - TipsInteractable
   layers:
   - Default
   - TransparentFX

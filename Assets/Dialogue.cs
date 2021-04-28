@@ -25,6 +25,7 @@ public class Dialogue : MonoBehaviour
             lastRoutine = StartCoroutine(WriteText(DialogueString[myPlace]));
         } else
         {
+            GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(true);
             Destroy(gameObject);
         }
     }
@@ -43,6 +44,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(true);
             Destroy(gameObject);
         }
     }
@@ -51,7 +53,7 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("e"))
         {
-            if (myPlace + 1 >= DialogueString.Length)
+            if (!writing && myPlace + 1 >= DialogueString.Length)
             {
                 GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(true);
                 if (creator != null)
@@ -64,6 +66,9 @@ public class Dialogue : MonoBehaviour
             if (writing)
             {
                 StopCoroutine(lastRoutine);
+                myText.text = dName + DialogueString[myPlace];
+                writing = false;
+                return;
             }
             myPlace++;
             if (creator != null && DialogueString[myPlace].Substring(0, 1) == "\\")

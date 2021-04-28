@@ -88,6 +88,7 @@ public class Dialogue : MonoBehaviour
         for (int i = 0; i < message.Length + 1; i++)
         {
             myText.text = dName + message.Substring(0, i);
+            //SOUND SHOULD PLAYER HERE
             yield return new WaitForSeconds(textTime);
         }
         writing = false;

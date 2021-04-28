@@ -28,6 +28,7 @@ public class LevelLogic : MonoBehaviour
         if (hub.myState == HubStateManager.ShopState.FirstLoad)
         {
             hub.myState = HubStateManager.ShopState.SecondLoad;
+            hub.myTutState = HubStateManager.TutorialState.Controls;
         }
     }
 

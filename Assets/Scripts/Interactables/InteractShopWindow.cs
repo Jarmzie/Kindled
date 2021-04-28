@@ -13,7 +13,13 @@ public class InteractShopWindow : Interactable
     public void Awake()
     {
         hub = GameObject.FindGameObjectWithTag("HubStateManager").GetComponent<HubStateManager>();
-        InteractMessage = "Talk to Shop Keeper - Press 'E'";
+        if (hub.myState == HubStateManager.ShopState.FirstLoad)
+        {
+            InteractMessage = "Talk to Shop Keeper - Press 'E'";
+        } else
+        {
+            InteractMessage = "Talk to Bjartur - Press 'E'";
+        }
     }
 
     public override IEnumerator OnInteract()
@@ -27,7 +33,7 @@ public class InteractShopWindow : Interactable
         switch (hub.myState)
         {
             case HubStateManager.ShopState.FirstLoad:
-                tempDialogue.GetComponent<Dialogue>().RunDialogue(MOTH_NAME, new string[] {
+                tempDialogue.GetComponent<Dialogue>().RunDialogue("Shop Keeper: ", new string[] {
                     "Hmmmm... They sent a new one, huh?",
                     "I have nothing to say to you right now.",
                     "You're gonna want to talk to Alto. He's the one sitting at that silly little \"tips\" stand. He'll give you more info about the dungeon.",

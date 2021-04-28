@@ -44,6 +44,19 @@ public class HubStateManager : MonoBehaviour
     public enum TutorialState
     {
         FirstLoad,
-        GoodToGo
+        GoodToGo,
+        Controls,
+        Why,
+        TheDungeon,
+        Oil,
+        TheHub,
+        TheShop,
+        Lanterns,
+        Baterns,
+        DiskDevils,
+        Drillburns,
+        Litwicks,
+        UpgradeRooms,
+        BottomOfDungeon
     }
 }

@@ -9,8 +9,6 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject controlsMenuUI;
-    
-    
 
     private void Start()
     {
@@ -22,7 +20,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && GameObject.FindGameObjectsWithTag("ShopWindow").Length < 1 && GameObject.FindGameObjectsWithTag("Dialogue").Length < 1)
         {
             if (GameIsPaused)
             {

@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //This keeps throwing errors and it's annoying me
-       /*if(Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){
+        /*if(Input.GetButtonDown("Horizontal") || Input.GetButtonDown("Vertical")){
             FindObjectOfType<AudioManager>().Plays("PlayerWalk");
         }else if(!Input.GetButtonDown("Horizontal") && (!Input.GetButtonDown("Vertical")))
         {

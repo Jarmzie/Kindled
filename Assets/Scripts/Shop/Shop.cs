@@ -119,7 +119,7 @@ public class Shop : MonoBehaviour
         if (!temp.getLocked())
         {
             currLant.sprite = temp.getSprite();
-            lantName.text = temp.getName();
+            lantName.text = temp.getName() + " (E)";
             lantDesc.text = temp.getDesc();
         } else
         {

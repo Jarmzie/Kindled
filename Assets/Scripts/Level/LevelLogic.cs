@@ -61,9 +61,13 @@ public class LevelLogic : MonoBehaviour
         if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom)
         {
             inUpgradeRoom = true;
+            FindObjectOfType<AudioManager>().Stop("CaveMusic");
+            FindObjectOfType<AudioManager>().Plays("UpgradeMusic");
             StartCoroutine(NewUpgradeRoom());
             return;
         } else if (inUpgradeRoom) {
+            FindObjectOfType<AudioManager>().Stop("UpgradeMusic");
+            FindObjectOfType<AudioManager>().Plays("CaveMusic");
             inUpgradeRoom = false;
         }
         StartCoroutine(NewRandomRoom());
@@ -154,6 +158,8 @@ public class LevelLogic : MonoBehaviour
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
         Destroy(player);
+        FindObjectOfType<AudioManager>().Stop("EnterDungeon");
+        FindObjectOfType<AudioManager>().Plays("TownHubMusic");
         SceneManager.LoadScene("TownHub");
         Destroy(gameObject);
         yield return null;

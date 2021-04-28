@@ -5740,6 +5740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InteractMessage: Message.Default
   dialoguePrefab: {fileID: 5920509800841081949, guid: 63bf48f548c65804995155bbf9e58cfb, type: 3}
+  tipsShop: {fileID: 2928151690817545004, guid: bcb60557a7e6aaf4a9c171da0c0ec228, type: 3}
 --- !u!61 &1483737379
 BoxCollider2D:
   m_ObjectHideFlags: 0

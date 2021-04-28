@@ -45,18 +45,5 @@ public class HubStateManager : MonoBehaviour
     {
         FirstLoad,
         GoodToGo,
-        Controls,
-        Why,
-        TheDungeon,
-        Oil,
-        TheHub,
-        TheShop,
-        Lanterns,
-        Baterns,
-        DiskDevils,
-        Drillburns,
-        Litwicks,
-        UpgradeRooms,
-        BottomOfDungeon
     }
 }

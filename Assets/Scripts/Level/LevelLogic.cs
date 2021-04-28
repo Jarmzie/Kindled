@@ -28,7 +28,6 @@ public class LevelLogic : MonoBehaviour
         if (hub.myState == HubStateManager.ShopState.FirstLoad)
         {
             hub.myState = HubStateManager.ShopState.SecondLoad;
-            hub.myTutState = HubStateManager.TutorialState.Controls;
         }
     }
 
@@ -76,7 +75,7 @@ public class LevelLogic : MonoBehaviour
         player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(Random.Range(1,4));
+        SceneManager.LoadScene(Random.Range(1,6));
         yield return new WaitForSeconds(1);
 
         //Updates LevelLogic objects

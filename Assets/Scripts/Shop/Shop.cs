@@ -55,7 +55,7 @@ public class Shop : MonoBehaviour
             lanternSpriteList[3],
             inGameSpriteList[3],
             projectileList[3],
-            0.2f,
+            0.4f,
             !hub.FinalLanternAquired,
             "Draught Lantern",
             "An intricately designed lamp that was found at the bottom of the dungeon. Shoots multiple small projectiles that don't do much damage."

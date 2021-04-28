@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public int maxHealth, health, damage, cost;
     private bool isFlashing = false;
+    public float heightDiffFromPlayer, PlayerHeight;
     public GameObject myProjectile, player;
     public Transform tf;
     public SpriteRenderer sr;
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
         tf = GetComponent<Transform>();
         an = GetComponent<Animator>();
         player = GameObject.FindWithTag("PlayerLegs");
+        PlayerHeight = player.GetComponent<SpriteRenderer>().size.y / 2;
     }
 
     public void TakeDamage(int damageAmount)
@@ -61,6 +63,7 @@ public class Enemy : MonoBehaviour
         }
         transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
         an.SetTrigger("Destroy");
+        Destroy(this);
     }
 
     public void DamagePlayer()

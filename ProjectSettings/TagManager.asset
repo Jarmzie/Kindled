@@ -28,6 +28,7 @@ TagManager:
   - ShopWindow
   - Lantern
   - TipsInteractable
+  - EnemyLayer
   layers:
   - Default
   - TransparentFX
@@ -83,6 +84,9 @@ TagManager:
   - name: BehindOfPlayer
     uniqueID: 1110701319
     locked: 0
+  - name: EnemyInBack
+    uniqueID: 1232149905
+    locked: 0
   - name: BackForLantern
     uniqueID: 4030967031
     locked: 0
@@ -94,6 +98,9 @@ TagManager:
     locked: 0
   - name: FrontForLantern
     uniqueID: 1799939135
+    locked: 0
+  - name: EnemyInFront
+    uniqueID: 4247809199
     locked: 0
   - name: FrontOfPlayer
     uniqueID: 2991404625

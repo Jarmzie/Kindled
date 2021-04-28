@@ -7,7 +7,7 @@ public class PlayerOilController : MonoBehaviour
 {
     public int initMaxOil = 200, maxOil = 200, currOil = 200;
     public OilBar OilBar;
-    public bool inDark = true, notDying = true;
+    public bool  inDark = true, notDying = true;
 
     private void Start()
     {

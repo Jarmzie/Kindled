@@ -82,7 +82,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: DoorOpen
     clip: {fileID: 8300000, guid: c258f7001d014904fbf5060462506ed4, type: 3}
-    volume: 0.056
+    volume: 0.133
     pitch: 1.32
     loop: 0
     source: {fileID: 0}

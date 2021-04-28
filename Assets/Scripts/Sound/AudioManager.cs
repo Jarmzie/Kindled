@@ -44,6 +44,11 @@ public class AudioManager : MonoBehaviour
             s.source.Play();
         }
 
+        if (PauseMenu.GameIsPaused)
+        {
+            s.source.pitch *= .5f;
+        }
+
     }
 
    public void Stop (string name)

@@ -43,11 +43,7 @@ public class PlayerMovement : MonoBehaviour
         
         
 
-        //THIS IS JUST FOR TESTING, DELETE BEFORE FINAL BUILD!!!
-        if (Input.GetKey("escape"))
-        {
-            Application.Quit();
-        }
+        //deleted the if statement that closed the game because I created a pause menu
     }
 
     void FixedUpdate()

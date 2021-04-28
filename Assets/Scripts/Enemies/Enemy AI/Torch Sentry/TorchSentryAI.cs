@@ -9,7 +9,7 @@ public class TorchSentryAI : Enemy
 
     void Awake()
     {
-        health = 30;
+        health = 25;
         cost = 2;
         //myLight = GetComponent<Light2D>(); //just in case
         GeneralSetUp();

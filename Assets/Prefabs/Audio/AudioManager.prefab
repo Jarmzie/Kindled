@@ -122,3 +122,15 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: deez
+    clip: {fileID: 8300000, guid: c663a65b66330bd44a3c350b7abf8245, type: 3}
+    volume: 0.062
+    pitch: 0.79
+    loop: 0
+    source: {fileID: 0}
+  - name: Heartbeat
+    clip: {fileID: 8300000, guid: ad52e4259be107f49a7ec8b7e6f92580, type: 3}
+    volume: 0.502
+    pitch: 1.01
+    loop: 1
+    source: {fileID: 0}

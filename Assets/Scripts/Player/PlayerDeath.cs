@@ -84,13 +84,16 @@ public class PlayerDeath : MonoBehaviour
     {
         if (playerHealth == 2)
         {
+            FindObjectOfType<AudioManager>().Stop("Heartbeat");
             bvsr.color = new Vector4(1, 1, 1, 0.15f);
         }
         else if (playerHealth == 1)
         {
+            FindObjectOfType<AudioManager>().Plays("Heartbeat");
             bvsr.color = new Vector4(1, 1, 1, 0.33f);
         } else
         {
+            FindObjectOfType<AudioManager>().Stop("Heartbeat");
             bvsr.color = new Vector4(1, 1, 1, 0);
         }
     }
@@ -109,4 +112,6 @@ public class PlayerDeath : MonoBehaviour
         GetComponent<Animator>().SetTrigger("Death");
         GameObject.FindGameObjectWithTag("LevelLogic").GetComponent<LevelLogic>().StartDeathCoroutine(gameObject);
     }
+
+  
 }

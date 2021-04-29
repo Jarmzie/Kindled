@@ -28,6 +28,8 @@ public class DrillburnAI : Enemy
 
     void Update()
     {
+        DeathSound();
+
         if (!charging) //checks if charging
         {
             if (horizontal) //checks direction
@@ -63,6 +65,8 @@ public class DrillburnAI : Enemy
                 }
             }
         }
+
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -77,6 +81,7 @@ public class DrillburnAI : Enemy
         rb.velocity = Vector2.zero;
         horizontal = !horizontal;
         charging = true;
+        FindObjectOfType<AudioManager>().Plays("deez");
         myLight.pointLightInnerRadius = 0.25f;
         myLight.pointLightOuterRadius = 1.25f;
         yield return new WaitForSeconds(1.5f);
@@ -92,6 +97,7 @@ public class DrillburnAI : Enemy
                 break;
         }
         yield return new WaitForSeconds(5);
+        FindObjectOfType<AudioManager>().Stop("deez");
         Vector2 tempHold = rb.velocity.normalized;
         rb.velocity = Vector2.zero;
         myLight.pointLightInnerRadius = 0;
@@ -102,5 +108,14 @@ public class DrillburnAI : Enemy
         rb.velocity = tempHold * 2;
         charging = false;
         yield return null;
+    }
+
+    void DeathSound()
+    {
+        if(health == 0)
+        {
+            FindObjectOfType<AudioManager>().Stop("deez");
+            
+        }
     }
 }

@@ -67,12 +67,21 @@ public class LevelLogic : MonoBehaviour
         } else if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom) {
             inUpgradeRoom = true;
             FindObjectOfType<AudioManager>().Stop("CaveMusic");
+            FindObjectOfType<AudioManager>().Stop("RuinMusic");
             FindObjectOfType<AudioManager>().Plays("UpgradeMusic");
             StartCoroutine(NewUpgradeRoom());
             return;
         } else if (inUpgradeRoom) {
             FindObjectOfType<AudioManager>().Stop("UpgradeMusic");
-            FindObjectOfType<AudioManager>().Plays("CaveMusic");
+            if (currLevel >= 6)
+            {
+                FindObjectOfType<AudioManager>().Plays("RuinMusic");
+            }
+            else
+            {
+                FindObjectOfType<AudioManager>().Plays("CaveMusic");
+            }
+
             inUpgradeRoom = false;
         }
         StartCoroutine(NewRandomRoom());
@@ -175,6 +184,8 @@ public class LevelLogic : MonoBehaviour
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
         Destroy(player);
+        FindObjectOfType<AudioManager>().Stop("CaveMusic");
+        FindObjectOfType<AudioManager>().Stop("RuinMusic");
         FindObjectOfType<AudioManager>().Stop("deez");
         SceneManager.LoadScene("TownHub");
         Destroy(gameObject);
@@ -206,7 +217,7 @@ public class LevelLogic : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         print("check 3");
         Destroy(player);
-        FindObjectOfType<AudioManager>().Stop("CaveMusic");
+        FindObjectOfType<AudioManager>().Stop("RuinMusic");
         FindObjectOfType<AudioManager>().Plays("TownHubMusic");
         print("check 4");
         SceneManager.LoadScene("TownHub");

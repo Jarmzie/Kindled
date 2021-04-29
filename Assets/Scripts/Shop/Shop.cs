@@ -31,7 +31,7 @@ public class Shop : MonoBehaviour
             0.3f,
             false,
             "Hood Lantern",
-            "You're trusty old lantern. Shoots a basic fireball that does decent damage."
+            "Your trusty old lantern. Shoots a basic fireball that does decent damage."
         ));
         myShopList.addNode(new ShopNode(
             lanternSpriteList[1],

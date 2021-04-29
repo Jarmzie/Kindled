@@ -30,6 +30,7 @@ public class TorchSentryAI : Enemy
                 Vector2 eyePos = tf.position + new Vector3(0, 0.4f);
                 if (!Physics2D.Raycast(eyePos, rand, 3f, 1 << 15) && !Physics2D.Raycast(eyePos, rand, 3f, 1 << 21))
                 {
+                    an.SetTrigger("WaxMeBaby");
                     GameObject newProj = Instantiate(myProjectile2, eyePos, Quaternion.identity);
                     newProj.GetComponent<Rigidbody2D>().velocity = rand * newProj.GetComponent<Projectile>().GetSpeed();
                     notInFreeSpace = false;
@@ -42,6 +43,7 @@ public class TorchSentryAI : Enemy
         }
         else
         {
+            an.SetTrigger("Attack");
             Vector2 eyePos = tf.position + new Vector3(0, 0.4f);
             Vector2 sentDirection = findPlayerDirection(player.transform.position, eyePos);
             GameObject newProj = Instantiate(myProjectile, eyePos, Quaternion.identity);

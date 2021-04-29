@@ -19,11 +19,11 @@ public class TorchFrontBackButItNeedsToBeQuickBecauseThisIsDueInAnHour : MonoBeh
     {
         if (player.transform.position.y > transform.position.y + posY)
         {
-            sr.sortingLayerName = "EnemyInFront";
+            sr.sortingLayerName = "Default";
         }
         else
         {
-            sr.sortingLayerName = "EnemyInBack";
+            sr.sortingLayerName = "Decor";
         }
     }
 }

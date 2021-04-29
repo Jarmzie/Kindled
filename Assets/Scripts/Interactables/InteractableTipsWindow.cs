@@ -36,7 +36,7 @@ public class InteractableTipsWindow : Interactable
                 tempDialogue.GetComponent<Dialogue>().RunDialogue("Squid: ", new string[] {
                     "Oh, hallo!",
                     "You must be new here! My name is Alto, nice to meet you!",
-                    //"My job here to is act as a researcher. I'm also in charge of telling people like you how to do their jobs correctly!",
+                    "My job here to is act as a researcher. I'm also in charge of telling people like you how to do their jobs correctly!",
                     "It seems you already know how to move your legs since you made it over here, which means you're ahead of the curve!",
                     "Anyway, you might have seen the entrance to the dungeon over near the front of the platform. That's where you'll be doing most of your work.",
                     "It's very dark down there, darker than up here, so you won't be able to see much.",

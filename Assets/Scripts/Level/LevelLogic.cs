@@ -66,9 +66,13 @@ public class LevelLogic : MonoBehaviour
             return;
         } else if (currLevel != 0 && currLevel % roomsPerUpgrade == 0 && !inUpgradeRoom) {
             inUpgradeRoom = true;
+            FindObjectOfType<AudioManager>().Stop("CaveMusic");
+            FindObjectOfType<AudioManager>().Plays("UpgradeMusic");
             StartCoroutine(NewUpgradeRoom());
             return;
         } else if (inUpgradeRoom) {
+            FindObjectOfType<AudioManager>().Stop("UpgradeMusic");
+            FindObjectOfType<AudioManager>().Plays("CaveMusic");
             inUpgradeRoom = false;
         }
         StartCoroutine(NewRandomRoom());
@@ -202,6 +206,8 @@ public class LevelLogic : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         print("check 3");
         Destroy(player);
+        FindObjectOfType<AudioManager>().Stop("CaveMusic");
+        FindObjectOfType<AudioManager>().Plays("TownHubMusic");
         print("check 4");
         SceneManager.LoadScene("TownHub");
         Destroy(gameObject);

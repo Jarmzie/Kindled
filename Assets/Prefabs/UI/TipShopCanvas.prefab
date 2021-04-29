@@ -585,9 +585,9 @@ MonoBehaviour:
   tipSpriteList:
   - {fileID: 21300000, guid: 3130465f1a99c2e4ab1dbad7ec34f165, type: 3}
   - {fileID: 21300000, guid: 6cd9c328986ef9340bea397d205f0a05, type: 3}
-  - {fileID: 21300000, guid: 99ce2e1234a3e414aa6ba3b3bec818a1, type: 3}
+  - {fileID: 21300000, guid: 344f98c7caa8218459ce04f3357cbc78, type: 3}
   - {fileID: 21300000, guid: f6396ea2ef975774ca2076750385dfa3, type: 3}
-  - {fileID: 21300000, guid: 809593e0d3fbb2648821050801252053, type: 3}
+  - {fileID: 21300000, guid: b244416134122e240a47ab9954c00e84, type: 3}
   - {fileID: 21300000, guid: 59ad75332b31a0446a7c52ac929fb350, type: 3}
   - {fileID: 21300000, guid: 448e4d1511b59084b99331038d8e6615, type: 3}
   - {fileID: -6318729089715867932, guid: b5931b91ed45e82499f28336052ace95, type: 3}

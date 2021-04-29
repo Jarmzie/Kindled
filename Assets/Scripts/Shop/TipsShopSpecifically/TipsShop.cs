@@ -50,6 +50,8 @@ public class TipsShop : MonoBehaviour
                     "The dungeon is a large interconnected series of seemingly random rooms that don't make any logical sense.",
                     "Also, it's filled with monsters!",
                     "In all seriousness, it's a pretty dangerous place. Each floor has a wave of monsters that you must defeat before traveling lower.",
+                    "The exit to the room is never where you came from. You don't want to accidentilly go backwards and loose progress!",
+                    "Though the entrance to the room does close behind you, so I don't think that should be a problem.",
                     "Luckily, I've heard rumors of safe areas with loot every couple floors. But you can ask me about those seperately.",
                     "Another thing to note is that the amount of monsters increases every floor. So be careful as you go deeper.",
                     "One last thing. Halfway through the dungeon the floors seem to change color. So be aware of that.",

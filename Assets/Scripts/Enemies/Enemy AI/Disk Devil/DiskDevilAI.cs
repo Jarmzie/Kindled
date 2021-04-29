@@ -11,7 +11,7 @@ public class DiskDevilAI : Enemy
     Coroutine lastRoutine = null;
     void Awake()
     {
-        health = 40;
+        health = 30;
         cost = 2;
         myLight = GetComponent<Light2D>();
         GeneralSetUp();

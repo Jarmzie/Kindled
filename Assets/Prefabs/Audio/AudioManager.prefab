@@ -111,15 +111,15 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: MainMenuMusic
-    clip: {fileID: 8300000, guid: cbc401c3ececd294f9e6c2d1527beef5, type: 3}
+    clip: {fileID: 8300000, guid: f5492023813e22748b4436a9a0fba037, type: 3}
     volume: 0.12
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: UpgradeMusic
-    clip: {fileID: 8300000, guid: f5492023813e22748b4436a9a0fba037, type: 3}
+    clip: {fileID: 8300000, guid: 5a4b8368b44cd4a4e8d5ef7fe36516fb, type: 3}
     volume: 0.12
-    pitch: 1
+    pitch: 1.33
     loop: 1
     source: {fileID: 0}
   - name: deez

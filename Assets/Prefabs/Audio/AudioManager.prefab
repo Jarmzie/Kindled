@@ -134,3 +134,9 @@ MonoBehaviour:
     pitch: 1.01
     loop: 1
     source: {fileID: 0}
+  - name: LogNoise
+    clip: {fileID: 8300000, guid: 43f30b95e2eca1442a50a41a71a6e8fc, type: 3}
+    volume: 0.317
+    pitch: 1.01
+    loop: 1
+    source: {fileID: 0}

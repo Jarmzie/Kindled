@@ -65,6 +65,7 @@ public class Dialogue : MonoBehaviour
             }
             if (writing)
             {
+                FindObjectOfType<AudioManager>().Stop("LogNoise");
                 StopCoroutine(lastRoutine);
                 myText.text = dName + DialogueString[myPlace];
                 writing = false;
@@ -88,10 +89,11 @@ public class Dialogue : MonoBehaviour
         for (int i = 0; i < message.Length + 1; i++)
         {
             myText.text = dName + message.Substring(0, i);
-            //SOUND SHOULD PLAYER HERE
+            FindObjectOfType<AudioManager>().Plays("LogNoise");
             yield return new WaitForSeconds(textTime);
         }
         writing = false;
+        FindObjectOfType<AudioManager>().Stop("LogNoise");
         yield return null;
     }
 }

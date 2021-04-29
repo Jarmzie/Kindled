@@ -130,13 +130,19 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Heartbeat
     clip: {fileID: 8300000, guid: ad52e4259be107f49a7ec8b7e6f92580, type: 3}
-    volume: 0.502
+    volume: 0.227
     pitch: 1.01
     loop: 1
     source: {fileID: 0}
   - name: LogNoise
     clip: {fileID: 8300000, guid: 43f30b95e2eca1442a50a41a71a6e8fc, type: 3}
     volume: 0.317
+    pitch: 1.01
+    loop: 1
+    source: {fileID: 0}
+  - name: RuinMusic
+    clip: {fileID: 8300000, guid: 11f90a5da2dc5f84288664fc8d7e9341, type: 3}
+    volume: 0.17
     pitch: 1.01
     loop: 1
     source: {fileID: 0}

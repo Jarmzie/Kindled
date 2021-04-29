@@ -171,6 +171,7 @@ public class LevelLogic : MonoBehaviour
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
         Destroy(player);
+        FindObjectOfType<AudioManager>().Stop("deez");
         SceneManager.LoadScene("TownHub");
         Destroy(gameObject);
         yield return null;

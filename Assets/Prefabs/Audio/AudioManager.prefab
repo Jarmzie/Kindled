@@ -111,14 +111,26 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
   - name: MainMenuMusic
-    clip: {fileID: 8300000, guid: cbc401c3ececd294f9e6c2d1527beef5, type: 3}
+    clip: {fileID: 8300000, guid: f5492023813e22748b4436a9a0fba037, type: 3}
     volume: 0.12
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: UpgradeMusic
-    clip: {fileID: 8300000, guid: f5492023813e22748b4436a9a0fba037, type: 3}
+    clip: {fileID: 8300000, guid: 5a4b8368b44cd4a4e8d5ef7fe36516fb, type: 3}
     volume: 0.12
-    pitch: 1
+    pitch: 1.33
+    loop: 1
+    source: {fileID: 0}
+  - name: deez
+    clip: {fileID: 8300000, guid: c663a65b66330bd44a3c350b7abf8245, type: 3}
+    volume: 0.062
+    pitch: 0.79
+    loop: 0
+    source: {fileID: 0}
+  - name: Heartbeat
+    clip: {fileID: 8300000, guid: ad52e4259be107f49a7ec8b7e6f92580, type: 3}
+    volume: 0.502
+    pitch: 1.01
     loop: 1
     source: {fileID: 0}

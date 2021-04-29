@@ -101,7 +101,7 @@ public class PlayerDeath : MonoBehaviour
     public void PlayerDie()
     {
         FindObjectOfType<AudioManager>().Stop("CaveMusic");
-        //FindObjectOfType<AudioManager>().Stop("RuinsMusic");
+        FindObjectOfType<AudioManager>().Stop("RuinMusic");
         FindObjectOfType<AudioManager>().Plays("DeathMusic");
         FindObjectOfType<AudioManager>().Plays("PlayerDeath");
         GetComponent<Rigidbody2D>().velocity = Vector3.zero;

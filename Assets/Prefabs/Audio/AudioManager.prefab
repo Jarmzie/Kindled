@@ -129,8 +129,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Heartbeat
-    clip: {fileID: 8300000, guid: ad52e4259be107f49a7ec8b7e6f92580, type: 3}
-    volume: 0.227
+    clip: {fileID: 8300000, guid: 3bad74ae33ba82e4dba9ee3acb44c04f, type: 3}
+    volume: 0.15
     pitch: 1.01
     loop: 1
     source: {fileID: 0}

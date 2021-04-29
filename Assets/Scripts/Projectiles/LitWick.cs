@@ -6,6 +6,6 @@ public class LitWick : Projectile
 {
     private void Awake()
     {
-        GeneralSetUp(6, 0, 0, 2);
+        GeneralSetUp(4, 0, 0, 2);
     }
 }

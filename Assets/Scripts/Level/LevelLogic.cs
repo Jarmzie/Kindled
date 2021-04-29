@@ -7,7 +7,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LevelLogic : MonoBehaviour
 {
-    public GameObject enemySpawn, player;
+    public GameObject enemySpawn, player, dialoguePrefab;
     private Image transitionImage;
     public GameObject[] currSpawnLocations;
     public Door exit, entrance;
@@ -99,12 +99,12 @@ public class LevelLogic : MonoBehaviour
         player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
-        if (currLevel < 6)
+        if (currLevel < 7)
         {
             SceneManager.LoadScene(Random.Range(1, 7));
         } else
         {
-            SceneManager.LoadScene(Random.Range(1, 7));
+            SceneManager.LoadScene(Random.Range(7, 13));
         }
         yield return new WaitForSeconds(1);
 
@@ -141,7 +141,13 @@ public class LevelLogic : MonoBehaviour
         player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene("UpgradeLevel");
+        if (currLevel < 6)
+        {
+            SceneManager.LoadScene("UpgradeLevel");
+        } else
+        {
+            SceneManager.LoadScene("RedUpgradeRoom");
+        }
         yield return new WaitForSeconds(1);
 
         //Updates LevelLogic objects

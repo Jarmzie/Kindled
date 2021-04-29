@@ -36,11 +36,32 @@ EditorBuildSettings:
     path: Assets/Scenes/Level6.unity
     guid: a84744082d327d54eb7c78ef62acca10
   - enabled: 1
+    path: Assets/Scenes/Level7.unity
+    guid: aafb390dab380fd4c881ce6460a9fbb6
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
+    guid: 9087b8febbd97b749bc71c51d4dbf131
+  - enabled: 1
+    path: Assets/Scenes/Level9.unity
+    guid: c5671158c32cc4c4abc3119f253d752d
+  - enabled: 1
+    path: Assets/Scenes/Level10.unity
+    guid: 45dff12a5c443a24cb2f4c8434295735
+  - enabled: 1
+    path: Assets/Scenes/Level11.unity
+    guid: 236d360b1eef8a74995e83ef9ccb961c
+  - enabled: 1
+    path: Assets/Scenes/Level12.unity
+    guid: ca25f8c6bda21934797e5dd85af65db0
+  - enabled: 1
     path: Assets/Scenes/TownHub.unity
     guid: 995fd3cdeb51ff44e8bf6ee63a6e261e
   - enabled: 1
     path: Assets/Scenes/UpgradeLevel.unity
     guid: 676e9431e40b62943ab01be37c65c99f
+  - enabled: 1
+    path: Assets/Scenes/RedUpgradeRoom.unity
+    guid: 6fd253a4386925b4fbad7a71c1ffc030
   - enabled: 1
     path: Assets/Scenes/FinalLevel.unity
     guid: 177cd84b93fd2bc429e9c71d0e34e0d1

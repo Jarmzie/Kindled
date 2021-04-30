@@ -5,7 +5,7 @@ using UnityEngine;
 public class InteractVictoryTorch : Interactable
 {
     [SerializeField]
-    private GameObject dialoguePrefab, winTorch;
+    private GameObject dialoguePrefab, winTorch, myLight;
 
     private void Awake()
     {
@@ -16,6 +16,7 @@ public class InteractVictoryTorch : Interactable
     {
         GameObject.FindGameObjectWithTag("PlayerLegs").GetComponent<PlayerMovement>().CutsceneMe(false);
         winTorch.GetComponent<Animator>().SetTrigger("DevilComes");
+        myLight.GetComponent<Animator>().SetTrigger("LetThereBeLight");
         yield return new WaitForSeconds(3.0f);
         GameObject temp = Instantiate(dialoguePrefab);
         temp.GetComponent<Dialogue>().RunDialogue("", new string[] {

@@ -48,7 +48,6 @@ public class AudioManager : MonoBehaviour
         {
             s.source.pitch *= .5f;
         }
-
     }
 
    public void Stop (string name)

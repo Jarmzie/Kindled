@@ -5,9 +5,9 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class DrillburnAI : Enemy
 {
-    private bool horizontal = true, charging = false;
+    private bool horizontal = true, charging = false, soundPlaying = false;
     private Light2D myLight;
-    private const float VIEW_DIST = 1.25f;
+    private const float VIEW_DIST = 2f;
 
     private enum DrillDirection
     {
@@ -74,13 +74,31 @@ public class DrillburnAI : Enemy
         an.SetTrigger("SwitchDirection");
     }
 
+    public override void DieLOL()
+    {
+        player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth * 1.2f));
+        if (rb.bodyType != RigidbodyType2D.Static)
+        {
+            rb.velocity = Vector3.zero;
+        }
+        transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
+        sr.color = new Vector4(1, 1, 1, 1);
+        if (soundPlaying)
+        {
+            FindObjectOfType<AudioManager>().Stop("deez");
+        }
+        an.SetTrigger("Destroy");
+        Destroy(this);
+    }
+
     //It's 4:11 AM, I just programmed this in one sitting wtihout testing and it worked first try and I popped off so hard
-    
+
     private IEnumerator Charge(DrillDirection chaseDirection)
     {
         rb.velocity = Vector2.zero;
         horizontal = !horizontal;
         charging = true;
+        soundPlaying = true;
         FindObjectOfType<AudioManager>().Plays("deez");
         myLight.pointLightInnerRadius = 0.25f;
         myLight.pointLightOuterRadius = 1.25f;
@@ -98,6 +116,7 @@ public class DrillburnAI : Enemy
         }
         yield return new WaitForSeconds(5);
         FindObjectOfType<AudioManager>().Stop("deez");
+        soundPlaying = false;
         Vector2 tempHold = rb.velocity.normalized;
         rb.velocity = Vector2.zero;
         myLight.pointLightInnerRadius = 0;

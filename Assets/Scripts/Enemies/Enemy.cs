@@ -54,7 +54,7 @@ public class Enemy : MonoBehaviour
         yield return null;
     }
 
-    public void DieLOL()
+    public virtual void DieLOL()
     {
         player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth * 1.2f));
         if (rb.bodyType != RigidbodyType2D.Static)

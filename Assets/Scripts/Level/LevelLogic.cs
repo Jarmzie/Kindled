@@ -211,15 +211,11 @@ public class LevelLogic : MonoBehaviour
         {
             hub.myState = HubStateManager.ShopState.FinishedGameInit;
         }
-        print("check 1");
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
-        print("check 2");
         yield return new WaitForSeconds(1.5f);
-        print("check 3");
         Destroy(player);
         FindObjectOfType<AudioManager>().Stop("RuinMusic");
         FindObjectOfType<AudioManager>().Plays("TownHubMusic");
-        print("check 4");
         SceneManager.LoadScene("TownHub");
         Destroy(gameObject);
         yield return null;

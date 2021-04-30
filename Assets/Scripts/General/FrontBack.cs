@@ -19,7 +19,7 @@ public class FrontBack : MonoBehaviour
     {
         if (player.transform.position.y > transform.position.y + posY)
         {
-            sr.sortingLayerName = "FrontOfPlayer";
+            sr.sortingLayerName = "Default";
         }
         else
         {

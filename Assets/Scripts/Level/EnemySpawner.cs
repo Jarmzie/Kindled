@@ -40,7 +40,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void DecideSpawning()
     {
-        if (difficultyPoints > 0)
+        if (difficultyPoints > 0 && numOfEnemies < maxEnemies)
         {
             StartCoroutine(SpawnRandomEnemies(2));
         }

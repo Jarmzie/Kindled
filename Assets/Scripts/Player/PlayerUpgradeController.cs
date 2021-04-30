@@ -6,7 +6,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 /**
  * I'm gonna be honest...
  * 
- * This is probably the MOST scuffed script in this entire project
+ * This is probably the MOST scuffed script in this entire project (This is Joshua from the future. It's not.)
  * 
  * All the upgrades work differently:
  * 

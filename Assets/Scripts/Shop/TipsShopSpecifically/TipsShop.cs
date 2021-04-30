@@ -69,7 +69,7 @@ public class TipsShop : MonoBehaviour
                     "Luckily, your suit is self-repairing. So if you get hit, you just have to not get hit for a certain amount of time and you'll heal up.",
                     "I would give you three hits before the suit decides it's had enough. So make sure if you've gotten hit twice to retreat for a while.",
                     "Also, one last thing. If you happen to spill some oil on yourself, make sure you don't touch water.",
-                    "We really don't want another \"Heaven Stairway\" incident.",
+                    "We really don't want a repeat of the \"Heaven's Stairway\" incident.",
                     "Anyway, I hope that helps! Come back if you ever need more help! I've got plenty of things to talk about!"
         }, tipSpriteList[3], "Oil and Health", "Hear some tips about oil and your health."));
         myTipList.addNode(new TipNode(new string[] {
@@ -84,7 +84,7 @@ public class TipsShop : MonoBehaviour
         }, tipSpriteList[4], "The Oil Rig", "Hear some insight into the Oil Rig (the hub)."));
         myTipList.addNode(new TipNode(new string[] {
             "Hallo! How about we talk about Bjartur's shop?",
-                    "I assume you've bet Bjartur. I don't think he likes me very much.",
+                    "I assume you've met Bjartur. I don't think he likes me very much.",
                     "To be honest, I don't think he likes many people very much. But I digress.",
                     "The shop can be used to switch out your lanterns. It seems Bjartur is even gonna let you use one of his lanterns.",
                     "If you find any more lanterns, it's possible that Bjartur might even let you keep more there. Just don't overstay your welcome.",
@@ -103,7 +103,7 @@ public class TipsShop : MonoBehaviour
                     "In my studies I've picked up a few things about them.",
                     "First of all, you don't want to get too close to them. If you're too close, they'll swoop at you to try and hurt you.",
                     "If you're out of their range, they'll either shoot at you or reposition themselves.",
-                    "They don't take too much damage to off them, but you could easily get overwhelmed by a bunch of them.",
+                    "It doesn't take too much damage to off them, but you could easily get overwhelmed by a bunch of them.",
                     "Anyway, I hope that helps! Come back if you ever need more help! I've got plenty of things to talk about!"
         }, tipSpriteList[7], "Banterns", "Hear some tips about how to fight Banterns."));
         myTipList.addNode(new TipNode(new string[] {
@@ -149,7 +149,7 @@ public class TipsShop : MonoBehaviour
                     "I actually don't know much about the bottom of the dungeon. I just know at some point the walls change color. But I haven't made it much past there.",
                     "I've researched the dungeon a lot, but I'm not a fighter. It took a lot of enginuity to get as far as I have!",
                     "The thing I do know is that I'm like 90% sure the reason that the oil lake has dried up is tied to the dungeon in some way!",
-                    "Like, there's a pretty good 75% chance that once you get down there, all of our problems will be gone",
+                    "Like, there's a pretty good 75% chance that once you get down there, all of our problems will be gone.",
                     "I'm fairly confident there's a 50/50 chance that we're sending you down there for a good reason!",
                     "Yep, there's about a 25% chance that I'm 100% correct.",
                     "...",

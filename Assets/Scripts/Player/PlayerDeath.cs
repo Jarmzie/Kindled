@@ -22,7 +22,7 @@ public class PlayerDeath : MonoBehaviour
     private void Update()
     {
         //This break with too many regen upgrades, shouldn't happen during normal gameplay tho
-        if (Time.timeSinceLevelLoad - timeAtHealthChange > (regenRate - upgrades.healthRegenUpgrades) && playerHealth <3 && playerHealth > 0)
+        if (Time.timeSinceLevelLoad - timeAtHealthChange > (regenRate - (upgrades.healthRegenUpgrades * 2)) && playerHealth <3 && playerHealth > 0)
         {
             healDamage();
         }

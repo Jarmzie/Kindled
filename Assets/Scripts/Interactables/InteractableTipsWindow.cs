@@ -34,25 +34,31 @@ public class InteractableTipsWindow : Interactable
         {
             case HubStateManager.TutorialState.FirstLoad:
                 tempDialogue.GetComponent<Dialogue>().RunDialogue("Squid: ", new string[] {
-                    "Oh, hallo!",
-                    "You must be new here! My name is Alto, nice to meet you!",
+                    "Oh, hallo! You must be new here! My name is Alto, nice to meet you!",
                     "My job here to is act as a researcher. I'm also in charge of telling people like you how to do their jobs correctly!",
                     "It seems you already know how to move your legs since you made it over here, which means you're ahead of the curve!",
                     "Anyway, you might have seen the entrance to the dungeon over near the front of the platform. That's where you'll be doing most of your work.",
-                    "It's very dark down there, darker than up here, so you won't be able to see much.",
-                    "Luckily, it looks like you've already come equipped with your own lantern and oil. Good job on being prepared!",
-                    "That oil isn't going to last you forever though, so be careful about how long you take in the dark. Oil won't burn when you're not in the dark.",
+                    "Your primary directive in the dungeon is to get to the bottom of it, though there are a couple things that might get in your way.",
+                    "The dungeon consists of series of randomized dark rooms filled with monsters.",
+                    "To see down there and to attack these monsters, you must use your lantern. Click in the direction you want to shoot to attack with your lantern.",
+                    "Luckily, it looks like you've already come equipped with your own lantern and some oil. Good job on being prepared!",
+                    "That oil isn't going to last forever. Shooting and being in the dark will both take oil.",
                     "If you're out of oil, you're a goner. So just don't let that happen! Okay?",
-                    "That lantern you have is also your primary weapon, but attacking with it will ALSO use oil, so be careful missing too many shots.",
-                    "So let's talk about the dungeon. As you might have picked up on, there's a lotta monsters down there.",
-                    "Most levels of the dungeon will have these monsters. You'll have to defeat all of them if you want to go to the lower levels.",
-                    "Speaking of the levels, the rooms in the dungeon can shift around and feel random.",
-                    "Let it be known that even if it feels like you've been to a room before, you're still making progress.",
-                    "You might be able to see your progress if you come to a room with no monsters, maybe you'll find something useful down there.",
-                    "Who knows though, nobody has ever gotten that far. Maybe you will!                                                  (but i doubt it)",
-                    "And one last thing. I don't think I should have to tell you this but don't let the monsters touch you. That's a surefire way to kick the bucket.",
-                    "But that's pretty much it. I think you're ready to head into the dungeon. Good luck, have fun!",
-                    "Oh, and come back if you ever need more help! I've got plenty of things to talk about!"
+                    "And one last thing. I don't think I should have to tell you this but don't let the monsters hit you. That's a surefire way to kick the bucket.",
+                    "But that's it. If you need anything re-explained or more in-depth info, just come talk with me again! I've got much to talk about!",
+                    "Anyway, good luck and have fun in the dungeon!"
+                    //"That oil isn't going to last you forever though, so be careful about how long you take in the dark. Oil won't burn when you're not in the dark.",
+                    //"If you're out of oil, you're a goner. So just don't let that happen! Okay?",
+                    //"That lantern you have is also your primary weapon, but attacking with it will ALSO use oil, so be careful missing too many shots.",
+                    //"So let's talk about the dungeon. As you might have picked up on, there's a lotta monsters down there.",
+                    //"Most levels of the dungeon will have these monsters. You'll have to defeat all of them if you want to go to the lower levels.",
+                    //"Speaking of the levels, the rooms in the dungeon can shift around and feel random.",
+                    //"Let it be known that even if it feels like you've been to a room before, you're still making progress.",
+                    //"You might be able to see your progress if you come to a room with no monsters, maybe you'll find something useful down there.",
+                    //"Who knows though, nobody has ever gotten that far. Maybe you will!                                                  (but i doubt it)",
+                    //"And one last thing. I don't think I should have to tell you this but don't let the monsters touch you. That's a surefire way to kick the bucket.",
+                    //"But that's pretty much it. I think you're ready to head into the dungeon. Good luck, have fun!",
+                    //"Oh, and come back if you ever need more help! I've got plenty of things to talk about!"
                 });
                 hub.myTutState = HubStateManager.TutorialState.GoodToGo;
                 break;

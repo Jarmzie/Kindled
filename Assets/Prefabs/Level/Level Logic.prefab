@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemySpawn: {fileID: 7759903624803691349, guid: 08ef1ec27726c47429de4c47e5e50d35, type: 3}
   player: {fileID: 0}
+  dialoguePrefab: {fileID: 5920509800841081949, guid: 63bf48f548c65804995155bbf9e58cfb, type: 3}
   currSpawnLocations: []
   exit: {fileID: 0}
   entrance: {fileID: 0}

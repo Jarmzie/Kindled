@@ -76,19 +76,11 @@ public class DrillburnAI : Enemy
 
     public override void DieLOL()
     {
-        player.GetComponent<PlayerOilController>().GainOilAmount((int)(maxHealth * 1.2f));
-        if (rb.bodyType != RigidbodyType2D.Static)
-        {
-            rb.velocity = Vector3.zero;
-        }
-        transform.Find("Hurtbox").GetComponent<Collider2D>().enabled = false;
-        sr.color = new Vector4(1, 1, 1, 1);
         if (soundPlaying)
         {
             FindObjectOfType<AudioManager>().Stop("deez");
         }
-        an.SetTrigger("Destroy");
-        Destroy(this);
+        base.DieLOL();
     }
 
     //It's 4:11 AM, I just programmed this in one sitting wtihout testing and it worked first try and I popped off so hard

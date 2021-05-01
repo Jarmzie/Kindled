@@ -60,4 +60,4 @@ MonoBehaviour:
   upgradeIncrease: 20
   startingDP: 20
   startingMaxEnemies: 6
-  maxEnemyIncrease: 3
+  maxEnemyIncrease: 4

@@ -139,18 +139,6 @@ public class LevelLogic : MonoBehaviour
 
     IEnumerator NewUpgradeRoom()
     {
-        if (currLevel == 6)
-        {
-            if (hub.myState == HubStateManager.ShopState.SecondLoad)
-            {
-                hub.myState = HubStateManager.ShopState.SkippedSecondLoad2ThirdLoad;
-            }
-            else if (hub.myState == HubStateManager.ShopState.Default && !hub.ThirdLanternAquired)
-            {
-                hub.myState = HubStateManager.ShopState.ThirdLantern;
-            }
-        }
-
         player.GetComponent<PlayerMovement>().CutsceneMe(false);
         transitionImage.GetComponent<Animator>().SetTrigger("EnterBlack");
         yield return new WaitForSeconds(1.5f);
@@ -170,6 +158,22 @@ public class LevelLogic : MonoBehaviour
         player.transform.position = entrance.transform.position + new Vector3(0, -1, 0);
         transitionImage.GetComponent<Animator>().SetTrigger("ExitBlack");
         player.GetComponent<PlayerMovement>().CutsceneMe(true);
+        if (currLevel == 6 && !hub.ThirdLanternAquired)
+        {
+            if (hub.myState == HubStateManager.ShopState.SecondLoad)
+            {
+                hub.myState = HubStateManager.ShopState.SkippedSecondLoad2ThirdLoad;
+            }
+            else if (hub.myState == HubStateManager.ShopState.Default && !hub.ThirdLanternAquired)
+            {
+                hub.myState = HubStateManager.ShopState.ThirdLantern;
+            }
+            GameObject temp = Instantiate(dialoguePrefab);
+            temp.GetComponent<Dialogue>().RunDialogue("", new string[] {
+                "The walls look different here. That might mean I'm making progress.",
+                "There's a lantern in the corner. I should take it and show it to the shop keeper."
+            });
+        }
         yield return null;
     }
 

@@ -13,7 +13,7 @@ public class EnemySpawner : MonoBehaviour
     private int numOfEnemies = 0;
 
     //These are all variables so that we can tweak them
-    public int perLevelDPIncrease = 5, upgradeFrequency = 3, upgradeIncrease = 20, startingDP = 10, startingMaxEnemies = 6, maxEnemyIncrease = 3;
+    public int perLevelDPIncrease = 5, upgradeFrequency = 3, upgradeIncrease = 20, startingDP = 10, startingMaxEnemies = 6, maxEnemyIncrease = 4;
 
     public void GeneralSetUp(int level_, LevelLogic CurrentLevelLogic_)
     {

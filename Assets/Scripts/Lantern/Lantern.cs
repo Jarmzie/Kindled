@@ -49,7 +49,7 @@ public class Lantern : MonoBehaviour
             yield break;
         }
         shooting = true;
-        torso.shooting = false;
+        torso.shooting = true;
         float temp = Mathf.Rad2Deg * Mathf.Atan2((Input.mousePosition.y - Screen.height / 2), (Input.mousePosition.x - Screen.width / 2));
         if (temp < 0)
         {
@@ -67,6 +67,7 @@ public class Lantern : MonoBehaviour
         torso.an.SetLayerWeight(0, 1);
         torso.shooting = false;
         shooting = false;
+        torso.FaceAtDirection();
         yield return null;
     }
 

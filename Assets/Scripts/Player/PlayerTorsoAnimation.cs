@@ -38,10 +38,6 @@ public class PlayerTorsoAnimation : MonoBehaviour
             psr.flipX = false;
             transform.parent.GetComponent<PlayerMovement>().facingRight = false;
         }
-    }
-
-    void FixedUpdate()
-    {
         an.SetFloat("Angle", shotAngle);
         currDirection = findDirection();
         lamp.GetComponent<LayerController>().CheckAndSet();
@@ -49,24 +45,7 @@ public class PlayerTorsoAnimation : MonoBehaviour
         {
             if (!shooting)
             {
-                switch (currDirection)
-                {
-                    case direction.Down:
-                        an.SetTrigger("Down");
-                        break;
-                    case direction.Up:
-                        an.SetTrigger("Up");
-                        break;
-                    case direction.Left:
-                        an.SetTrigger("Side");
-                        break;
-                    case direction.Right:
-                        an.SetTrigger("Right");
-                        break;
-                    case direction.Other:
-                        sr.color = new Vector4(1, 1, 1, 0);
-                        break;
-                }
+                FaceAtDirection();
                 lastDirection = currDirection;
             }
             else
@@ -100,6 +79,28 @@ public class PlayerTorsoAnimation : MonoBehaviour
             }
         }
         return direction.Other;
+    }
+
+    public void FaceAtDirection()
+    {
+        switch (currDirection)
+        {
+            case direction.Down:
+                an.SetTrigger("Down");
+                break;
+            case direction.Up:
+                an.SetTrigger("Up");
+                break;
+            case direction.Left:
+                an.SetTrigger("Side");
+                break;
+            case direction.Right:
+                an.SetTrigger("Right");
+                break;
+            case direction.Other:
+                sr.color = new Vector4(1, 1, 1, 0);
+                break;
+        }
     }
 
     public void ShootAtDirection()

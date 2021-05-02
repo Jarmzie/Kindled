@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if (velocityX > 0 && !facingRight || velocityX < 0 && facingRight)
+        if (Input.GetAxisRaw("Horizontal") > 0 && !facingRight || Input.GetAxisRaw("Horizontal") < 0 && facingRight)
         {
             sr.flipX = !sr.flipX;
             facingRight = !facingRight;

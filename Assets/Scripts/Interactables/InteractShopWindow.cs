@@ -36,8 +36,8 @@ public class InteractShopWindow : Interactable
                 tempDialogue.GetComponent<Dialogue>().RunDialogue("Shop Keeper: ", new string[] {
                     "Hmmmm... They sent a new one, huh?",
                     "I have nothing to say to you right now.",
-                    "You're gonna want to talk to Alto. He's the one sitting at that silly little \"tips\" stand. He'll give you more info about the dungeon.",
-                    "Maybe after I see how you fare in the dungeon I'll change my mind about talking to you."
+                    "You're gonna want to talk to Alto. He's the one sitting at that silly little \"tips\" shop. He'll give you more info about the dungeon.",
+                    "Maybe come back after you've tried out the dungeon. I might change my mind about talking to you."
                 });
                 break;
             case HubStateManager.ShopState.SecondLoad:

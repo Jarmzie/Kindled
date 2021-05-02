@@ -23,7 +23,13 @@ public class EnemySpawner : MonoBehaviour
         SpawnLocations = GameObject.FindGameObjectsWithTag("SpawnLocation");
         maxEnemies = startingMaxEnemies + maxEnemyIncrease * ((level - 1) / upgradeFrequency);
         difficultyPoints = startingDP + (perLevelDPIncrease * ((level - 1) % upgradeFrequency)) + (upgradeIncrease * ((level - 1) / upgradeFrequency));
-        InvokeRepeating("DecideSpawning", 3.0f, spawnRate);
+        Invoke("InitalSpawn", 3.0f);
+        InvokeRepeating("DecideSpawning", 3.0f + spawnRate, spawnRate);
+    }
+
+    private void InitalSpawn()
+    {
+        StartCoroutine(SpawnRandomEnemies(maxEnemies / 2));
     }
 
     private void Update()

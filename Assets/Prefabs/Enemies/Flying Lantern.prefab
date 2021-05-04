@@ -262,9 +262,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.024987936}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.35
 --- !u!114 &448986810927607870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +281,8 @@ MonoBehaviour:
   health: 0
   damage: 10
   cost: 1
+  heightDiffFromPlayer: 0
+  PlayerHeight: 0
   myProjectile: {fileID: 6593177034166436272, guid: b2d4fd1f577314246912e01f0d3a6f0c, type: 3}
   player: {fileID: 9059281771669358570, guid: 047ef80fd34fa4d459ba1a4d4b3d0544, type: 3}
   tf: {fileID: 0}

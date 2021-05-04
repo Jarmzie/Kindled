@@ -13,7 +13,7 @@ public class PlayerOilController : MonoBehaviour
     {
         currOil = initMaxOil;
         OilBar.SetMaxOil(initMaxOil);
-        InvokeRepeating("LoseOilOverTime", 0, 1);
+        InvokeRepeating("LoseOilOverTime", 0, 0.7f);
     }
 
     private void Update()
